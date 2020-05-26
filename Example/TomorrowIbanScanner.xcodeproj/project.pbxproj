@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44379876247D7162000DA0F5 /* EmailExtractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44379871247D7138000DA0F5 /* EmailExtractorTest.swift */; };
+		44379877247D7166000DA0F5 /* IbanExtractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44379872247D7138000DA0F5 /* IbanExtractorTest.swift */; };
+		44379878247D7169000DA0F5 /* StubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44379870247D7137000DA0F5 /* StubModel.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		9F327FBE5D925CB894512820 /* Pods_TomorrowIbanScanner_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B59A3697E6533A7001C763 /* Pods_TomorrowIbanScanner_Tests.framework */; };
 		B4409486F65FD87B013728A9 /* Pods_TomorrowIbanScanner_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1851739982D25D4CF56B3099 /* Pods_TomorrowIbanScanner_Example.framework */; };
 /* End PBXBuildFile section */
@@ -30,6 +32,9 @@
 /* Begin PBXFileReference section */
 		063AA83E7418CEEFC6BE6000 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		1851739982D25D4CF56B3099 /* Pods_TomorrowIbanScanner_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TomorrowIbanScanner_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44379870247D7137000DA0F5 /* StubModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubModel.swift; sourceTree = "<group>"; };
+		44379871247D7138000DA0F5 /* EmailExtractorTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailExtractorTest.swift; sourceTree = "<group>"; };
+		44379872247D7138000DA0F5 /* IbanExtractorTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IbanExtractorTest.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* TomorrowIbanScanner_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TomorrowIbanScanner_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,7 +44,6 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* TomorrowIbanScanner_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TomorrowIbanScanner_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		67F3AD5BD704E87287F73305 /* Pods-TomorrowIbanScanner_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomorrowIbanScanner_Tests.debug.xcconfig"; path = "Target Support Files/Pods-TomorrowIbanScanner_Tests/Pods-TomorrowIbanScanner_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6C41943A043F867EE27380DF /* Pods-TomorrowIbanScanner_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomorrowIbanScanner_Example.debug.xcconfig"; path = "Target Support Files/Pods-TomorrowIbanScanner_Example/Pods-TomorrowIbanScanner_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		7297C07614EF3A783C84B2D2 /* Pods-TomorrowIbanScanner_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomorrowIbanScanner_Example.release.xcconfig"; path = "Target Support Files/Pods-TomorrowIbanScanner_Example/Pods-TomorrowIbanScanner_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -126,7 +130,9 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				44379871247D7138000DA0F5 /* EmailExtractorTest.swift */,
+				44379872247D7138000DA0F5 /* IbanExtractorTest.swift */,
+				44379870247D7137000DA0F5 /* StubModel.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -361,7 +367,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				44379877247D7166000DA0F5 /* IbanExtractorTest.swift in Sources */,
+				44379876247D7162000DA0F5 /* EmailExtractorTest.swift in Sources */,
+				44379878247D7169000DA0F5 /* StubModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
