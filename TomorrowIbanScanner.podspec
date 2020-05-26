@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   This CocoaPod provides the ability to extract an IBAN or email from a given image. It includes some IBAN-specific validation rules so you will need no boilerplate for that.
                        DESC
 
-  s.homepage         = 'https://wwww.tomorrow.one' #FIXME
+  s.homepage         = 'https://github.com/PavelStepanovTomorrow' #FIXME
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'PavelStepanovTomorrow' => 'pavel@tomorrow.one' }
