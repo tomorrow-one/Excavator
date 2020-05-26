@@ -1,0 +1,27 @@
+PODS:
+  - Nimble (7.3.4)
+  - Quick (1.2.0)
+  - TomorrowIbanScanner (0.1.0)
+
+DEPENDENCIES:
+  - Nimble (~> 7.0)
+  - Quick (~> 1.2.0)
+  - TomorrowIbanScanner (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Nimble
+    - Quick
+
+EXTERNAL SOURCES:
+  TomorrowIbanScanner:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  TomorrowIbanScanner: 26bad7717ea0b6edcb623a9a12c722d49b909e26
+
+PODFILE CHECKSUM: ea2dfa562a7d22af1779270d8888f73fb1e02085
+
+COCOAPODS: 1.9.2

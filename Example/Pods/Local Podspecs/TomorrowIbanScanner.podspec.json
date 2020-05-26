@@ -1,0 +1,22 @@
+{
+  "name": "TomorrowIbanScanner",
+  "version": "0.1.0",
+  "summary": "A short description of TomorrowIbanScanner.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/PavelStepanovTomorrow/TomorrowIbanScanner",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "PavelStepanovTomorrow": "pavel@tomorrow.one"
+  },
+  "source": {
+    "git": "https://github.com/PavelStepanovTomorrow/TomorrowIbanScanner.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "TomorrowIbanScanner/Classes/**/*"
+}

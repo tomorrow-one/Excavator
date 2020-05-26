@@ -1,0 +1,6 @@
+framework module TomorrowIbanScanner {
+  umbrella header "TomorrowIbanScanner-umbrella.h"
+
+  export *
+  module * { export * }
+}
