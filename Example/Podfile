@@ -3,12 +3,12 @@ use_frameworks!
 
 target 'TomorrowIbanScanner_Example' do
   pod 'SwiftLint'
-  pod 'TomorrowIbanScanner', :path => '../'
+  pod 'TomorrowIbanScanner'
 
-  target 'TomorrowIbanScanner_Tests' do
+  target 'TomorrowIbanScanner_ExampleTests' do
     inherit! :search_paths
 
-    pod 'Quick', '~> 1.2.0'
-    pod 'Nimble', '~> 7.0'
+    pod 'Quick'
+    pod 'Nimble'
   end
 end

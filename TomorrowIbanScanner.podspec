@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TomorrowIbanScanner'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'A set of classes which recognize and extract IBAN from an image.'
   s.swift_version    = '5.0'
 
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/PavelStepanovTomorrow' #FIXME
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'PavelStepanovTomorrow' => 'pavel@tomorrow.one' }
+  s.author           = { 'PavelStepanovTomorrow' => 'pavel@tomorrow.one' } #fixme
   s.source           = { :git => 'https://github.com/PavelStepanovTomorrow/TomorrowIbanScanner.git', :tag => s.version.to_s } #FIXME
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 

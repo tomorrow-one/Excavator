@@ -14,10 +14,7 @@ import TomorrowIbanScanner
 public final class TextRecognizingController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
 
     @IBOutlet weak var captureRectView: UIView!
-    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var messageLabel: UILabel!
-
-    private var style: Style!
 
     private var viewModel: IdentifierRecognizingViewModel!
 
@@ -92,13 +89,8 @@ public final class TextRecognizingController: UIViewController, AVCaptureMetadat
 
         self.captureRectView.layer.cornerRadius = 8
         self.captureRectView.layer.borderWidth = 1
-        self.captureRectView.layer.borderColor = self.style.borderColor.cgColor
+        self.captureRectView.layer.borderColor = UIColor(named: "always_white")!.cgColor
         self.captureRectView.clipsToBounds = false
-
-        self.titleLabel.font = self.style.titleFont
-        self.titleLabel.text = "Point your camera at an IBAN or an email address"
-
-        self.messageLabel.font = self.style.messageFont
         self.messageLabel.text = "We haven't discovered anything yet"
     }
 
@@ -184,13 +176,9 @@ extension TextRecognizingController: AVCaptureVideoDataOutputSampleBufferDelegat
 
 @available(iOS 13, *)
 extension TextRecognizingController {
-    public static func make(style: Style, extractors: [ValueExtracting] = [IbanExtractor(), EmailExtractor()]) -> TextRecognizingController {
+    public static func make(extractors: [ValueExtracting] = [IbanExtractor(), EmailExtractor()]) -> TextRecognizingController {
         let controller = TextRecognizingController()
-//        let bundle = Bundle(for: type(of: controller))
-//        bundle.loadNibNamed("TextRecognizingController", owner: controller, options: nil)
-        controller.style = style
         controller.viewModel = IdentifierRecognizingViewModel(extractors: extractors)
-//        _ = controller.view
         return controller
     }
 }

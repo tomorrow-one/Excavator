@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  TomorrowIbanScanner
 //
-//  Created by PavelStepanovTomorrow on 05/26/2020.
-//  Copyright (c) 2020 PavelStepanovTomorrow. All rights reserved.
+//  Created by Pavel Stepanov on 05/26/2020.
+//  Copyright (c) 2020 Tomorrow. All rights reserved.
 //
 
 import UIKit
@@ -18,10 +18,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.makeKeyAndVisible()
 
         if #available(iOS 13, *) {
-            let style = TextRecognizingController.Style(titleFont: .systemFont(ofSize: 19),
-                                                        messageFont: .systemFont(ofSize: 14),
-                                                        borderColor: .white)
-            let recognizingController = TextRecognizingController.make(style: style)
+            let recognizingController = TextRecognizingController.make()
             self.window?.rootViewController = recognizingController
         } else {
             print("This could be used only iOS 13+")

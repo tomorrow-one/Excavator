@@ -13,7 +13,6 @@
             <connections>
                 <outlet property="captureRectView" destination="Yx7-QZ-MZH" id="ueU-Vt-De5"/>
                 <outlet property="messageLabel" destination="d1x-Cq-p9l" id="zJf-4h-8Ah"/>
-                <outlet property="titleLabel" destination="DcL-jP-Il9" id="PKg-Pq-3z0"/>
                 <outlet property="view" destination="iN0-l3-epB" id="qOU-0d-bH5"/>
             </connections>
         </placeholder>
@@ -23,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="Xmr-yf-HVz">
-                    <rect key="frame" x="24" y="360" width="366" height="176.5"/>
+                    <rect key="frame" x="24" y="347.5" width="366" height="201.5"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yx7-QZ-MZH">
                             <rect key="frame" x="0.0" y="0.0" width="366" height="72"/>
@@ -33,21 +32,21 @@
                             </constraints>
                         </view>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZD8-tQ-fpA">
-                            <rect key="frame" x="0.0" y="104" width="366" height="72.5"/>
+                            <rect key="frame" x="0.0" y="104" width="366" height="97.5"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icCaptureLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Mh0-DD-0iv">
                                     <rect key="frame" x="0.0" y="0.0" width="366" height="36"/>
                                     <color key="tintColor" name="always_white"/>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wow there is a camera" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DcL-jP-Il9">
-                                    <rect key="frame" x="0.0" y="44" width="366" height="20.5"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Point your camera at an IBAN or an email address" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DcL-jP-Il9">
+                                    <rect key="frame" x="0.0" y="44" width="366" height="45.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                     <color key="textColor" name="always_white"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1x-Cq-p9l">
-                                    <rect key="frame" x="0.0" y="72.5" width="366" height="0.0"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <rect key="frame" x="0.0" y="97.5" width="366" height="0.0"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <color key="textColor" name="always_white"/>
                                     <nil key="highlightedColor"/>
                                 </label>

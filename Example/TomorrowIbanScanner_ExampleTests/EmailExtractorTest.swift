@@ -8,6 +8,7 @@
 
 import XCTest
 import Nimble
+@testable import TomorrowIbanScanner_Example
 @testable import TomorrowIbanScanner
 
 @available(iOS 13, *)
