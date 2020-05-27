@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TextRecognizingController" customModule="TomorrowIbanScanner_Example" customModuleProvider="target">
+            <connections>
+                <outlet property="captureRectView" destination="Yx7-QZ-MZH" id="ueU-Vt-De5"/>
+                <outlet property="messageLabel" destination="d1x-Cq-p9l" id="zJf-4h-8Ah"/>
+                <outlet property="titleLabel" destination="DcL-jP-Il9" id="PKg-Pq-3z0"/>
+                <outlet property="view" destination="iN0-l3-epB" id="qOU-0d-bH5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="Xmr-yf-HVz">
+                    <rect key="frame" x="24" y="360" width="366" height="176.5"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yx7-QZ-MZH">
+                            <rect key="frame" x="0.0" y="0.0" width="366" height="72"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="72" id="zIz-Bi-lbd"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZD8-tQ-fpA">
+                            <rect key="frame" x="0.0" y="104" width="366" height="72.5"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icCaptureLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Mh0-DD-0iv">
+                                    <rect key="frame" x="0.0" y="0.0" width="366" height="36"/>
+                                    <color key="tintColor" name="always_white"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wow there is a camera" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DcL-jP-Il9">
+                                    <rect key="frame" x="0.0" y="44" width="366" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" name="always_white"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1x-Cq-p9l">
+                                    <rect key="frame" x="0.0" y="72.5" width="366" height="0.0"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" name="always_white"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Xmr-yf-HVz" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="topMargin" id="0YV-bB-9Ke"/>
+                <constraint firstItem="Xmr-yf-HVz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="SOs-IK-B62"/>
+                <constraint firstItem="Xmr-yf-HVz" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" priority="900" id="lqH-A6-AM6"/>
+                <constraint firstItem="Xmr-yf-HVz" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="sWw-8v-aMg"/>
+            </constraints>
+            <edgeInsets key="layoutMargins" top="8" left="24" bottom="8" right="24"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="117"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icCaptureLarge" width="36" height="36"/>
+        <namedColor name="always_white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

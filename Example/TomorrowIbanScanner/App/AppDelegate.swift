@@ -13,8 +13,20 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        self.window = UIWindow()
+        self.window?.makeKeyAndVisible()
+
+        if #available(iOS 13, *) {
+            let style = TextRecognizingController.Style(titleFont: .systemFont(ofSize: 19),
+                                                        messageFont: .systemFont(ofSize: 14),
+                                                        borderColor: .white)
+            let recognizingController = TextRecognizingController.make(style: style)
+            self.window?.rootViewController = recognizingController
+        } else {
+            print("This could be used only iOS 13+")
+        }
+
         return true
     }
 
