@@ -29,8 +29,7 @@ public final class TextRecognizer: TextRecognizing {
                 let requestHandler = VNImageRequestHandler(ciImage: ciImage)
                 try requestHandler.perform([request])
             } catch {
-                // TODO: Put Logging back
-//                Logger.error(error.localizedDescription, tag: .transfer)
+                self.logError(error: error)
             }
         }
     }
@@ -42,8 +41,7 @@ public final class TextRecognizer: TextRecognizing {
             }
             guard let observations = request.results as? [VNRecognizedTextObservation] else {
                 if let error = error {
-                    // TODO: Put Logging back
-//                    Logger.error(error.localizedDescription, tag: .transfer)
+                    self.logError(error: error)
                 }
                 return
             }
@@ -60,5 +58,11 @@ public final class TextRecognizer: TextRecognizing {
         textRecognitionRequest.recognitionLevel = .accurate
         textRecognitionRequest.usesLanguageCorrection = false
         return textRecognitionRequest
+    }
+
+    private func logError(error: Error) {
+        if TextRecognizerConfig.isDebugLoggingEnabled {
+            debugPrint(error.localizedDescription)
+        }
     }
 }
