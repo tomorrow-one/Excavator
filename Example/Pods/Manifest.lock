@@ -1,17 +1,20 @@
 PODS:
   - Nimble (7.3.4)
   - Quick (1.2.0)
+  - SwiftLint (0.39.2)
   - TomorrowIbanScanner (0.1.0)
 
 DEPENDENCIES:
   - Nimble (~> 7.0)
   - Quick (~> 1.2.0)
+  - SwiftLint
   - TomorrowIbanScanner (from `../`)
 
 SPEC REPOS:
   trunk:
     - Nimble
     - Quick
+    - SwiftLint
 
 EXTERNAL SOURCES:
   TomorrowIbanScanner:
@@ -20,8 +23,9 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
   TomorrowIbanScanner: f5ab147513623bd22fe985cd64c8004dfc5b2075
 
-PODFILE CHECKSUM: 44b4c83ffae103596c22da1243682c372829f6c3
+PODFILE CHECKSUM: 4f7ae1eb982bbc0f74fe6545a1c7173ca6313f2d
 
 COCOAPODS: 1.9.2

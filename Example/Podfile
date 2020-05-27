@@ -2,6 +2,7 @@ platform :ios, '11.0'
 use_frameworks!
 
 target 'TomorrowIbanScanner_Example' do
+  pod 'SwiftLint'
   pod 'TomorrowIbanScanner', :path => '../'
 
   target 'TomorrowIbanScanner_Tests' do

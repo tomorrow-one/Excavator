@@ -1,0 +1,33 @@
+line_length: 150
+large_tuple: 3
+
+identifier_name:
+  excluded:
+    - id
+    - i
+    - x
+    - y
+    - kg
+    - to
+
+nesting:
+  type_level: 3
+
+disabled_rules:
+  - redundant_string_enum_value
+
+opt_in_rules:
+  - conditional_returns_on_newline
+  - contains_over_first_not_nil
+  - empty_count
+  - empty_string
+  - empty_xctest_method
+  - fatal_error_message
+  - function_default_parameter_at_end
+  - implicit_return
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Pods
+  - build
+  - fastlane
+  - scripts
+  - TomorrowAPI/TomorrowAPI/HttpClient/Interceptors/HMAC/Secrets.swift
