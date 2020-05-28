@@ -9,7 +9,6 @@
 import UIKit
 import TomorrowIbanScanner
 
-@available(iOS 13, *)
 final class IdentifierRecognizingViewModel {
 
     var inProgess: Bool {

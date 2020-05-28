@@ -10,7 +10,6 @@ import UIKit
 import AVFoundation
 import TomorrowIbanScanner
 
-@available(iOS 13, *)
 public final class TextRecognizingController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
 
     @IBOutlet weak var captureRectView: UIView!
@@ -157,7 +156,6 @@ public final class TextRecognizingController: UIViewController, AVCaptureMetadat
     }
 }
 
-@available(iOS 13, *)
 extension TextRecognizingController: AVCaptureVideoDataOutputSampleBufferDelegate {
 
     public func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
@@ -174,7 +172,6 @@ extension TextRecognizingController: AVCaptureVideoDataOutputSampleBufferDelegat
     }
 }
 
-@available(iOS 13, *)
 extension TextRecognizingController {
     public static func make(extractors: [ValueExtracting] = [IbanExtractor(), EmailExtractor()]) -> TextRecognizingController {
         let controller = TextRecognizingController()

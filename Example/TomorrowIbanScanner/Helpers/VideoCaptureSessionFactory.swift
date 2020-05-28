@@ -8,7 +8,6 @@
 
 import AVFoundation
 
-@available(iOS 13, *)
 enum VideoCaptureSessionFactory {
     static func make(delegate: AVCaptureVideoDataOutputSampleBufferDelegate) -> AVCaptureSession? {
         guard let videoCaptureDevice = AVCaptureDevice.default(for: .video) else {
