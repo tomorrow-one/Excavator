@@ -6,7 +6,7 @@
 //  Copyright © 2020 Tomorrow GmbH. All rights reserved.
 //
 
-import UIKit
+import CoreImage.CIImage
 
 @available(iOS 13, *)
 public protocol TextRecognizing: class {

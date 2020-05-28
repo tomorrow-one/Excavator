@@ -7,7 +7,6 @@
 //
 
 public final class Iban {
-
     public let value: String
 
     init(value: String) {

@@ -6,7 +6,6 @@
 //  Copyright © 2020 Tomorrow GmbH. All rights reserved.
 //
 
-import UIKit
 import Vision
 
 @available(iOS 13, *)

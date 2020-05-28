@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TomorrowIbanScanner'
-  s.version          = '0.1.3'
-  s.summary          = 'A set of classes which recognize and extract IBAN from an image.'
+  s.version          = '0.1.4'
+  s.summary          = 'A set of classes which recognize and extract IBAN or email from an image using Vision framework from Apple.'
   s.swift_version    = '5.0'
 
 # This description is used to generate tags and improve search results.
@@ -19,14 +19,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-  This CocoaPod provides the ability to extract an IBAN or email from a given image. It includes some IBAN-specific validation rules so you will need no boilerplate for that.
+  This CocoaPod provides the ability to extract an IBAN or email from a given image. It includes some IBAN and email specific validation rules so you will need no boilerplate for that.
                        DESC
 
-  s.homepage         = 'https://github.com/PavelStepanovTomorrow' #FIXME
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/PavelStepanovTomorrow' #TODO: FIXME
+  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2' #TODO: FIXME
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'PavelStepanovTomorrow' => 'pavel@tomorrow.one' } #fixme
-  s.source           = { :git => 'https://github.com/PavelStepanovTomorrow/TomorrowIbanScanner.git', :tag => s.version.to_s } #FIXME
+  s.source           = { :git => 'https://github.com/PavelStepanovTomorrow/TomorrowIbanScanner.git', :tag => s.version.to_s } #TODO: FIXME
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '11.0'
@@ -37,7 +37,5 @@ Pod::Spec.new do |s|
   #   'TomorrowIbanScanner' => ['TomorrowIbanScanner/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'CoreImage', 'Vision'
 end
