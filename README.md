@@ -7,9 +7,11 @@
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To run the example project, clone the repo, and run `pod install` from the Example directory first. 
+You can also simply run `pod try TomorrowIbanScanner` and it will do all the needed stuff.
 
 ## Requirements
+iOS 13+. As Vision framework recognizes text only starting from iOS 13.
 
 ## Installation
 
@@ -22,7 +24,7 @@ pod 'TomorrowIbanScanner'
 
 ## Author
 
-PavelStepanovTomorrow, pavel@tomorrow.one
+PavelStepanovTomorrow, pavel@tomorrow.one #TODO: Fill out :) 
 
 ## License
 
