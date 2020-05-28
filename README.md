@@ -41,6 +41,7 @@ As for now the library logs errors if any were produced into the standart output
 
 In the example project you can see a fully set up flow where we can extract IBAN, email or even multiple entries and then choose one.
 
+<img src="https://github.com/PavelStepanovTomorrow/TomorrowIbanScanner/blob/master/Example/TomorrowIbanScanner/Screenshots/EmailExample.PNG" width="200"> <img src="https://github.com/PavelStepanovTomorrow/TomorrowIbanScanner/blob/master/Example/TomorrowIbanScanner/Screenshots/MultilineExample.PNG" width="200"> <img src="https://github.com/PavelStepanovTomorrow/TomorrowIbanScanner/blob/master/Example/TomorrowIbanScanner/Screenshots/MultipleIdsExample.PNG" width="200">
 
 ## License
 
