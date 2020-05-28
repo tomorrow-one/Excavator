@@ -149,9 +149,7 @@ public final class TextRecognizingController: UIViewController, AVCaptureMetadat
                                            style: .default(isPreferred: false)) { [unowned self] in
             self.dismiss(animated: true)
         }
-        let item = AlertControllerViewItem(title: NSLocalizedString("transfer.iban_scanner.not_supported", comment: ""),
-                                           message: nil,
-                                           actions: [okAction])
+        let item = AlertControllerViewItem(title: "Your device does not support scanning IBAN", message: nil, actions: [okAction])
         self.present(AlertFactory.makeAlertController(item: item), animated: true)
     }
 }

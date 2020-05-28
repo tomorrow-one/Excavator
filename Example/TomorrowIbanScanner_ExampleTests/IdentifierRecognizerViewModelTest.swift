@@ -241,7 +241,7 @@ final class IdentifierRecognizingViewModelTest: XCTestCase {
 
         // then
         expect(didRecognizeMultipleResultsCounter).to(equal(1))
-        expect(actionTitles).to(equal(["du@tomorrow.one", "wir@tomorrow.one", NSLocalizedString("global.cancel", comment: "")]))
+        expect(actionTitles).to(equal(["du@tomorrow.one", "wir@tomorrow.one", "Cancel"]))
     }
 
     func testCallsDidRecognizeMultipleResultsIfMultipleIbanValues() {
@@ -266,7 +266,7 @@ final class IdentifierRecognizingViewModelTest: XCTestCase {
 
         // then
         expect(didRecognizeMultipleResultsCounter).to(equal(1))
-        expect(actionTitles).to(equal([iban1.value, iban2.value, NSLocalizedString("global.cancel", comment: "")]))
+        expect(actionTitles).to(equal([iban1.value, iban2.value, "Cancel"]))
     }
 
     func testCallsDidRecognizeMultipleResultsIfEmailAndIbanValues() {
@@ -292,7 +292,7 @@ final class IdentifierRecognizingViewModelTest: XCTestCase {
 
         // then
         expect(didRecognizeMultipleResultsCounter).to(equal(1))
-        expect(actionTitles).to(equal([iban.value, email, NSLocalizedString("global.cancel", comment: "")]))
+        expect(actionTitles).to(equal([iban.value, email, "Cancel"]))
     }
 
     func testDidSuccessAfterDidRecognizeMultipleResults() {

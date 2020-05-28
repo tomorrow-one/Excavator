@@ -40,8 +40,6 @@ final class IdentifierRecognizingViewModel {
     private func recognizeResults(_ results: [TextRecognizerResult]) {
         let extractorResults = self.extractors.flatMap { $0.extract(from: results) }
         if extractorResults.count == 1 {
-            // TODO: Fix comments
-//            trackSuccessfulRecognition(value: extractorResults.first!)
             self.didSuccess(extractorResults.first!)
         } else if extractorResults.count > 1 {
             let controllerItem = makeAlertControllerItem(for: extractorResults)
@@ -57,13 +55,11 @@ final class IdentifierRecognizingViewModel {
             }
         }
 
-        actions.append(AlertActionViewItem(title: NSLocalizedString("global.cancel", comment: ""), style: .cancel) { [unowned self] in
+        actions.append(AlertActionViewItem(title: "Cancel", style: .cancel) { [unowned self] in
             self.isWaitingForUserInput = false
         })
 
-        return AlertControllerViewItem(title: NSLocalizedString("transfer.iban_email_scanner.found_multiple.title", comment: ""),
-                                       message: NSLocalizedString("transfer.iban_email_scanner.found_multiple.description", comment: ""),
-                                       actions: actions)
+        return AlertControllerViewItem(title: "We have found multiple IBANs or emails", message: "Select one", actions: actions)
     }
 
     private func title(for extractorResult: ExtractorValue) -> String {
