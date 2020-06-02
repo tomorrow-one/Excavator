@@ -6,7 +6,7 @@
 //  Copyright © 2020 Tomorrow GmbH. All rights reserved.
 //
 
-import UIKit
+import CoreImage.CIImage
 import AVFoundation
 
 enum CIImageHelper {
