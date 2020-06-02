@@ -15,6 +15,7 @@
 			dependencies = (
 			);
 			name = SwiftLint;
+			productName = SwiftLint;
 		};
 /* End PBXAggregateTarget section */
 
@@ -197,7 +198,7 @@
 		05330DFD75F4E6E51FAF5A6AF171C019 /* CwlCatchException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CwlCatchException.h; path = Carthage/Checkouts/CwlPreconditionTesting/Dependencies/CwlCatchException/Sources/CwlCatchExceptionSupport/include/CwlCatchException.h; sourceTree = "<group>"; };
 		06BE8FA1EC3B942837542C83851781A4 /* Quick-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Quick-prefix.pch"; sourceTree = "<group>"; };
 		0CFE8712B1FBE281D845E1ABABAFBDA5 /* QCKDSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QCKDSL.m; path = Sources/QuickObjectiveC/DSL/QCKDSL.m; sourceTree = "<group>"; };
-		0D631E9908483F9525A6B3F36F16CC61 /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Quick.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D631E9908483F9525A6B3F36F16CC61 /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E0410EE0B8F62DABF2F09F7383A26F2 /* PostNotification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PostNotification.swift; path = Sources/Nimble/Matchers/PostNotification.swift; sourceTree = "<group>"; };
 		0EC7C5A3C2C61E05A81674C41E980EA2 /* Pods-TomorrowIbanScanner_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TomorrowIbanScanner_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		10BD84AF3ADFCE00BC37E04D7C84349A /* IbanHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IbanHelper.swift; path = TomorrowIbanScanner/Classes/Iban/IbanHelper.swift; sourceTree = "<group>"; };
@@ -240,7 +241,7 @@
 		5A14AF472AFE04E38D4CC81CF0A47F1F /* CwlCatchBadInstruction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CwlCatchBadInstruction.swift; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlPreconditionTesting/CwlCatchBadInstruction.swift; sourceTree = "<group>"; };
 		5B0B26E04A2A3FCB75626E10E97D31D7 /* TomorrowIbanScanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TomorrowIbanScanner.release.xcconfig; sourceTree = "<group>"; };
 		5C84B601FF15A81048784A86562EBDFC /* ExampleHooks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleHooks.swift; path = Sources/Quick/Hooks/ExampleHooks.swift; sourceTree = "<group>"; };
-		5D17C9CA4C0B9A513DF4469CD9A11648 /* mach_excServer.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mach_excServer.c; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlMachBadInstructionHandler/mach_excServer.c; sourceTree = "<group>"; };
+		5D17C9CA4C0B9A513DF4469CD9A11648 /* mach_excServer.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mach_excServer.c; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlMachBadInstructionHandler/mach_excServer.c; sourceTree = "<group>"; };
 		5E2E80613849C3E5F9E9FE47ECDD0B19 /* Stringers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stringers.swift; path = Sources/Nimble/Utils/Stringers.swift; sourceTree = "<group>"; };
 		5FBF4B96E9F46F422EE61ED3805785D2 /* Pods-TomorrowIbanScanner_ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TomorrowIbanScanner_ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		6075CC4B381F03BC6AA406B572635C60 /* World+DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "World+DSL.swift"; path = "Sources/Quick/DSL/World+DSL.swift"; sourceTree = "<group>"; };
@@ -263,7 +264,7 @@
 		7922B68826F2BDFEA7B683D4235F9C2C /* Pods-TomorrowIbanScanner_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TomorrowIbanScanner_Example-frameworks.sh"; sourceTree = "<group>"; };
 		79A09AD4B706EBF5C2503A7726E9CA5F /* String+C99ExtendedIdentifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+C99ExtendedIdentifier.swift"; path = "Sources/Quick/String+C99ExtendedIdentifier.swift"; sourceTree = "<group>"; };
 		7AB12A3161AC10929E54A2DE6F0A06C9 /* Nimble.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Nimble.modulemap; sourceTree = "<group>"; };
-		7C9B303122BAE1F7DBCB97EF3EEBB3D3 /* Pods_TomorrowIbanScanner_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TomorrowIbanScanner_ExampleTests.framework; path = "Pods-TomorrowIbanScanner_ExampleTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C9B303122BAE1F7DBCB97EF3EEBB3D3 /* Pods_TomorrowIbanScanner_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TomorrowIbanScanner_ExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E019ECCE576CAFC735ABED4F5191D1B /* BeGreaterThanOrEqualTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeGreaterThanOrEqualTo.swift; path = Sources/Nimble/Matchers/BeGreaterThanOrEqualTo.swift; sourceTree = "<group>"; };
 		81075359CA60C29D3B67A44650F0205A /* XCTestSuite+QuickTestSuiteBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "XCTestSuite+QuickTestSuiteBuilder.m"; path = "Sources/QuickObjectiveC/XCTestSuite+QuickTestSuiteBuilder.m"; sourceTree = "<group>"; };
 		82E22F77EB82ADA74761B7B4DCFA01D6 /* BeGreaterThan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeGreaterThan.swift; path = Sources/Nimble/Matchers/BeGreaterThan.swift; sourceTree = "<group>"; };
@@ -278,7 +279,7 @@
 		88522DA4C5E3C7082A76B49F0E56E395 /* Pods-TomorrowIbanScanner_ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TomorrowIbanScanner_ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8AB2C531D354B8568359F6CC0579E614 /* Quick-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Quick-umbrella.h"; sourceTree = "<group>"; };
 		8BFFD58A10C4AE418578196050727451 /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Sources/Nimble/Expression.swift; sourceTree = "<group>"; };
-		8EF5EADBD79B168F8AA00BD6D5D915D5 /* Pods_TomorrowIbanScanner_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TomorrowIbanScanner_Example.framework; path = "Pods-TomorrowIbanScanner_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EF5EADBD79B168F8AA00BD6D5D915D5 /* Pods_TomorrowIbanScanner_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TomorrowIbanScanner_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F5BF7BB833A8AE565F58C136400E1EF /* ContainElementSatisfying.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContainElementSatisfying.swift; path = Sources/Nimble/Matchers/ContainElementSatisfying.swift; sourceTree = "<group>"; };
 		8F7BBDB43F418A95829865CA5E116B6E /* NimbleXCTestHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NimbleXCTestHandler.swift; path = Sources/Nimble/Adapters/NimbleXCTestHandler.swift; sourceTree = "<group>"; };
 		937209A9F54BA9D92D8FE0C12D2E380A /* Quick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Quick.debug.xcconfig; sourceTree = "<group>"; };
@@ -288,7 +289,7 @@
 		9A056907A1829BF2A5B633619641A778 /* Nimble.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Nimble.release.xcconfig; sourceTree = "<group>"; };
 		9A8A781240FD4C359DEFF325336D4EFA /* DSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSL.h; path = Sources/NimbleObjectiveC/DSL.h; sourceTree = "<group>"; };
 		9C59EF2C36230E40A871CEA1424007FD /* DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DSL.swift; path = Sources/Nimble/DSL.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F1A41E256A284C0BDB566C78790828A /* SuiteHooks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SuiteHooks.swift; path = Sources/Quick/Hooks/SuiteHooks.swift; sourceTree = "<group>"; };
 		A00D0CE42AAF4B79BFC453B5A4133A18 /* ExtractorValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtractorValue.swift; path = TomorrowIbanScanner/Classes/ValueExtractor/ExtractorValue.swift; sourceTree = "<group>"; };
 		A08E564E28D8A09336A3327240C5B6E2 /* IbanHelperCountryIso.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IbanHelperCountryIso.swift; path = TomorrowIbanScanner/Classes/Iban/IbanHelperCountryIso.swift; sourceTree = "<group>"; };
@@ -306,7 +307,7 @@
 		B9C289E71121870636DF927ADB8DB27D /* Nimble-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Nimble-Info.plist"; sourceTree = "<group>"; };
 		BA7FA82BD4CCD6A84C92EE835E28A1E5 /* ErrorUtility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ErrorUtility.swift; path = Sources/Quick/ErrorUtility.swift; sourceTree = "<group>"; };
 		BAAB495B6AEFB56A307FE34CA2365222 /* Quick-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Quick-dummy.m"; sourceTree = "<group>"; };
-		BAE263041362D074978BB3B577DF0A05 /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Nimble.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAE263041362D074978BB3B577DF0A05 /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB9AC9C21753F5CDB26356C3CB96799B /* CwlMachBadInstructionHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CwlMachBadInstructionHandler.h; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlMachBadInstructionHandler/include/CwlMachBadInstructionHandler.h; sourceTree = "<group>"; };
 		BF746125AABF3717CF55BAEF22E7A3E3 /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
 		C333FAA5587A60204403C604B96070A1 /* ThrowAssertion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThrowAssertion.swift; path = Sources/Nimble/Matchers/ThrowAssertion.swift; sourceTree = "<group>"; };
@@ -336,7 +337,7 @@
 		E135EEE8682E2BE664B354D935607E97 /* EmailExtractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmailExtractor.swift; path = TomorrowIbanScanner/Classes/ValueExtractor/EmailExtractor.swift; sourceTree = "<group>"; };
 		E2FA5930D225913136DAD8836CCE039F /* BeginWith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeginWith.swift; path = Sources/Nimble/Matchers/BeginWith.swift; sourceTree = "<group>"; };
 		E88C14F6792FD6C9CD639C1D78C9F4A1 /* BeEmpty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeEmpty.swift; path = Sources/Nimble/Matchers/BeEmpty.swift; sourceTree = "<group>"; };
-		EAEEB92392F71ADDA80304153EB7D684 /* TomorrowIbanScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TomorrowIbanScanner.framework; path = TomorrowIbanScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAEEB92392F71ADDA80304153EB7D684 /* TomorrowIbanScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TomorrowIbanScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB3DB805A681EA09431320D8A8B4F5A5 /* Await.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Await.swift; path = Sources/Nimble/Utils/Await.swift; sourceTree = "<group>"; };
 		EC3B1B588B9A1AF6C5CC89B47AAE9A42 /* TextRecognizerConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextRecognizerConfig.swift; path = TomorrowIbanScanner/Classes/TextRecognizer/TextRecognizerConfig.swift; sourceTree = "<group>"; };
 		F13D92DE76B6609EAA2FEA221D10F108 /* ExampleMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleMetadata.swift; path = Sources/Quick/ExampleMetadata.swift; sourceTree = "<group>"; };
@@ -455,7 +456,6 @@
 				F1C5B197118D78EDEC97C226D2B8B3EC /* ValueExtracting.swift */,
 				8EF283B8D60B7AC704186AB4359935BC /* Support Files */,
 			);
-			name = TomorrowIbanScanner;
 			path = TomorrowIbanScanner;
 			sourceTree = "<group>";
 		};
@@ -464,7 +464,6 @@
 			children = (
 				A92FA47511E98AC6F43C6622290520A5 /* Support Files */,
 			);
-			name = SwiftLint;
 			path = SwiftLint;
 			sourceTree = "<group>";
 		};
@@ -596,7 +595,6 @@
 				4710D1CF05DEC58543041960EED2DFE1 /* XCTestObservationCenter+Register.m */,
 				F2B71821F5A396D3EF50D70CABDAB863 /* Support Files */,
 			);
-			name = Nimble;
 			path = Nimble;
 			sourceTree = "<group>";
 		};
@@ -646,7 +644,6 @@
 				81075359CA60C29D3B67A44650F0205A /* XCTestSuite+QuickTestSuiteBuilder.m */,
 				05387C870286FDC90B28E9986783DCBC /* Support Files */,
 			);
-			name = Quick;
 			path = Quick;
 			sourceTree = "<group>";
 		};
@@ -1131,6 +1128,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 0.1.4;
 				MODULEMAP_FILE = "Target Support Files/TomorrowIbanScanner/TomorrowIbanScanner.modulemap";
 				PRODUCT_MODULE_NAME = TomorrowIbanScanner;
 				PRODUCT_NAME = TomorrowIbanScanner;
@@ -1198,8 +1196,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -1574,6 +1571,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 0.1.4;
 				MODULEMAP_FILE = "Target Support Files/TomorrowIbanScanner/TomorrowIbanScanner.modulemap";
 				PRODUCT_MODULE_NAME = TomorrowIbanScanner;
 				PRODUCT_NAME = TomorrowIbanScanner;
