@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.summary          = 'A set of classes which recognize and extract IBAN or email from an image using Vision framework from Apple.'
   s.swift_version    = '5.0'
 
-# This description is used to generate tags and improve search results.
+# This description is used to generate tags and improve search results. FIXME
 #   * Think: What does it do? Why did you write it? What is the focus?
 #   * Try to keep it short, snappy and to the point.
 #   * Write the description between the DESC delimiters below.
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '11.0'
 
-  s.source_files = 'TomorrowIbanScanner/Classes/**/*'
+  s.source_files = 'IBScanner/IBScanner/**/*'
   
   # s.resource_bundles = {
   #   'TomorrowIbanScanner' => ['TomorrowIbanScanner/Assets/*.png']
