@@ -7,9 +7,8 @@
 //
 
 import XCTest
-import Nimble
-@testable import TomorrowIbanScanner
-@testable import TomorrowIbanScanner_Example
+@testable import IBScanner
+@testable import Example
 
 @available(iOS 13, *)
 final class IdentifierRecognizingViewModelTest: XCTestCase {
@@ -35,7 +34,7 @@ final class IdentifierRecognizingViewModelTest: XCTestCase {
         viewModel.tryRecognizeIdentifierInImage(self.dummyCiImage)
 
         // then
-        expect(self.recognizer.recognizeTextInImageCounter).to(equal(1))
+        XCTAssertEqual(self.recognizer.recognizeTextInImageCounter, 1)
     }
 
     // MARK: - Recognizer in progress
@@ -45,7 +44,7 @@ final class IdentifierRecognizingViewModelTest: XCTestCase {
         let viewModel = IdentifierRecognizingViewModel(extractors: [], recognizer: self.recognizer)
 
         // then
-        expect(viewModel.inProgess).to(equal(false))
+        XCTAssertEqual(viewModel.inProgess, false)
     }
 
     func testInProgressIfRecognizerTogglesInProgress() {
@@ -56,7 +55,7 @@ final class IdentifierRecognizingViewModelTest: XCTestCase {
         self.recognizer.inProgress = true
 
         // then
-        expect(viewModel.inProgess).to(equal(true))
+        XCTAssertEqual(viewModel.inProgess, true)
     }
 
     // MARK: - Extractor
@@ -71,7 +70,7 @@ final class IdentifierRecognizingViewModelTest: XCTestCase {
         self.recognizer.invokation([])
 
         // then
-        expect(extractor.counter).to(equal(1))
+        XCTAssertEqual(extractor.counter, 1)
     }
 
     func testExtractorCallsCounterForOneStringFromRecognizer() {
@@ -84,7 +83,7 @@ final class IdentifierRecognizingViewModelTest: XCTestCase {
         self.recognizer.invokation([TextRecognizerResult(value: "1", confidence: 1)])
 
         // then
-        expect(extractor.counter).to(equal(1))
+        XCTAssertEqual(extractor.counter, 1)
     }
 
     func testExtractorCallsCounterForMultipleStringsFromRecognizer() {
@@ -100,7 +99,7 @@ final class IdentifierRecognizingViewModelTest: XCTestCase {
         self.recognizer.invokation(result)
 
         // then
-        expect(extractor.counter).to(equal(1))
+        XCTAssertEqual(extractor.counter, 1)
     }
 
     func testExtractorReceivesAllStringsFromRecognizer() {
@@ -116,7 +115,7 @@ final class IdentifierRecognizingViewModelTest: XCTestCase {
         self.recognizer.invokation(result)
 
         // then
-        expect(extractor.receviedResults).to(equal(result))
+        XCTAssertEqual(extractor.receviedResults, result)
     }
 
     func testAllExtractorsGetCalledIfNoSuccess() {
@@ -134,16 +133,16 @@ final class IdentifierRecognizingViewModelTest: XCTestCase {
         self.recognizer.invokation(result)
 
         // then
-        expect(extractor1.counter).to(equal(1))
-        expect(extractor2.counter).to(equal(1))
-        expect(extractor3.counter).to(equal(1))
+        XCTAssertEqual(extractor1.counter, 1)
+        XCTAssertEqual(extractor2.counter, 1)
+        XCTAssertEqual(extractor3.counter, 1)
     }
 
     func testAllExtractorsGetCalledIfSuccess() {
         // given
         let extractor1 = DummyExtractor()
         let extractor2 = DummyExtractor()
-        extractor2.extractorValues = [.iban(iban: TomorrowIbanScanner.Iban(value: "DE75110101002144403897"))]
+        extractor2.extractorValues = [.iban(iban: IBScanner.Iban(value: "DE75110101002144403897"))]
         let extractor3 = DummyExtractor()
         let viewModel = IdentifierRecognizingViewModel(extractors: [extractor1, extractor2, extractor3], recognizer: self.recognizer)
         viewModel.didSuccess = { _ in }
@@ -156,9 +155,9 @@ final class IdentifierRecognizingViewModelTest: XCTestCase {
         self.recognizer.invokation(result)
 
         // then
-        expect(extractor1.counter).to(equal(1))
-        expect(extractor2.counter).to(equal(1))
-        expect(extractor3.counter).to(equal(1))
+        XCTAssertEqual(extractor1.counter, 1)
+        XCTAssertEqual(extractor2.counter, 1)
+        XCTAssertEqual(extractor3.counter, 1)
     }
 
     // MARK: - didSuccess
@@ -166,7 +165,7 @@ final class IdentifierRecognizingViewModelTest: XCTestCase {
     func testDidSuccessExtractorExtractedIban() {
         // given
         let extractor = DummyExtractor()
-        extractor.extractorValues = [.iban(iban: TomorrowIbanScanner.Iban(value: StubModel.validIban.value))]
+        extractor.extractorValues = [.iban(iban: IBScanner.Iban(value: StubModel.validIban.value))]
         let viewModel = IdentifierRecognizingViewModel(extractors: [extractor], recognizer: self.recognizer)
         viewModel.tryRecognizeIdentifierInImage(self.dummyCiImage)
 
@@ -179,7 +178,7 @@ final class IdentifierRecognizingViewModelTest: XCTestCase {
         self.recognizer.invokation([TextRecognizerResult(value: "1", confidence: 1)])
 
         // then
-        expect(didSuccessCounter).to(equal(1))
+        XCTAssertEqual(didSuccessCounter, 1)
     }
 
     func testDidSuccessExtractorExtractedEmail() {
@@ -198,7 +197,7 @@ final class IdentifierRecognizingViewModelTest: XCTestCase {
         self.recognizer.invokation([TextRecognizerResult(value: "1", confidence: 1)])
 
         // then
-        expect(didSuccessCounter).to(equal(1))
+        XCTAssertEqual(didSuccessCounter, 1)
     }
 
     func testNoDidSuccessExtractorNotExtracted() {
@@ -217,7 +216,7 @@ final class IdentifierRecognizingViewModelTest: XCTestCase {
         self.recognizer.invokation([TextRecognizerResult(value: "1", confidence: 1)])
 
         // then
-        expect(didSuccessCounter).to(equal(0))
+        XCTAssertEqual(didSuccessCounter, 0)
     }
 
     // MARK: - didRecognizeMultipleResults
@@ -240,8 +239,8 @@ final class IdentifierRecognizingViewModelTest: XCTestCase {
         self.recognizer.invokation([TextRecognizerResult(value: "1", confidence: 1)])
 
         // then
-        expect(didRecognizeMultipleResultsCounter).to(equal(1))
-        expect(actionTitles).to(equal(["du@tomorrow.one", "wir@tomorrow.one", "Cancel"]))
+        XCTAssertEqual(didRecognizeMultipleResultsCounter, 1)
+        XCTAssertEqual(actionTitles, ["du@tomorrow.one", "wir@tomorrow.one", "Cancel"])
     }
 
     func testCallsDidRecognizeMultipleResultsIfMultipleIbanValues() {
@@ -249,8 +248,8 @@ final class IdentifierRecognizingViewModelTest: XCTestCase {
         let extractor = DummyExtractor()
         let iban1 = StubModel.validIban
         let iban2 = StubModel.validIban2
-        extractor.extractorValues = [.iban(iban: TomorrowIbanScanner.Iban(value: StubModel.validIban.value)),
-                                     .iban(iban: TomorrowIbanScanner.Iban(value: StubModel.validIban2.value))]
+        extractor.extractorValues = [.iban(iban: IBScanner.Iban(value: StubModel.validIban.value)),
+                                     .iban(iban: IBScanner.Iban(value: StubModel.validIban2.value))]
         let viewModel = IdentifierRecognizingViewModel(extractors: [extractor], recognizer: self.recognizer)
         viewModel.tryRecognizeIdentifierInImage(self.dummyCiImage)
 
@@ -265,8 +264,8 @@ final class IdentifierRecognizingViewModelTest: XCTestCase {
         self.recognizer.invokation([TextRecognizerResult(value: "1", confidence: 1)])
 
         // then
-        expect(didRecognizeMultipleResultsCounter).to(equal(1))
-        expect(actionTitles).to(equal([iban1.value, iban2.value, "Cancel"]))
+        XCTAssertEqual(didRecognizeMultipleResultsCounter, 1)
+        XCTAssertEqual(actionTitles, [iban1.value, iban2.value, "Cancel"])
     }
 
     func testCallsDidRecognizeMultipleResultsIfEmailAndIbanValues() {
@@ -275,7 +274,7 @@ final class IdentifierRecognizingViewModelTest: XCTestCase {
         let emailExtractor = DummyExtractor()
         let iban = StubModel.validIban
         let email = "ihr@tomorrow.one"
-        ibanExtractor.extractorValues = [.iban(iban: TomorrowIbanScanner.Iban(value: StubModel.validIban.value))]
+        ibanExtractor.extractorValues = [.iban(iban: IBScanner.Iban(value: StubModel.validIban.value))]
         emailExtractor.extractorValues = [.email(email: email)]
         let viewModel = IdentifierRecognizingViewModel(extractors: [ibanExtractor, emailExtractor], recognizer: self.recognizer)
         viewModel.tryRecognizeIdentifierInImage(self.dummyCiImage)
@@ -291,14 +290,14 @@ final class IdentifierRecognizingViewModelTest: XCTestCase {
         self.recognizer.invokation([TextRecognizerResult(value: "1", confidence: 1)])
 
         // then
-        expect(didRecognizeMultipleResultsCounter).to(equal(1))
-        expect(actionTitles).to(equal([iban.value, email, "Cancel"]))
+        XCTAssertEqual(didRecognizeMultipleResultsCounter, 1)
+        XCTAssertEqual(actionTitles, [iban.value, email, "Cancel"])
     }
 
     func testDidSuccessAfterDidRecognizeMultipleResults() {
         // given
         let extractor = DummyExtractor()
-        let iban = TomorrowIbanScanner.Iban(value: StubModel.validIban.value)
+        let iban = IBScanner.Iban(value: StubModel.validIban.value)
         let email = "ihr@tomorrow.one"
         extractor.extractorValues = [.iban(iban: iban), .email(email: email)]
         let viewModel = IdentifierRecognizingViewModel(extractors: [extractor], recognizer: self.recognizer)
@@ -318,9 +317,10 @@ final class IdentifierRecognizingViewModelTest: XCTestCase {
 
         // then
         guard case .email(let extractedEmail) = extractedValue else {
-            fail("Incorrect state")
+            XCTFail("Incorrect state")
             return
         }
+
         XCTAssertEqual(extractedEmail, email)
     }
 
@@ -342,13 +342,13 @@ final class IdentifierRecognizingViewModelTest: XCTestCase {
         viewModel.tryRecognizeIdentifierInImage(self.dummyCiImage)
 
         // then
-        expect(self.recognizer.recognizeTextInImageCounter).to(equal(1))
+        XCTAssertEqual(self.recognizer.recognizeTextInImageCounter, 1)
     }
 
     func testReceivesInputAgainAfterDidRecognizeMultipleResultsCancelled() {
         // given
         let extractor = DummyExtractor()
-        let iban = TomorrowIbanScanner.Iban(value: StubModel.validIban.value)
+        let iban = IBScanner.Iban(value: StubModel.validIban.value)
         let email = "ihr@tomorrow.one"
         extractor.extractorValues = [.iban(iban: iban), .email(email: email)]
         let viewModel = IdentifierRecognizingViewModel(extractors: [extractor], recognizer: self.recognizer)
@@ -365,7 +365,7 @@ final class IdentifierRecognizingViewModelTest: XCTestCase {
         viewModel.tryRecognizeIdentifierInImage(self.dummyCiImage)
 
         // then
-        expect(self.recognizer.recognizeTextInImageCounter).to(equal(4))
+        XCTAssertEqual(self.recognizer.recognizeTextInImageCounter, 4)
     }
 }
 

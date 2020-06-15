@@ -1,6 +1,0 @@
-framework module Pods_TomorrowIbanScanner_Example {
-  umbrella header "Pods-TomorrowIbanScanner_Example-umbrella.h"
-
-  export *
-  module * { export * }
-}

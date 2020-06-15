@@ -18,11 +18,10 @@
 		44E56AE3247E7A8300DF4DE5 /* AlertControllerViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E56AE2247E7A8300DF4DE5 /* AlertControllerViewItem.swift */; };
 		44E56AE5247E7AA100DF4DE5 /* AlertActionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E56AE4247E7AA100DF4DE5 /* AlertActionViewItem.swift */; };
 		44E56AE8247E7AE300DF4DE5 /* AlertFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E56AE7247E7AE300DF4DE5 /* AlertFactory.swift */; };
-		49FC956980EE005E5364C2C2 /* Pods_TomorrowIbanScanner_ExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83903DB33587F7F284FCA39C /* Pods_TomorrowIbanScanner_ExampleTests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		B4409486F65FD87B013728A9 /* Pods_TomorrowIbanScanner_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1851739982D25D4CF56B3099 /* Pods_TomorrowIbanScanner_Example.framework */; };
+		EC6760EBA92DD6BB67FC69F3 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C105B45999DF1E49AD7890E /* Pods_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,13 +49,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		100F12CDE03FA16E13FF18FF /* Pods-TomorrowIbanScanner_ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomorrowIbanScanner_ExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-TomorrowIbanScanner_ExampleTests/Pods-TomorrowIbanScanner_ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
-		1851739982D25D4CF56B3099 /* Pods_TomorrowIbanScanner_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TomorrowIbanScanner_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		28AA46B7F55B0D7949F0DC65 /* Pods-TomorrowIbanScanner_ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomorrowIbanScanner_ExampleTests.release.xcconfig"; path = "Target Support Files/Pods-TomorrowIbanScanner_ExampleTests/Pods-TomorrowIbanScanner_ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		44379870247D7137000DA0F5 /* StubModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubModel.swift; sourceTree = "<group>"; };
 		4466576B247EA6B200A806D2 /* IdentifierRecognizerViewModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifierRecognizerViewModelTest.swift; sourceTree = "<group>"; };
 		4466576E247EA78400A806D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		44665774247EAFFF00A806D2 /* Example_ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Example_ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44665774247EAFFF00A806D2 /* ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44665778247EAFFF00A806D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4497770D2497B95C009BF942 /* IBScanner.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IBScanner.xcodeproj; path = ../IBScanner/IBScanner.xcodeproj; sourceTree = "<group>"; };
 		449777132497BA57009BF942 /* TextRecognizingController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TextRecognizingController.xib; path = TomorrowIbanScanner/Source/TextRecognizingController.xib; sourceTree = SOURCE_ROOT; };
@@ -73,9 +69,11 @@
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		67F3AD5BD704E87287F73305 /* Pods-TomorrowIbanScanner_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomorrowIbanScanner_Tests.debug.xcconfig"; path = "Target Support Files/Pods-TomorrowIbanScanner_Tests/Pods-TomorrowIbanScanner_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		6C105B45999DF1E49AD7890E /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C41943A043F867EE27380DF /* Pods-TomorrowIbanScanner_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomorrowIbanScanner_Example.debug.xcconfig"; path = "Target Support Files/Pods-TomorrowIbanScanner_Example/Pods-TomorrowIbanScanner_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		7297C07614EF3A783C84B2D2 /* Pods-TomorrowIbanScanner_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomorrowIbanScanner_Example.release.xcconfig"; path = "Target Support Files/Pods-TomorrowIbanScanner_Example/Pods-TomorrowIbanScanner_Example.release.xcconfig"; sourceTree = "<group>"; };
-		83903DB33587F7F284FCA39C /* Pods_TomorrowIbanScanner_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TomorrowIbanScanner_ExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF5A601544CAB8500B06137B /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
+		D1AF00B45925714031AB9C46 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F8B59A3697E6533A7001C763 /* Pods_TomorrowIbanScanner_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TomorrowIbanScanner_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF0CB3216EC255E23096E2A /* Pods-TomorrowIbanScanner_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomorrowIbanScanner_Tests.release.xcconfig"; path = "Target Support Files/Pods-TomorrowIbanScanner_Tests/Pods-TomorrowIbanScanner_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,7 +83,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49FC956980EE005E5364C2C2 /* Pods_TomorrowIbanScanner_ExampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4409486F65FD87B013728A9 /* Pods_TomorrowIbanScanner_Example.framework in Frameworks */,
+				EC6760EBA92DD6BB67FC69F3 /* Pods_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,8 +182,8 @@
 				7297C07614EF3A783C84B2D2 /* Pods-TomorrowIbanScanner_Example.release.xcconfig */,
 				67F3AD5BD704E87287F73305 /* Pods-TomorrowIbanScanner_Tests.debug.xcconfig */,
 				FAF0CB3216EC255E23096E2A /* Pods-TomorrowIbanScanner_Tests.release.xcconfig */,
-				100F12CDE03FA16E13FF18FF /* Pods-TomorrowIbanScanner_ExampleTests.debug.xcconfig */,
-				28AA46B7F55B0D7949F0DC65 /* Pods-TomorrowIbanScanner_ExampleTests.release.xcconfig */,
+				D1AF00B45925714031AB9C46 /* Pods-Example.debug.xcconfig */,
+				BF5A601544CAB8500B06137B /* Pods-Example.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -207,7 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD01AFB9204008FA782 /* Example.app */,
-				44665774247EAFFF00A806D2 /* Example_ExampleTests.xctest */,
+				44665774247EAFFF00A806D2 /* ExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -233,9 +230,8 @@
 		B7DC956BFD6C0E4119F2F63F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1851739982D25D4CF56B3099 /* Pods_TomorrowIbanScanner_Example.framework */,
 				F8B59A3697E6533A7001C763 /* Pods_TomorrowIbanScanner_Tests.framework */,
-				83903DB33587F7F284FCA39C /* Pods_TomorrowIbanScanner_ExampleTests.framework */,
+				6C105B45999DF1E49AD7890E /* Pods_Example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -243,29 +239,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		44665773247EAFFF00A806D2 /* Example_ExampleTests */ = {
+		44665773247EAFFF00A806D2 /* ExampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4466577B247EAFFF00A806D2 /* Build configuration list for PBXNativeTarget "Example_ExampleTests" */;
+			buildConfigurationList = 4466577B247EAFFF00A806D2 /* Build configuration list for PBXNativeTarget "ExampleTests" */;
 			buildPhases = (
-				7FB4199CBFCCC964AFE83A12 /* [CP] Check Pods Manifest.lock */,
 				44665770247EAFFF00A806D2 /* Sources */,
 				44665771247EAFFF00A806D2 /* Frameworks */,
 				44665772247EAFFF00A806D2 /* Resources */,
-				433CE9EE77739EA14332C13C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				4466577A247EAFFF00A806D2 /* PBXTargetDependency */,
 			);
-			name = Example_ExampleTests;
+			name = ExampleTests;
 			productName = TomorrowIbanScanner_ExampleTests;
-			productReference = 44665774247EAFFF00A806D2 /* Example_ExampleTests.xctest */;
+			productReference = 44665774247EAFFF00A806D2 /* ExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		607FACCF1AFB9204008FA782 /* Example_Example */ = {
+		607FACCF1AFB9204008FA782 /* Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Example_Example" */;
+			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Example" */;
 			buildPhases = (
 				F145C18089252F350059CDF1 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
@@ -276,7 +270,7 @@
 			);
 			dependencies = (
 			);
-			name = Example_Example;
+			name = Example;
 			productName = TomorrowIbanScanner;
 			productReference = 607FACD01AFB9204008FA782 /* Example.app */;
 			productType = "com.apple.product-type.application";
@@ -322,8 +316,8 @@
 			);
 			projectRoot = "";
 			targets = (
-				607FACCF1AFB9204008FA782 /* Example_Example */,
-				44665773247EAFFF00A806D2 /* Example_ExampleTests */,
+				607FACCF1AFB9204008FA782 /* Example */,
+				44665773247EAFFF00A806D2 /* ExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -367,48 +361,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		433CE9EE77739EA14332C13C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TomorrowIbanScanner_ExampleTests/Pods-TomorrowIbanScanner_ExampleTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TomorrowIbanScanner_ExampleTests/Pods-TomorrowIbanScanner_ExampleTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7FB4199CBFCCC964AFE83A12 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TomorrowIbanScanner_ExampleTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		F145C18089252F350059CDF1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -424,7 +376,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TomorrowIbanScanner_Example-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -463,7 +415,7 @@
 /* Begin PBXTargetDependency section */
 		4466577A247EAFFF00A806D2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* Example_Example */;
+			target = 607FACCF1AFB9204008FA782 /* Example */;
 			targetProxy = 44665779247EAFFF00A806D2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -482,7 +434,6 @@
 /* Begin XCBuildConfiguration section */
 		4466577C247EAFFF00A806D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 100F12CDE03FA16E13FF18FF /* Pods-TomorrowIbanScanner_ExampleTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -507,13 +458,12 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example_Example.app/Example_Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
 			};
 			name = Debug;
 		};
 		4466577D247EAFFF00A806D2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 28AA46B7F55B0D7949F0DC65 /* Pods-TomorrowIbanScanner_ExampleTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -535,7 +485,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example_Example.app/Example_Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
 			};
 			name = Release;
 		};
@@ -640,7 +590,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C41943A043F867EE27380DF /* Pods-TomorrowIbanScanner_Example.debug.xcconfig */;
+			baseConfigurationReference = D1AF00B45925714031AB9C46 /* Pods-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8GNUVHDS8K;
@@ -658,7 +608,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7297C07614EF3A783C84B2D2 /* Pods-TomorrowIbanScanner_Example.release.xcconfig */;
+			baseConfigurationReference = BF5A601544CAB8500B06137B /* Pods-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = T26XN9U9U2;
@@ -677,7 +627,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4466577B247EAFFF00A806D2 /* Build configuration list for PBXNativeTarget "Example_ExampleTests" */ = {
+		4466577B247EAFFF00A806D2 /* Build configuration list for PBXNativeTarget "ExampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4466577C247EAFFF00A806D2 /* Debug */,
@@ -695,7 +645,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Example_Example" */ = {
+		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,
