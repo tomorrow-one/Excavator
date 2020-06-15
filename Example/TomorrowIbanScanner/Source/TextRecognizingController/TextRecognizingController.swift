@@ -8,7 +8,7 @@
 
 import UIKit
 import AVFoundation
-import TomorrowIbanScanner
+import IBScanner
 
 public final class TextRecognizingController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
 

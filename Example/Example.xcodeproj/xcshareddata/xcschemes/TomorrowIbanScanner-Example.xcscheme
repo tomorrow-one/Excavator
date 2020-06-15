@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "TomorrowIbanScanner_Example.app"
-               BlueprintName = "TomorrowIbanScanner_Example"
-               ReferencedContainer = "container:TomorrowIbanScanner.xcodeproj">
+               BuildableName = "Example_Example.app"
+               BlueprintName = "Example_Example"
+               ReferencedContainer = "container:Example.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -31,7 +31,7 @@
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
                BuildableName = "TomorrowIbanScanner_Tests.xctest"
                BlueprintName = "TomorrowIbanScanner_Tests"
-               ReferencedContainer = "container:TomorrowIbanScanner.xcodeproj">
+               ReferencedContainer = "container:Example.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,9 +46,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "TomorrowIbanScanner_Example.app"
-            BlueprintName = "TomorrowIbanScanner_Example"
-            ReferencedContainer = "container:TomorrowIbanScanner.xcodeproj">
+            BuildableName = "Example_Example.app"
+            BlueprintName = "Example_Example"
+            ReferencedContainer = "container:Example.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -57,9 +57,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "44665773247EAFFF00A806D2"
-               BuildableName = "TomorrowIbanScanner_ExampleTests.xctest"
-               BlueprintName = "TomorrowIbanScanner_ExampleTests"
-               ReferencedContainer = "container:TomorrowIbanScanner.xcodeproj">
+               BuildableName = "Example_ExampleTests.xctest"
+               BlueprintName = "Example_ExampleTests"
+               ReferencedContainer = "container:Example.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -79,9 +79,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "TomorrowIbanScanner_Example.app"
-            BlueprintName = "TomorrowIbanScanner_Example"
-            ReferencedContainer = "container:TomorrowIbanScanner.xcodeproj">
+            BuildableName = "Example_Example.app"
+            BlueprintName = "Example_Example"
+            ReferencedContainer = "container:Example.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "TomorrowIbanScanner_Example.app"
-            BlueprintName = "TomorrowIbanScanner_Example"
-            ReferencedContainer = "container:TomorrowIbanScanner.xcodeproj">
+            BuildableName = "Example_Example.app"
+            BlueprintName = "Example_Example"
+            ReferencedContainer = "container:Example.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

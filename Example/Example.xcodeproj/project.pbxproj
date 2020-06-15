@@ -7,16 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		44665777247EAFFF00A806D2 /* TomorrowIbanScanner_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44665776247EAFFF00A806D2 /* TomorrowIbanScanner_ExampleTests.swift */; };
 		4466577E247EB01400A806D2 /* EmailExtractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44379871247D7138000DA0F5 /* EmailExtractorTest.swift */; };
 		4466577F247EB01400A806D2 /* IdentifierRecognizerViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4466576B247EA6B200A806D2 /* IdentifierRecognizerViewModelTest.swift */; };
 		44665780247EB01400A806D2 /* IbanExtractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44379872247D7138000DA0F5 /* IbanExtractorTest.swift */; };
 		44665781247EB01400A806D2 /* StubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44379870247D7137000DA0F5 /* StubModel.swift */; };
-		44AA41C7247E7FA900C3B996 /* TextRecognizingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44E56AD5247E78F000DF4DE5 /* TextRecognizingController.xib */; };
+		449777142497BA57009BF942 /* TextRecognizingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 449777132497BA57009BF942 /* TextRecognizingController.xib */; };
 		44AA41C9247E803700C3B996 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44AA41C8247E803700C3B996 /* Assets.xcassets */; };
-		44C13C3D247FEDCC00AD7F89 /* MultipleIdsExample.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 44C13C3A247FEDCC00AD7F89 /* MultipleIdsExample.PNG */; };
-		44C13C3E247FEDCC00AD7F89 /* EmailExample.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 44C13C3B247FEDCC00AD7F89 /* EmailExample.PNG */; };
-		44C13C3F247FEDCC00AD7F89 /* MultilineExample.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 44C13C3C247FEDCC00AD7F89 /* MultilineExample.PNG */; };
 		44E56ADB247E78F000DF4DE5 /* IdentifierRecognizingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E56AD4247E78F000DF4DE5 /* IdentifierRecognizingViewModel.swift */; };
 		44E56ADD247E78F000DF4DE5 /* TextRecognizingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E56AD6247E78F000DF4DE5 /* TextRecognizingController.swift */; };
 		44E56ADE247E78F000DF4DE5 /* VideoCaptureSessionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E56AD8247E78F000DF4DE5 /* VideoCaptureSessionFactory.swift */; };
@@ -39,10 +35,16 @@
 			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
 			remoteInfo = TomorrowIbanScanner_Example;
 		};
+		449777112497B95C009BF942 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4497770D2497B95C009BF942 /* IBScanner.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 449776A92497B70C009BF942;
+			remoteInfo = IBScanner;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		063AA83E7418CEEFC6BE6000 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		100F12CDE03FA16E13FF18FF /* Pods-TomorrowIbanScanner_ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomorrowIbanScanner_ExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-TomorrowIbanScanner_ExampleTests/Pods-TomorrowIbanScanner_ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1851739982D25D4CF56B3099 /* Pods_TomorrowIbanScanner_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TomorrowIbanScanner_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28AA46B7F55B0D7949F0DC65 /* Pods-TomorrowIbanScanner_ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomorrowIbanScanner_ExampleTests.release.xcconfig"; path = "Target Support Files/Pods-TomorrowIbanScanner_ExampleTests/Pods-TomorrowIbanScanner_ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -51,44 +53,26 @@
 		44379872247D7138000DA0F5 /* IbanExtractorTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IbanExtractorTest.swift; sourceTree = "<group>"; };
 		4466576B247EA6B200A806D2 /* IdentifierRecognizerViewModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifierRecognizerViewModelTest.swift; sourceTree = "<group>"; };
 		4466576E247EA78400A806D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		44665774247EAFFF00A806D2 /* TomorrowIbanScanner_ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TomorrowIbanScanner_ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		44665776247EAFFF00A806D2 /* TomorrowIbanScanner_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomorrowIbanScanner_ExampleTests.swift; sourceTree = "<group>"; };
+		44665774247EAFFF00A806D2 /* Example_ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Example_ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44665778247EAFFF00A806D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		449776802497B441009BF942 /* TextRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextRecognizer.swift; sourceTree = "<group>"; };
-		449776812497B441009BF942 /* TextRecognizerConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextRecognizerConfig.swift; sourceTree = "<group>"; };
-		449776822497B441009BF942 /* TextRecognizerResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextRecognizerResult.swift; sourceTree = "<group>"; };
-		449776832497B441009BF942 /* TextRecognizing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextRecognizing.swift; sourceTree = "<group>"; };
-		449776862497B441009BF942 /* IbanHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IbanHelper.swift; sourceTree = "<group>"; };
-		449776872497B441009BF942 /* Iban.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Iban.swift; sourceTree = "<group>"; };
-		449776882497B441009BF942 /* IbanHelperLength.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IbanHelperLength.swift; sourceTree = "<group>"; };
-		449776892497B441009BF942 /* IbanHelperCountryIso.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IbanHelperCountryIso.swift; sourceTree = "<group>"; };
-		4497768B2497B441009BF942 /* IbanExtractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IbanExtractor.swift; sourceTree = "<group>"; };
-		4497768C2497B441009BF942 /* ValueExtracting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueExtracting.swift; sourceTree = "<group>"; };
-		4497768D2497B441009BF942 /* EmailExtractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailExtractor.swift; sourceTree = "<group>"; };
-		4497768E2497B441009BF942 /* ExtractorTypeHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtractorTypeHelper.swift; sourceTree = "<group>"; };
-		4497768F2497B441009BF942 /* ExtractorValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtractorValue.swift; sourceTree = "<group>"; };
+		4497770D2497B95C009BF942 /* IBScanner.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IBScanner.xcodeproj; path = ../IBScanner/IBScanner.xcodeproj; sourceTree = "<group>"; };
+		449777132497BA57009BF942 /* TextRecognizingController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TextRecognizingController.xib; path = TomorrowIbanScanner/Source/TextRecognizingController.xib; sourceTree = SOURCE_ROOT; };
 		44AA41C8247E803700C3B996 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		44C13C3A247FEDCC00AD7F89 /* MultipleIdsExample.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultipleIdsExample.PNG; sourceTree = "<group>"; };
-		44C13C3B247FEDCC00AD7F89 /* EmailExample.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EmailExample.PNG; sourceTree = "<group>"; };
-		44C13C3C247FEDCC00AD7F89 /* MultilineExample.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultilineExample.PNG; sourceTree = "<group>"; };
 		44E56AD4247E78F000DF4DE5 /* IdentifierRecognizingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifierRecognizingViewModel.swift; sourceTree = "<group>"; };
-		44E56AD5247E78F000DF4DE5 /* TextRecognizingController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TextRecognizingController.xib; path = Helpers/TextRecognizingController.xib; sourceTree = "<group>"; };
 		44E56AD6247E78F000DF4DE5 /* TextRecognizingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextRecognizingController.swift; sourceTree = "<group>"; };
 		44E56AD8247E78F000DF4DE5 /* VideoCaptureSessionFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCaptureSessionFactory.swift; sourceTree = "<group>"; };
 		44E56AD9247E78F000DF4DE5 /* CIImageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CIImageHelper.swift; sourceTree = "<group>"; };
 		44E56AE2247E7A8300DF4DE5 /* AlertControllerViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertControllerViewItem.swift; sourceTree = "<group>"; };
 		44E56AE4247E7AA100DF4DE5 /* AlertActionViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertActionViewItem.swift; sourceTree = "<group>"; };
 		44E56AE7247E7AE300DF4DE5 /* AlertFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertFactory.swift; sourceTree = "<group>"; };
-		607FACD01AFB9204008FA782 /* TomorrowIbanScanner_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TomorrowIbanScanner_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACD01AFB9204008FA782 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		67F3AD5BD704E87287F73305 /* Pods-TomorrowIbanScanner_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomorrowIbanScanner_Tests.debug.xcconfig"; path = "Target Support Files/Pods-TomorrowIbanScanner_Tests/Pods-TomorrowIbanScanner_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6C41943A043F867EE27380DF /* Pods-TomorrowIbanScanner_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomorrowIbanScanner_Example.debug.xcconfig"; path = "Target Support Files/Pods-TomorrowIbanScanner_Example/Pods-TomorrowIbanScanner_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		7297C07614EF3A783C84B2D2 /* Pods-TomorrowIbanScanner_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomorrowIbanScanner_Example.release.xcconfig"; path = "Target Support Files/Pods-TomorrowIbanScanner_Example/Pods-TomorrowIbanScanner_Example.release.xcconfig"; sourceTree = "<group>"; };
-		733E0021D8925222F6E83C2B /* TomorrowIbanScanner.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TomorrowIbanScanner.podspec; path = ../TomorrowIbanScanner.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		83903DB33587F7F284FCA39C /* Pods_TomorrowIbanScanner_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TomorrowIbanScanner_ExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2ECC27E7001867372A81F8D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F8B59A3697E6533A7001C763 /* Pods_TomorrowIbanScanner_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TomorrowIbanScanner_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF0CB3216EC255E23096E2A /* Pods-TomorrowIbanScanner_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomorrowIbanScanner_Tests.release.xcconfig"; path = "Target Support Files/Pods-TomorrowIbanScanner_Tests/Pods-TomorrowIbanScanner_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,7 +104,6 @@
 				44379871247D7138000DA0F5 /* EmailExtractorTest.swift */,
 				44379872247D7138000DA0F5 /* IbanExtractorTest.swift */,
 				44379870247D7137000DA0F5 /* StubModel.swift */,
-				44665776247EAFFF00A806D2 /* TomorrowIbanScanner_ExampleTests.swift */,
 				44665778247EAFFF00A806D2 /* Info.plist */,
 			);
 			path = TomorrowIbanScanner_ExampleTests;
@@ -135,67 +118,34 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		4497767D2497B411009BF942 /* src */ = {
+		4497770C2497B92E009BF942 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				4497767E2497B441009BF942 /* Classes */,
+				44E56AE1247E7A7800DF4DE5 /* App */,
+				449777152497BA5B009BF942 /* TextRecognizingController */,
+				44E56AE6247E7AD000DF4DE5 /* Alert */,
+				44E56AD7247E78F000DF4DE5 /* Helpers */,
+				44665782247EB03D00A806D2 /* Resources */,
 			);
-			path = src;
+			path = Source;
 			sourceTree = "<group>";
 		};
-		4497767E2497B441009BF942 /* Classes */ = {
+		4497770E2497B95C009BF942 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4497767F2497B441009BF942 /* TextRecognizer */,
-				449776852497B441009BF942 /* Iban */,
-				4497768A2497B441009BF942 /* ValueExtractor */,
+				449777122497B95C009BF942 /* IBScanner.framework */,
 			);
-			name = Classes;
-			path = ../../TomorrowIbanScanner/Classes;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		4497767F2497B441009BF942 /* TextRecognizer */ = {
+		449777152497BA5B009BF942 /* TextRecognizingController */ = {
 			isa = PBXGroup;
 			children = (
-				449776802497B441009BF942 /* TextRecognizer.swift */,
-				449776812497B441009BF942 /* TextRecognizerConfig.swift */,
-				449776822497B441009BF942 /* TextRecognizerResult.swift */,
-				449776832497B441009BF942 /* TextRecognizing.swift */,
+				449777132497BA57009BF942 /* TextRecognizingController.xib */,
+				44E56AD6247E78F000DF4DE5 /* TextRecognizingController.swift */,
+				44E56AD4247E78F000DF4DE5 /* IdentifierRecognizingViewModel.swift */,
 			);
-			path = TextRecognizer;
-			sourceTree = "<group>";
-		};
-		449776852497B441009BF942 /* Iban */ = {
-			isa = PBXGroup;
-			children = (
-				449776862497B441009BF942 /* IbanHelper.swift */,
-				449776872497B441009BF942 /* Iban.swift */,
-				449776882497B441009BF942 /* IbanHelperLength.swift */,
-				449776892497B441009BF942 /* IbanHelperCountryIso.swift */,
-			);
-			path = Iban;
-			sourceTree = "<group>";
-		};
-		4497768A2497B441009BF942 /* ValueExtractor */ = {
-			isa = PBXGroup;
-			children = (
-				4497768B2497B441009BF942 /* IbanExtractor.swift */,
-				4497768C2497B441009BF942 /* ValueExtracting.swift */,
-				4497768D2497B441009BF942 /* EmailExtractor.swift */,
-				4497768E2497B441009BF942 /* ExtractorTypeHelper.swift */,
-				4497768F2497B441009BF942 /* ExtractorValue.swift */,
-			);
-			path = ValueExtractor;
-			sourceTree = "<group>";
-		};
-		44C13C36247FEBCE00AD7F89 /* Screenshots */ = {
-			isa = PBXGroup;
-			children = (
-				44C13C3B247FEDCC00AD7F89 /* EmailExample.PNG */,
-				44C13C3C247FEDCC00AD7F89 /* MultilineExample.PNG */,
-				44C13C3A247FEDCC00AD7F89 /* MultipleIdsExample.PNG */,
-			);
-			path = Screenshots;
+			path = TextRecognizingController;
 			sourceTree = "<group>";
 		};
 		44E56AD7247E78F000DF4DE5 /* Helpers */ = {
@@ -242,10 +192,9 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
-				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* TomorrowIbanScannerExample */,
 				44665775247EAFFF00A806D2 /* TomorrowIbanScanner_ExampleTests */,
-				4497767D2497B411009BF942 /* src */,
+				4497770D2497B95C009BF942 /* IBScanner.xcodeproj */,
 				607FACD11AFB9204008FA782 /* Products */,
 				45B0AEBE1854A104A8A3E495 /* Pods */,
 				B7DC956BFD6C0E4119F2F63F /* Frameworks */,
@@ -255,8 +204,8 @@
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD01AFB9204008FA782 /* TomorrowIbanScanner_Example.app */,
-				44665774247EAFFF00A806D2 /* TomorrowIbanScanner_ExampleTests.xctest */,
+				607FACD01AFB9204008FA782 /* Example.app */,
+				44665774247EAFFF00A806D2 /* Example_ExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -264,15 +213,8 @@
 		607FACD21AFB9204008FA782 /* TomorrowIbanScannerExample */ = {
 			isa = PBXGroup;
 			children = (
-				44E56AE1247E7A7800DF4DE5 /* App */,
-				44E56AD5247E78F000DF4DE5 /* TextRecognizingController.xib */,
-				44E56AD6247E78F000DF4DE5 /* TextRecognizingController.swift */,
-				44E56AD4247E78F000DF4DE5 /* IdentifierRecognizingViewModel.swift */,
-				44E56AE6247E7AD000DF4DE5 /* Alert */,
-				44E56AD7247E78F000DF4DE5 /* Helpers */,
-				44665782247EB03D00A806D2 /* Resources */,
+				4497770C2497B92E009BF942 /* Source */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
-				44C13C36247FEBCE00AD7F89 /* Screenshots */,
 			);
 			name = TomorrowIbanScannerExample;
 			path = TomorrowIbanScanner;
@@ -284,16 +226,6 @@
 				607FACD41AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
-			isa = PBXGroup;
-			children = (
-				733E0021D8925222F6E83C2B /* TomorrowIbanScanner.podspec */,
-				063AA83E7418CEEFC6BE6000 /* README.md */,
-				E2ECC27E7001867372A81F8D /* LICENSE */,
-			);
-			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
 		B7DC956BFD6C0E4119F2F63F /* Frameworks */ = {
@@ -309,9 +241,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		44665773247EAFFF00A806D2 /* TomorrowIbanScanner_ExampleTests */ = {
+		44665773247EAFFF00A806D2 /* Example_ExampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4466577B247EAFFF00A806D2 /* Build configuration list for PBXNativeTarget "TomorrowIbanScanner_ExampleTests" */;
+			buildConfigurationList = 4466577B247EAFFF00A806D2 /* Build configuration list for PBXNativeTarget "Example_ExampleTests" */;
 			buildPhases = (
 				7FB4199CBFCCC964AFE83A12 /* [CP] Check Pods Manifest.lock */,
 				44665770247EAFFF00A806D2 /* Sources */,
@@ -324,28 +256,27 @@
 			dependencies = (
 				4466577A247EAFFF00A806D2 /* PBXTargetDependency */,
 			);
-			name = TomorrowIbanScanner_ExampleTests;
+			name = Example_ExampleTests;
 			productName = TomorrowIbanScanner_ExampleTests;
-			productReference = 44665774247EAFFF00A806D2 /* TomorrowIbanScanner_ExampleTests.xctest */;
+			productReference = 44665774247EAFFF00A806D2 /* Example_ExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		607FACCF1AFB9204008FA782 /* TomorrowIbanScanner_Example */ = {
+		607FACCF1AFB9204008FA782 /* Example_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "TomorrowIbanScanner_Example" */;
+			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Example_Example" */;
 			buildPhases = (
 				F145C18089252F350059CDF1 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				DFD769AB72DE00B03528E841 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = TomorrowIbanScanner_Example;
+			name = Example_Example;
 			productName = TomorrowIbanScanner;
-			productReference = 607FACD01AFB9204008FA782 /* TomorrowIbanScanner_Example.app */;
+			productReference = 607FACD01AFB9204008FA782 /* Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -371,7 +302,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "TomorrowIbanScanner" */;
+			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "Example" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -381,13 +312,29 @@
 			mainGroup = 607FACC71AFB9204008FA782;
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4497770E2497B95C009BF942 /* Products */;
+					ProjectRef = 4497770D2497B95C009BF942 /* IBScanner.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
-				607FACCF1AFB9204008FA782 /* TomorrowIbanScanner_Example */,
-				44665773247EAFFF00A806D2 /* TomorrowIbanScanner_ExampleTests */,
+				607FACCF1AFB9204008FA782 /* Example_Example */,
+				44665773247EAFFF00A806D2 /* Example_ExampleTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		449777122497B95C009BF942 /* IBScanner.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = IBScanner.framework;
+			remoteRef = 449777112497B95C009BF942 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		44665772247EAFFF00A806D2 /* Resources */ = {
@@ -402,12 +349,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
-				44AA41C7247E7FA900C3B996 /* TextRecognizingController.xib in Resources */,
 				44AA41C9247E803700C3B996 /* Assets.xcassets in Resources */,
+				449777142497BA57009BF942 /* TextRecognizingController.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
-				44C13C3F247FEDCC00AD7F89 /* MultilineExample.PNG in Resources */,
-				44C13C3D247FEDCC00AD7F89 /* MultipleIdsExample.PNG in Resources */,
-				44C13C3E247FEDCC00AD7F89 /* EmailExample.PNG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,24 +400,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DFD769AB72DE00B03528E841 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TomorrowIbanScanner_Example/Pods-TomorrowIbanScanner_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/TomorrowIbanScanner/TomorrowIbanScanner.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TomorrowIbanScanner.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TomorrowIbanScanner_Example/Pods-TomorrowIbanScanner_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		F145C18089252F350059CDF1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -504,7 +430,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				44665780247EB01400A806D2 /* IbanExtractorTest.swift in Sources */,
-				44665777247EAFFF00A806D2 /* TomorrowIbanScanner_ExampleTests.swift in Sources */,
 				4466577F247EB01400A806D2 /* IdentifierRecognizerViewModelTest.swift in Sources */,
 				44665781247EB01400A806D2 /* StubModel.swift in Sources */,
 				4466577E247EB01400A806D2 /* EmailExtractorTest.swift in Sources */,
@@ -531,7 +456,7 @@
 /* Begin PBXTargetDependency section */
 		4466577A247EAFFF00A806D2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* TomorrowIbanScanner_Example */;
+			target = 607FACCF1AFB9204008FA782 /* Example_Example */;
 			targetProxy = 44665779247EAFFF00A806D2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -575,7 +500,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TomorrowIbanScanner_Example.app/TomorrowIbanScanner_Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example_Example.app/Example_Example";
 			};
 			name = Debug;
 		};
@@ -603,7 +528,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TomorrowIbanScanner_Example.app/TomorrowIbanScanner_Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example_Example.app/Example_Example";
 			};
 			name = Release;
 		};
@@ -718,7 +643,7 @@
 				MARKETING_VERSION = 0.1.5;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "one.tomorrow.TomorrowIbanScanner-Example";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Example;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
 			};
@@ -736,7 +661,7 @@
 				MARKETING_VERSION = 0.1.5;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "one.tomorrow.TomorrowIbanScanner-Example";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Example;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
 			};
@@ -745,7 +670,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4466577B247EAFFF00A806D2 /* Build configuration list for PBXNativeTarget "TomorrowIbanScanner_ExampleTests" */ = {
+		4466577B247EAFFF00A806D2 /* Build configuration list for PBXNativeTarget "Example_ExampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4466577C247EAFFF00A806D2 /* Debug */,
@@ -754,7 +679,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "TomorrowIbanScanner" */ = {
+		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACED1AFB9204008FA782 /* Debug */,
@@ -763,7 +688,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "TomorrowIbanScanner_Example" */ = {
+		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Example_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,

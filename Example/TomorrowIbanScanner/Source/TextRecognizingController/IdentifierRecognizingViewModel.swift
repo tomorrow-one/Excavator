@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import TomorrowIbanScanner
+import IBScanner
 
 final class IdentifierRecognizingViewModel {
 

@@ -321,7 +321,7 @@ final class IdentifierRecognizingViewModelTest: XCTestCase {
             fail("Incorrect state")
             return
         }
-        expect(extractedEmail).to(equal(email))
+        XCTAssertEqual(extractedEmail, email)
     }
 
     // MARK: - isWaitingForUserInput

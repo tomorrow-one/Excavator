@@ -3,7 +3,6 @@ use_frameworks!
 
 target 'TomorrowIbanScanner_Example' do
   pod 'SwiftLint'
-  pod 'TomorrowIbanScanner'
 
   target 'TomorrowIbanScanner_ExampleTests' do
     inherit! :search_paths
