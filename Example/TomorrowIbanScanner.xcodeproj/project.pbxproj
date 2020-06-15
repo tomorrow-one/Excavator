@@ -12,20 +12,6 @@
 		4466577F247EB01400A806D2 /* IdentifierRecognizerViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4466576B247EA6B200A806D2 /* IdentifierRecognizerViewModelTest.swift */; };
 		44665780247EB01400A806D2 /* IbanExtractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44379872247D7138000DA0F5 /* IbanExtractorTest.swift */; };
 		44665781247EB01400A806D2 /* StubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44379870247D7137000DA0F5 /* StubModel.swift */; };
-		449776902497B441009BF942 /* TextRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449776802497B441009BF942 /* TextRecognizer.swift */; };
-		449776912497B441009BF942 /* TextRecognizerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449776812497B441009BF942 /* TextRecognizerConfig.swift */; };
-		449776922497B441009BF942 /* TextRecognizerResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449776822497B441009BF942 /* TextRecognizerResult.swift */; };
-		449776932497B441009BF942 /* TextRecognizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449776832497B441009BF942 /* TextRecognizing.swift */; };
-		449776942497B441009BF942 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 449776842497B441009BF942 /* .gitkeep */; };
-		449776952497B441009BF942 /* IbanHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449776862497B441009BF942 /* IbanHelper.swift */; };
-		449776962497B441009BF942 /* Iban.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449776872497B441009BF942 /* Iban.swift */; };
-		449776972497B441009BF942 /* IbanHelperLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449776882497B441009BF942 /* IbanHelperLength.swift */; };
-		449776982497B441009BF942 /* IbanHelperCountryIso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449776892497B441009BF942 /* IbanHelperCountryIso.swift */; };
-		449776992497B441009BF942 /* IbanExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4497768B2497B441009BF942 /* IbanExtractor.swift */; };
-		4497769A2497B441009BF942 /* ValueExtracting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4497768C2497B441009BF942 /* ValueExtracting.swift */; };
-		4497769B2497B441009BF942 /* EmailExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4497768D2497B441009BF942 /* EmailExtractor.swift */; };
-		4497769C2497B441009BF942 /* ExtractorTypeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4497768E2497B441009BF942 /* ExtractorTypeHelper.swift */; };
-		4497769D2497B441009BF942 /* ExtractorValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4497768F2497B441009BF942 /* ExtractorValue.swift */; };
 		44AA41C7247E7FA900C3B996 /* TextRecognizingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44E56AD5247E78F000DF4DE5 /* TextRecognizingController.xib */; };
 		44AA41C9247E803700C3B996 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44AA41C8247E803700C3B996 /* Assets.xcassets */; };
 		44C13C3D247FEDCC00AD7F89 /* MultipleIdsExample.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 44C13C3A247FEDCC00AD7F89 /* MultipleIdsExample.PNG */; };
@@ -72,7 +58,6 @@
 		449776812497B441009BF942 /* TextRecognizerConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextRecognizerConfig.swift; sourceTree = "<group>"; };
 		449776822497B441009BF942 /* TextRecognizerResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextRecognizerResult.swift; sourceTree = "<group>"; };
 		449776832497B441009BF942 /* TextRecognizing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextRecognizing.swift; sourceTree = "<group>"; };
-		449776842497B441009BF942 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		449776862497B441009BF942 /* IbanHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IbanHelper.swift; sourceTree = "<group>"; };
 		449776872497B441009BF942 /* Iban.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Iban.swift; sourceTree = "<group>"; };
 		449776882497B441009BF942 /* IbanHelperLength.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IbanHelperLength.swift; sourceTree = "<group>"; };
@@ -161,7 +146,6 @@
 		4497767E2497B441009BF942 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				449776842497B441009BF942 /* .gitkeep */,
 				4497767F2497B441009BF942 /* TextRecognizer */,
 				449776852497B441009BF942 /* Iban */,
 				4497768A2497B441009BF942 /* ValueExtractor */,
@@ -424,7 +408,6 @@
 				44C13C3F247FEDCC00AD7F89 /* MultilineExample.PNG in Resources */,
 				44C13C3D247FEDCC00AD7F89 /* MultipleIdsExample.PNG in Resources */,
 				44C13C3E247FEDCC00AD7F89 /* EmailExample.PNG in Resources */,
-				449776942497B441009BF942 /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,27 +515,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				449776992497B441009BF942 /* IbanExtractor.swift in Sources */,
 				44E56ADB247E78F000DF4DE5 /* IdentifierRecognizingViewModel.swift in Sources */,
-				4497769A2497B441009BF942 /* ValueExtracting.swift in Sources */,
 				44E56ADE247E78F000DF4DE5 /* VideoCaptureSessionFactory.swift in Sources */,
 				44E56ADD247E78F000DF4DE5 /* TextRecognizingController.swift in Sources */,
 				44E56AE3247E7A8300DF4DE5 /* AlertControllerViewItem.swift in Sources */,
-				449776922497B441009BF942 /* TextRecognizerResult.swift in Sources */,
-				449776912497B441009BF942 /* TextRecognizerConfig.swift in Sources */,
-				449776952497B441009BF942 /* IbanHelper.swift in Sources */,
 				44E56AE5247E7AA100DF4DE5 /* AlertActionViewItem.swift in Sources */,
-				4497769C2497B441009BF942 /* ExtractorTypeHelper.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-				449776932497B441009BF942 /* TextRecognizing.swift in Sources */,
 				44E56ADF247E78F000DF4DE5 /* CIImageHelper.swift in Sources */,
-				4497769D2497B441009BF942 /* ExtractorValue.swift in Sources */,
-				449776972497B441009BF942 /* IbanHelperLength.swift in Sources */,
-				449776902497B441009BF942 /* TextRecognizer.swift in Sources */,
 				44E56AE8247E7AE300DF4DE5 /* AlertFactory.swift in Sources */,
-				449776982497B441009BF942 /* IbanHelperCountryIso.swift in Sources */,
-				4497769B2497B441009BF942 /* EmailExtractor.swift in Sources */,
-				449776962497B441009BF942 /* Iban.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
