@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4466577E247EB01400A806D2 /* EmailExtractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44379871247D7138000DA0F5 /* EmailExtractorTest.swift */; };
 		4466577F247EB01400A806D2 /* IdentifierRecognizerViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4466576B247EA6B200A806D2 /* IdentifierRecognizerViewModelTest.swift */; };
-		44665780247EB01400A806D2 /* IbanExtractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44379872247D7138000DA0F5 /* IbanExtractorTest.swift */; };
 		44665781247EB01400A806D2 /* StubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44379870247D7137000DA0F5 /* StubModel.swift */; };
 		449777142497BA57009BF942 /* TextRecognizingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 449777132497BA57009BF942 /* TextRecognizingController.xib */; };
 		44AA41C9247E803700C3B996 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44AA41C8247E803700C3B996 /* Assets.xcassets */; };
@@ -42,6 +40,13 @@
 			remoteGlobalIDString = 449776A92497B70C009BF942;
 			remoteInfo = IBScanner;
 		};
+		449777392497C333009BF942 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4497770D2497B95C009BF942 /* IBScanner.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 449777292497C30A009BF942;
+			remoteInfo = IBScannerTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -49,8 +54,6 @@
 		1851739982D25D4CF56B3099 /* Pods_TomorrowIbanScanner_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TomorrowIbanScanner_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28AA46B7F55B0D7949F0DC65 /* Pods-TomorrowIbanScanner_ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomorrowIbanScanner_ExampleTests.release.xcconfig"; path = "Target Support Files/Pods-TomorrowIbanScanner_ExampleTests/Pods-TomorrowIbanScanner_ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		44379870247D7137000DA0F5 /* StubModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubModel.swift; sourceTree = "<group>"; };
-		44379871247D7138000DA0F5 /* EmailExtractorTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailExtractorTest.swift; sourceTree = "<group>"; };
-		44379872247D7138000DA0F5 /* IbanExtractorTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IbanExtractorTest.swift; sourceTree = "<group>"; };
 		4466576B247EA6B200A806D2 /* IdentifierRecognizerViewModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifierRecognizerViewModelTest.swift; sourceTree = "<group>"; };
 		4466576E247EA78400A806D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		44665774247EAFFF00A806D2 /* Example_ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Example_ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,8 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				4466576B247EA6B200A806D2 /* IdentifierRecognizerViewModelTest.swift */,
-				44379871247D7138000DA0F5 /* EmailExtractorTest.swift */,
-				44379872247D7138000DA0F5 /* IbanExtractorTest.swift */,
 				44379870247D7137000DA0F5 /* StubModel.swift */,
 				44665778247EAFFF00A806D2 /* Info.plist */,
 			);
@@ -134,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				449777122497B95C009BF942 /* IBScanner.framework */,
+				4497773A2497C333009BF942 /* IBScannerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -334,6 +336,13 @@
 			remoteRef = 449777112497B95C009BF942 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		4497773A2497C333009BF942 /* IBScannerTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = IBScannerTests.xctest;
+			remoteRef = 449777392497C333009BF942 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -429,10 +438,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44665780247EB01400A806D2 /* IbanExtractorTest.swift in Sources */,
 				4466577F247EB01400A806D2 /* IdentifierRecognizerViewModelTest.swift in Sources */,
 				44665781247EB01400A806D2 /* StubModel.swift in Sources */,
-				4466577E247EB01400A806D2 /* EmailExtractorTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,8 +7,7 @@
 //
 
 import XCTest
-import Nimble
-@testable import TomorrowIbanScanner
+@testable import IBScanner
 
 @available(iOS 13, *)
 final class IbanExtractorTest: XCTestCase {
@@ -19,11 +18,11 @@ final class IbanExtractorTest: XCTestCase {
 
     func testValidIbanExtractionSuccess() {
         // given
-        let ibanValue = properIbanValue
+        let ibanValue = self.properIbanValue
         let recognizedValue = TextRecognizerResult(value: ibanValue, confidence: 1.0)
 
         // when && then
-        expect(self.extractedIbanValue(from: [recognizedValue])).to(equal(properIbanValue))
+        XCTAssertEqual(extractedIbanValue(from: [recognizedValue]), self.properIbanValue)
     }
 
     func testValidIbanWithSpacesOnEndsExtractionSuccess() {
@@ -32,7 +31,7 @@ final class IbanExtractorTest: XCTestCase {
         let recognizedValue = TextRecognizerResult(value: ibanValue, confidence: 1.0)
 
         // when && then
-        expect(self.extractedIbanValue(from: [recognizedValue])).to(equal(properIbanValue))
+        XCTAssertEqual(extractedIbanValue(from: [recognizedValue]), self.properIbanValue)
     }
 
     func testValidIbanWithSpacesExtractionSuccess() {
@@ -41,7 +40,7 @@ final class IbanExtractorTest: XCTestCase {
         let recognizedValue = TextRecognizerResult(value: ibanValue, confidence: 1.0)
 
         // when && then
-        expect(self.extractedIbanValue(from: [recognizedValue])).to(equal(properIbanValue))
+        XCTAssertEqual(extractedIbanValue(from: [recognizedValue]), self.properIbanValue)
     }
 
     func testValidIbanWithNonBreakableSpacesExtractionSuccess() {
@@ -50,7 +49,7 @@ final class IbanExtractorTest: XCTestCase {
         let recognizedValue = TextRecognizerResult(value: ibanValue, confidence: 1.0)
 
         // when && then
-        expect(self.extractedIbanValue(from: [recognizedValue])).to(equal(properIbanValue))
+        XCTAssertEqual(extractedIbanValue(from: [recognizedValue]), self.properIbanValue)
     }
 
     func testValidIbanWithIncorrectSymbolsOnEndsExtractionSuccess() {
@@ -59,7 +58,7 @@ final class IbanExtractorTest: XCTestCase {
         let recognizedValue = TextRecognizerResult(value: ibanValue, confidence: 1.0)
 
         // when && then
-        expect(self.extractedIbanValue(from: [recognizedValue])).to(equal(properIbanValue))
+        XCTAssertEqual(extractedIbanValue(from: [recognizedValue]), self.properIbanValue)
     }
 
     func testValidIbanLowercasedExtractionSuccess() {
@@ -68,7 +67,7 @@ final class IbanExtractorTest: XCTestCase {
         let recognizedValue = TextRecognizerResult(value: ibanValue, confidence: 1.0)
 
         // when && then
-        expect(self.extractedIbanValue(from: [recognizedValue])).to(equal(properIbanValue))
+        XCTAssertEqual(extractedIbanValue(from: [recognizedValue]), self.properIbanValue)
     }
 
     func testValidIbanWithIncorrectPrefixExtractionSuccess() {
@@ -77,7 +76,7 @@ final class IbanExtractorTest: XCTestCase {
         let recognizedValue = TextRecognizerResult(value: ibanValue, confidence: 1.0)
 
         // when && then
-        expect(self.extractedIbanValue(from: [recognizedValue])).to(equal(properIbanValue))
+        XCTAssertEqual(extractedIbanValue(from: [recognizedValue]), self.properIbanValue)
     }
 
     func testValidIbanWithIncorrectSuffixExtractionSuccess() {
@@ -86,7 +85,7 @@ final class IbanExtractorTest: XCTestCase {
         let recognizedValue = TextRecognizerResult(value: ibanValue, confidence: 1.0)
 
         // when && then
-        expect(self.extractedIbanValue(from: [recognizedValue])).to(equal(properIbanValue))
+        XCTAssertEqual(extractedIbanValue(from: [recognizedValue]), self.properIbanValue)
     }
 
     func testValidIbanWithFalseyIbanPrefixExtractionSuccess() {
@@ -95,7 +94,7 @@ final class IbanExtractorTest: XCTestCase {
         let recognizedValue = TextRecognizerResult(value: ibanValue, confidence: 1.0)
 
         // when && then
-        expect(self.extractedIbanValue(from: [recognizedValue])).to(equal(properIbanValue))
+        XCTAssertEqual(extractedIbanValue(from: [recognizedValue]), self.properIbanValue)
     }
 
     func testValidIbanWithFalseyIbanPrefixAndSuffixExtractionSuccess() {
@@ -104,7 +103,7 @@ final class IbanExtractorTest: XCTestCase {
         let recognizedValue = TextRecognizerResult(value: ibanValue, confidence: 1.0)
 
         // when && then
-        expect(self.extractedIbanValue(from: [recognizedValue])).to(equal(properIbanValue))
+        XCTAssertEqual(extractedIbanValue(from: [recognizedValue]), self.properIbanValue)
     }
 
     func testValidIbanWithLineEndExtractionSuccess() {
@@ -113,7 +112,7 @@ final class IbanExtractorTest: XCTestCase {
         let recognizedValue = TextRecognizerResult(value: ibanValue, confidence: 1.0)
 
         // when && then
-        expect(self.extractedIbanValue(from: [recognizedValue])).to(equal("DE61110101002562351444"))
+        XCTAssertEqual(extractedIbanValue(from: [recognizedValue]), "DE61110101002562351444")
     }
 
     func testValidIbanExtractionWithOtherValidIbanInSubstring() {
@@ -122,7 +121,7 @@ final class IbanExtractorTest: XCTestCase {
         let recognizedValue = TextRecognizerResult(value: ibanValue, confidence: 1.0)
 
         // when && then
-        expect(self.extractedIbanValue(from: [recognizedValue])).to(equal("MC9114508000702484513283C60"))
+        XCTAssertEqual(extractedIbanValue(from: [recognizedValue]), "MC9114508000702484513283C60")
     }
 
     func testIValidIbanExtractionWithOtherValidNonExistingIban() {
@@ -131,7 +130,7 @@ final class IbanExtractorTest: XCTestCase {
         let recognizedValue = TextRecognizerResult(value: ibanValue, confidence: 1.0)
 
         // when && then
-        expect(self.extractedIbanValue(from: [recognizedValue])).to(equal("DE05700000000070001506"))
+        XCTAssertEqual(extractedIbanValue(from: [recognizedValue]), "DE05700000000070001506")
     }
 
     // MARK: - No success
@@ -142,7 +141,7 @@ final class IbanExtractorTest: XCTestCase {
         let recognizedValue = TextRecognizerResult(value: ibanValue, confidence: 1.0)
 
         // when && then
-        expect(self.extractedIbanValue(from: [recognizedValue])).to(beNil())
+        XCTAssertEqual(extractedIbanValue(from: [recognizedValue]), nil)
     }
 
     func testSuccessEvenWithoutConfidence() {
@@ -151,7 +150,7 @@ final class IbanExtractorTest: XCTestCase {
         let recognizedValue = TextRecognizerResult(value: ibanValue, confidence: 0.0)
 
         // when && then
-        expect(self.extractedIbanValue(from: [recognizedValue])).to(equal(ibanValue))
+        XCTAssertEqual(extractedIbanValue(from: [recognizedValue]), "DE61110101002562351444")
     }
 
     // MARK: - Helper
@@ -187,7 +186,7 @@ final class IbanExtractorTest: XCTestCase {
         }
 
         // then
-        expect(ibanValues).to(equal(["DE87110101002430920438", "DE05700000000070001506"]))
+        XCTAssertEqual(ibanValues, ["DE87110101002430920438", "DE05700000000070001506"])
     }
 
     func testMultipleIbansOnlyValidExtracted() {
@@ -213,7 +212,7 @@ final class IbanExtractorTest: XCTestCase {
         }
 
         // then
-        expect(ibanValues).to(equal(["DE87110101002430920438", "DE05700000000070001506"]))
+        XCTAssertEqual(ibanValues, ["DE87110101002430920438", "DE05700000000070001506"])
     }
 
     func testMultipleIbansInOneLineAllExtracted() {
@@ -235,6 +234,6 @@ final class IbanExtractorTest: XCTestCase {
         }
 
         // then
-        expect(ibanValues).to(equal(["DE87110101002430920438", "DE05700000000070001506"]))
+        XCTAssertEqual(ibanValues, ["DE87110101002430920438", "DE05700000000070001506"])
     }
 }

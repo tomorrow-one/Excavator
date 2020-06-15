@@ -27,7 +27,20 @@
 		449777222497BBDE009BF942 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4497771F2497BBDE009BF942 /* README.md */; };
 		449777232497BBDE009BF942 /* TomorrowIbanScanner.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 449777202497BBDE009BF942 /* TomorrowIbanScanner.podspec */; };
 		449777242497BBDE009BF942 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 449777212497BBDE009BF942 /* LICENSE */; };
+		4497772E2497C30A009BF942 /* IBScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 449776A92497B70C009BF942 /* IBScanner.framework */; };
+		4497773D2497C342009BF942 /* IbanExtractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4497773B2497C342009BF942 /* IbanExtractorTest.swift */; };
+		4497773E2497C342009BF942 /* EmailExtractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4497773C2497C342009BF942 /* EmailExtractorTest.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4497772F2497C30A009BF942 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 449776A02497B70C009BF942 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 449776A82497B70C009BF942;
+			remoteInfo = IBScanner;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		449776A92497B70C009BF942 /* IBScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +65,10 @@
 		4497771F2497BBDE009BF942 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		449777202497BBDE009BF942 /* TomorrowIbanScanner.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TomorrowIbanScanner.podspec; path = ../TomorrowIbanScanner.podspec; sourceTree = "<group>"; };
 		449777212497BBDE009BF942 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		449777292497C30A009BF942 /* IBScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBScannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4497772D2497C30A009BF942 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4497773B2497C342009BF942 /* IbanExtractorTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IbanExtractorTest.swift; sourceTree = "<group>"; };
+		4497773C2497C342009BF942 /* EmailExtractorTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailExtractorTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +76,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		449777262497C30A009BF942 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4497772E2497C30A009BF942 /* IBScanner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +96,7 @@
 				4497771E2497BBD5009BF942 /* Deployment */,
 				449777052497B863009BF942 /* Screenshots */,
 				449776AB2497B70C009BF942 /* IBScanner */,
+				4497772A2497C30A009BF942 /* IBScannerTests */,
 				449776AA2497B70C009BF942 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				449776A92497B70C009BF942 /* IBScanner.framework */,
+				449777292497C30A009BF942 /* IBScannerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,6 +185,16 @@
 			name = Deployment;
 			sourceTree = "<group>";
 		};
+		4497772A2497C30A009BF942 /* IBScannerTests */ = {
+			isa = PBXGroup;
+			children = (
+				4497773C2497C342009BF942 /* EmailExtractorTest.swift */,
+				4497773B2497C342009BF942 /* IbanExtractorTest.swift */,
+				4497772D2497C30A009BF942 /* Info.plist */,
+			);
+			path = IBScannerTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -190,17 +227,40 @@
 			productReference = 449776A92497B70C009BF942 /* IBScanner.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		449777282497C30A009BF942 /* IBScannerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 449777312497C30A009BF942 /* Build configuration list for PBXNativeTarget "IBScannerTests" */;
+			buildPhases = (
+				449777252497C30A009BF942 /* Sources */,
+				449777262497C30A009BF942 /* Frameworks */,
+				449777272497C30A009BF942 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				449777302497C30A009BF942 /* PBXTargetDependency */,
+			);
+			name = IBScannerTests;
+			productName = IBScannerTests;
+			productReference = 449777292497C30A009BF942 /* IBScannerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		449776A02497B70C009BF942 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Pavel Stepanov";
 				TargetAttributes = {
 					449776A82497B70C009BF942 = {
 						CreatedOnToolsVersion = 11.5;
+					};
+					449777282497C30A009BF942 = {
+						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -218,6 +278,7 @@
 			projectRoot = "";
 			targets = (
 				449776A82497B70C009BF942 /* IBScanner */,
+				449777282497C30A009BF942 /* IBScannerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,6 +294,13 @@
 				449777222497BBDE009BF942 /* README.md in Resources */,
 				449777232497BBDE009BF942 /* TomorrowIbanScanner.podspec in Resources */,
 				4497770A2497B863009BF942 /* MultipleIdsExample.PNG in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		449777272497C30A009BF942 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +327,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		449777252497C30A009BF942 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4497773D2497C342009BF942 /* IbanExtractorTest.swift in Sources */,
+				4497773E2497C342009BF942 /* EmailExtractorTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		449777302497C30A009BF942 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 449776A82497B70C009BF942 /* IBScanner */;
+			targetProxy = 4497772F2497C30A009BF942 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		449776AF2497B70C009BF942 /* Debug */ = {
@@ -430,6 +515,47 @@
 			};
 			name = Release;
 		};
+		449777322497C30A009BF942 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8GNUVHDS8K;
+				INFOPLIST_FILE = IBScannerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tomorrow.ibanScanner.IBScannerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		449777332497C30A009BF942 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8GNUVHDS8K;
+				INFOPLIST_FILE = IBScannerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tomorrow.ibanScanner.IBScannerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -447,6 +573,15 @@
 			buildConfigurations = (
 				449776B22497B70C009BF942 /* Debug */,
 				449776B32497B70C009BF942 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		449777312497C30A009BF942 /* Build configuration list for PBXNativeTarget "IBScannerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				449777322497C30A009BF942 /* Debug */,
+				449777332497C30A009BF942 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

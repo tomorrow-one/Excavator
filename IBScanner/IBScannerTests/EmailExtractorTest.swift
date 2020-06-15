@@ -7,9 +7,7 @@
 //
 
 import XCTest
-import Nimble
-@testable import TomorrowIbanScanner_Example
-@testable import TomorrowIbanScanner
+@testable import IBScanner
 
 @available(iOS 13, *)
 final class EmailExtractorTest: XCTestCase {
@@ -24,7 +22,7 @@ final class EmailExtractorTest: XCTestCase {
         let results = [TextRecognizerResult(value: email, confidence: 1.0)]
 
         // when && then
-        expect(self.extractedEmailValue(from: results)).to(equal(self.properEmail))
+        XCTAssertEqual(extractedEmailValue(from: results), self.properEmail)
     }
 
     func testValidEmailExtractionHasPrefixSuccess() {
@@ -33,7 +31,7 @@ final class EmailExtractorTest: XCTestCase {
         let results = [TextRecognizerResult(value: email, confidence: 1.0)]
 
         // when && then
-        expect(self.extractedEmailValue(from: results)).to(equal(self.properEmail))
+        XCTAssertEqual(extractedEmailValue(from: results), self.properEmail)
     }
 
     func testValidEmailExtractionHasSuffixSuccess() {
@@ -42,7 +40,7 @@ final class EmailExtractorTest: XCTestCase {
         let results = [TextRecognizerResult(value: email, confidence: 1.0)]
 
         // when && then
-        expect(self.extractedEmailValue(from: results)).to(equal(self.properEmail))
+        XCTAssertEqual(extractedEmailValue(from: results), self.properEmail)
     }
 
     func testValidEmailExtractionHasSuffixSuccessIWillFailFixMe() {
@@ -51,7 +49,7 @@ final class EmailExtractorTest: XCTestCase {
         let results = [TextRecognizerResult(value: email, confidence: 1.0)]
 
         // when && then
-        expect(self.extractedEmailValue(from: results)).to(equal(self.properEmail))
+        XCTAssertEqual(extractedEmailValue(from: results), self.properEmail)
     }
 
     func testEmailExtractionHasPefixAndSuffixSuccess() {
@@ -60,7 +58,7 @@ final class EmailExtractorTest: XCTestCase {
         let results = [TextRecognizerResult(value: email, confidence: 1.0)]
 
         // when && then
-        expect(self.extractedEmailValue(from: results)).to(equal(self.properEmail))
+        XCTAssertEqual(extractedEmailValue(from: results), self.properEmail)
     }
 
     func testEmailExtractionComplexEmailSuccess() {
@@ -69,7 +67,7 @@ final class EmailExtractorTest: XCTestCase {
         let results = [TextRecognizerResult(value: email, confidence: 1.0)]
 
         // when && then
-        expect(self.extractedEmailValue(from: results)).to(equal(email))
+        XCTAssertEqual(extractedEmailValue(from: results), email)
     }
 
     // MARK: - Failure
@@ -80,7 +78,7 @@ final class EmailExtractorTest: XCTestCase {
         let results = [TextRecognizerResult(value: email, confidence: 1.0)]
 
         // when && then
-        expect(self.extractedEmailValue(from: results)).to(beNil())
+        XCTAssertEqual(extractedEmailValue(from: results), nil)
     }
 
     func testEmailIncorrectFormatNoSuffixExtractionFailure() {
@@ -89,7 +87,7 @@ final class EmailExtractorTest: XCTestCase {
         let results = [TextRecognizerResult(value: email, confidence: 1.0)]
 
         // when && then
-        expect(self.extractedEmailValue(from: results)).to(beNil())
+        XCTAssertEqual(extractedEmailValue(from: results), nil)
     }
 
     func testEmailIncorrectFormatNoPrefixExtractionFailure() {
@@ -98,7 +96,7 @@ final class EmailExtractorTest: XCTestCase {
         let results = [TextRecognizerResult(value: email, confidence: 1.0)]
 
         // when && then
-        expect(self.extractedEmailValue(from: results)).to(beNil())
+        XCTAssertEqual(extractedEmailValue(from: results), nil)
     }
 
     func testEmailIncorrectFormatNoDomainExtractionFailure() {
@@ -107,7 +105,7 @@ final class EmailExtractorTest: XCTestCase {
         let results = [TextRecognizerResult(value: email, confidence: 1.0)]
 
         // when && then
-        expect(self.extractedEmailValue(from: results)).to(beNil())
+        XCTAssertEqual(extractedEmailValue(from: results), nil)
     }
 
     func testEmailIncorrectFormatNoAtSymbolExtractionFailure() {
@@ -116,7 +114,7 @@ final class EmailExtractorTest: XCTestCase {
         let results = [TextRecognizerResult(value: email, confidence: 1.0)]
 
         // when && then
-        expect(self.extractedEmailValue(from: results)).to(beNil())
+        XCTAssertEqual(extractedEmailValue(from: results), nil)
     }
 
     func testEmailIncorrectFormatOnlyAtSymbolExtractionFailure() {
@@ -125,7 +123,7 @@ final class EmailExtractorTest: XCTestCase {
         let results = [TextRecognizerResult(value: email, confidence: 1.0)]
 
         // when && then
-        expect(self.extractedEmailValue(from: results)).to(beNil())
+        XCTAssertEqual(extractedEmailValue(from: results), nil)
     }
 
     // MARK: - Helpers
@@ -161,7 +159,7 @@ final class EmailExtractorTest: XCTestCase {
         }
 
         // then
-        expect(emailValues).to(equal([emailValue1, emailValue2]))
+        XCTAssertEqual(emailValues, [emailValue1, emailValue2])
     }
 
     func testValidMultipleEmailsOnlyValidExtraction() {
@@ -185,6 +183,6 @@ final class EmailExtractorTest: XCTestCase {
         }
 
         // then
-        expect(emailValues).to(equal(["dog@doggyHouse.com", "doggy@dogHouse.com"]))
+        XCTAssertEqual(emailValues, ["dog@doggyHouse.com", "doggy@dogHouse.com"])
     }
 }
