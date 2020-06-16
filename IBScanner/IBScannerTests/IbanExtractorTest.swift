@@ -158,11 +158,7 @@ final class IbanExtractorTest: XCTestCase {
     private func extractedIbanValue(from result: [TextRecognizerResult]) -> String? {
         let extractor = IbanExtractor()
         let values = extractor.extract(from: result)
-        if case .iban(let iban) = values.first {
-            return iban.value
-        } else {
-            return nil
-        }
+        return values.first
     }
 
     // MARK: - Success, multiple IBANs
@@ -177,13 +173,7 @@ final class IbanExtractorTest: XCTestCase {
 
         // when
         let extactedValues = extractor.extract(from: recognizedValues)
-        let ibanValues: [String] = extactedValues.compactMap {
-            if case .iban(let iban) = $0 {
-                return iban.value
-            } else {
-                return nil
-            }
-        }
+        let ibanValues: [String] = extactedValues.compactMap { $0 }
 
         // then
         XCTAssertEqual(ibanValues, ["DE87110101002430920438", "DE05700000000070001506"])
@@ -203,13 +193,7 @@ final class IbanExtractorTest: XCTestCase {
 
         // when
         let extactedValues = extractor.extract(from: recognizedValues)
-        let ibanValues: [String] = extactedValues.compactMap {
-            if case .iban(let iban) = $0 {
-                return iban.value
-            } else {
-                return nil
-            }
-        }
+        let ibanValues: [String] = extactedValues.compactMap { $0 }
 
         // then
         XCTAssertEqual(ibanValues, ["DE87110101002430920438", "DE05700000000070001506"])
@@ -225,13 +209,7 @@ final class IbanExtractorTest: XCTestCase {
 
         // when
         let extactedValues = extractor.extract(from: recognizedValues)
-        let ibanValues: [String] = extactedValues.compactMap {
-            if case .iban(let iban) = $0 {
-                return iban.value
-            } else {
-                return nil
-            }
-        }
+        let ibanValues: [String] = extactedValues.compactMap { $0 }
 
         // then
         XCTAssertEqual(ibanValues, ["DE87110101002430920438", "DE05700000000070001506"])
