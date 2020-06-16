@@ -18,7 +18,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.makeKeyAndVisible()
 
         if #available(iOS 13, *) {
-            let recognizingController = TextRecognizingController.make()
+            let recognizingController = TextRecognizingController.make(extractor: CombinedExtractor())
             self.window?.rootViewController = recognizingController
         } else {
             print("This could be used only iOS 13+")

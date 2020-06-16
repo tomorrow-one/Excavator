@@ -69,12 +69,7 @@ public final class TextRecognizingController: UIViewController, AVCaptureMetadat
 
     private func bindViewModel() {
         self.viewModel.didSuccess = { [unowned self] value in
-            switch value {
-            case .email(let email):
-                self.messageLabel.text = email
-            case .iban(let iban):
-                self.messageLabel.text = iban.value
-            }
+            self.messageLabel.text = value
         }
         self.viewModel.didRecognizeMultipleResults = { [unowned self] item in
             self.present(AlertFactory.makeAlertController(item: item), animated: true)
@@ -171,9 +166,9 @@ extension TextRecognizingController: AVCaptureVideoDataOutputSampleBufferDelegat
 }
 
 extension TextRecognizingController {
-    public static func make(extractors: [ValueExtracting] = [IbanExtractor(), EmailExtractor()]) -> TextRecognizingController {
+    public static func make(extractor: ValueExtracting) -> TextRecognizingController {
         let controller = TextRecognizingController()
-        controller.viewModel = IdentifierRecognizingViewModel(extractors: extractors)
+        controller.viewModel = IdentifierRecognizingViewModel(recognizer: TextRecognizer(extractor: extractor))
         return controller
     }
 }
