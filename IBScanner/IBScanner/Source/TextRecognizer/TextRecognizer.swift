@@ -14,34 +14,42 @@ public final class TextRecognizer: TextRecognizing {
 
     public var inProgress = false
 
-    private let textRecognitionWorkQueue = DispatchQueue.global(qos: .userInitiated)
+    private let extractor: ValueExtracting
+    private let queue = DispatchQueue.global(qos: .userInitiated)
 
-    public init() { }
+    public init(extractor: ValueExtracting) {
+        self.extractor = extractor
+    }
 
-    public func recognizeTextInImage(_ ciImage: CIImage, completion: @escaping ([TextRecognizerResult]) -> Void) {
+    public func recognize(_ ciImage: CIImage, completion: @escaping ([String]) -> Void) {
         guard !self.inProgress else {
             return
         }
+
         self.inProgress = true
-        let request = makeRequest(completion: completion)
-        self.textRecognitionWorkQueue.async {
+        self.queue.async { [unowned self] in
             do {
-                let requestHandler = VNImageRequestHandler(ciImage: ciImage)
-                try requestHandler.perform([request])
+                let request = self.makeRequest { [weak self] results in
+                    self?.inProgress = false
+                    guard let strings = self?.extractor.extract(from: results) else {
+                        return
+                    }
+                    completion(strings)
+                }
+                let handler = VNImageRequestHandler(ciImage: ciImage)
+                try handler.perform([request])
             } catch {
+                self.inProgress = false
                 self.logError(error: error)
             }
         }
     }
 
     private func makeRequest(completion: @escaping ([TextRecognizerResult]) -> Void) -> VNRecognizeTextRequest {
-        let textRecognitionRequest = VNRecognizeTextRequest { [weak self] request, error in
-            guard let self = self else {
-                return
-            }
+        let request = VNRecognizeTextRequest { [weak self] request, error in
             guard let observations = request.results as? [VNRecognizedTextObservation] else {
                 if let error = error {
-                    self.logError(error: error)
+                    self?.logError(error: error)
                 }
                 return
             }
@@ -51,13 +59,12 @@ public final class TextRecognizer: TextRecognizing {
                 .map { TextRecognizerResult(value: $0.string, confidence: $0.confidence) }
 
             DispatchQueue.main.async {
-                self.inProgress = false
                 completion(result)
             }
         }
-        textRecognitionRequest.recognitionLevel = .accurate
-        textRecognitionRequest.usesLanguageCorrection = false
-        return textRecognitionRequest
+        request.recognitionLevel = .accurate
+        request.usesLanguageCorrection = false
+        return request
     }
 
     private func logError(error: Error) {

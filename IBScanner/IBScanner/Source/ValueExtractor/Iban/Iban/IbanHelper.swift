@@ -12,13 +12,9 @@ enum IbanHelper {
 
     private static let ibanRegex = "\\A[A-Z]{2}\\d{2}[A-Z\\d]+\\z"
 
-    public static func make(from string: String) -> Iban? {
+    public static func excerpt(from string: String) -> String? {
         let ibanValue = trimNonValidCharacters(from: string.uppercased())
-        guard isValid(iban: ibanValue) else {
-            return nil
-        }
-
-        return Iban(value: ibanValue)
+        return isValid(iban: ibanValue) ? ibanValue : nil
     }
 
     public static func trimNonValidCharacters(from string: String) -> String {
