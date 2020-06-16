@@ -8,5 +8,5 @@
 
 @available(iOS 13, *)
 public protocol ValueExtracting {
-    func extract(from results: [TextRecognizerResult]) -> [ExtractorValue]
+    func extract(from results: [TextRecognizerResult]) -> [String]
 }

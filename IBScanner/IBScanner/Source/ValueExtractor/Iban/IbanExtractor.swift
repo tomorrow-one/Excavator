@@ -14,19 +14,19 @@ public final class IbanExtractor: ValueExtracting {
 
     public init() { }
 
-    public func extract(from results: [TextRecognizerResult]) -> [ExtractorValue] {
+    public func extract(from results: [TextRecognizerResult]) -> [String] {
         let concatenetedValue: String = results.reduce("") { $0 + $1.value }
         return process(recognitionResult: TextRecognizerResult(value: concatenetedValue, confidence: 1.0))
     }
 
-    private func process(recognitionResult: TextRecognizerResult) -> [ExtractorValue] {
+    private func process(recognitionResult: TextRecognizerResult) -> [String] {
         let trimmedIbanValue = IbanHelper.trimNonValidCharacters(from: recognitionResult.value.uppercased())
         let possibleIbanValues = extractPossibleIbans(from: trimmedIbanValue, isFirstStep: true)
 
-        var extractedIbans: [ExtractorValue] = []
+        var extractedIbans: [String] = []
         for possibleIbanValue in possibleIbanValues {
             if let iban = excerptIban(with: possibleIbanValue) {
-                extractedIbans.append(.iban(iban: iban))
+                extractedIbans.append(iban)
             }
         }
         return extractedIbans
@@ -44,11 +44,11 @@ public final class IbanExtractor: ValueExtracting {
         return result
     }
 
-    private func excerptIban(with possibleIbanValue: String) -> Iban? {
+    private func excerptIban(with possibleIbanValue: String) -> String? {
         var currentLength = IbanHelper.minIbanLength
         while currentLength <= possibleIbanValue.count {
             let probableIban = String(possibleIbanValue.prefix(currentLength))
-            if let iban = IbanHelper.make(from: probableIban) {
+            if let iban = IbanHelper.excerpt(from: probableIban) {
                 return iban
             }
 

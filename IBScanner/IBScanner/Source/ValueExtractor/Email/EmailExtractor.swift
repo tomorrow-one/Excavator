@@ -17,25 +17,17 @@ public final class EmailExtractor: ValueExtracting {
         self.minConfidence = minConfidence
     }
 
-    public func extract(from recognitionResults: [TextRecognizerResult]) -> [ExtractorValue] {
+    public func extract(from recognitionResults: [TextRecognizerResult]) -> [String] {
         recognitionResults.compactMap { self.process(recognitionResult: $0) }
     }
 
-    private func process(recognitionResult: TextRecognizerResult) -> ExtractorValue? {
-        guard recognitionResult.confidence >= minConfidence,
-            let atSymbolPosition = recognitionResult.value.firstIndex(of: "@") else {
+    private func process(recognitionResult: TextRecognizerResult) -> String? {
+        guard recognitionResult.confidence >= self.minConfidence, let atSymbolPosition = recognitionResult.value.firstIndex(of: "@") else {
                 return nil
         }
         let prefix = emailPrefix(atSymbolPosition: atSymbolPosition, recognizedString: recognitionResult.value)
-        let result = emailSuffix(atSymbolPosition: atSymbolPosition,
-                                 recognizedString: recognitionResult.value,
-                                 intermediateResult: prefix)
-
-        if self.validator.isValid(email: result) {
-            return .email(email: result)
-        } else {
-            return nil
-        }
+        let result = emailSuffix(atSymbolPosition: atSymbolPosition, recognizedString: recognitionResult.value, intermediateResult: prefix)
+        return self.validator.isValid(email: result) ? result : nil
     }
 
     private func emailPrefix(atSymbolPosition: String.Index, recognizedString: String) -> String {

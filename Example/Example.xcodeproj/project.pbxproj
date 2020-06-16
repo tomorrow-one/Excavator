@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4466577F247EB01400A806D2 /* IdentifierRecognizerViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4466576B247EA6B200A806D2 /* IdentifierRecognizerViewModelTest.swift */; };
-		44665781247EB01400A806D2 /* StubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44379870247D7137000DA0F5 /* StubModel.swift */; };
+		448A6FEC2499169A004CE44F /* CombinedExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448A6FEB2499169A004CE44F /* CombinedExtractor.swift */; };
 		449777142497BA57009BF942 /* TextRecognizingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 449777132497BA57009BF942 /* TextRecognizingController.xib */; };
 		44AA41C9247E803700C3B996 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44AA41C8247E803700C3B996 /* Assets.xcassets */; };
 		44E56ADB247E78F000DF4DE5 /* IdentifierRecognizingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E56AD4247E78F000DF4DE5 /* IdentifierRecognizingViewModel.swift */; };
@@ -49,11 +49,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		44379870247D7137000DA0F5 /* StubModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubModel.swift; sourceTree = "<group>"; };
 		4466576B247EA6B200A806D2 /* IdentifierRecognizerViewModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifierRecognizerViewModelTest.swift; sourceTree = "<group>"; };
-		4466576E247EA78400A806D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		44665774247EAFFF00A806D2 /* ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44665778247EAFFF00A806D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		448A6FEA249901BF004CE44F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		448A6FEB2499169A004CE44F /* CombinedExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedExtractor.swift; sourceTree = "<group>"; };
 		4497770D2497B95C009BF942 /* IBScanner.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IBScanner.xcodeproj; path = ../IBScanner/IBScanner.xcodeproj; sourceTree = "<group>"; };
 		449777132497BA57009BF942 /* TextRecognizingController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TextRecognizingController.xib; path = TomorrowIbanScanner/Source/TextRecognizingController.xib; sourceTree = SOURCE_ROOT; };
 		44AA41C8247E803700C3B996 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -101,7 +101,6 @@
 			isa = PBXGroup;
 			children = (
 				4466576B247EA6B200A806D2 /* IdentifierRecognizerViewModelTest.swift */,
-				44379870247D7137000DA0F5 /* StubModel.swift */,
 				44665778247EAFFF00A806D2 /* Info.plist */,
 			);
 			path = TomorrowIbanScanner_ExampleTests;
@@ -143,6 +142,7 @@
 				449777132497BA57009BF942 /* TextRecognizingController.xib */,
 				44E56AD6247E78F000DF4DE5 /* TextRecognizingController.swift */,
 				44E56AD4247E78F000DF4DE5 /* IdentifierRecognizingViewModel.swift */,
+				448A6FEB2499169A004CE44F /* CombinedExtractor.swift */,
 			);
 			path = TextRecognizingController;
 			sourceTree = "<group>";
@@ -282,7 +282,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = Tomorrow;
 				TargetAttributes = {
 					44665773247EAFFF00A806D2 = {
@@ -304,6 +304,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 607FACC71AFB9204008FA782;
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
@@ -391,7 +392,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4466577F247EB01400A806D2 /* IdentifierRecognizerViewModelTest.swift in Sources */,
-				44665781247EB01400A806D2 /* StubModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +402,7 @@
 				44E56ADB247E78F000DF4DE5 /* IdentifierRecognizingViewModel.swift in Sources */,
 				44E56ADE247E78F000DF4DE5 /* VideoCaptureSessionFactory.swift in Sources */,
 				44E56ADD247E78F000DF4DE5 /* TextRecognizingController.swift in Sources */,
+				448A6FEC2499169A004CE44F /* CombinedExtractor.swift in Sources */,
 				44E56AE3247E7A8300DF4DE5 /* AlertControllerViewItem.swift in Sources */,
 				44E56AE5247E7AA100DF4DE5 /* AlertActionViewItem.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
@@ -424,7 +425,7 @@
 		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4466576E247EA78400A806D2 /* en */,
+				448A6FEA249901BF004CE44F /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -501,12 +502,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -554,12 +557,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -597,7 +602,7 @@
 				INFOPLIST_FILE = TomorrowIbanScanner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 0.1.5;
+				MARKETING_VERSION = 0.1.6;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "one.tomorrow.TomorrowIbanScanner-Example";
 				PRODUCT_NAME = Example;
@@ -615,7 +620,7 @@
 				INFOPLIST_FILE = TomorrowIbanScanner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 0.1.5;
+				MARKETING_VERSION = 0.1.6;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "one.tomorrow.TomorrowIbanScanner-Example";
 				PRODUCT_NAME = Example;

@@ -131,11 +131,7 @@ final class EmailExtractorTest: XCTestCase {
     private func extractedEmailValue(from result: [TextRecognizerResult]) -> String? {
         let extractor = EmailExtractor()
         let values = extractor.extract(from: result)
-        if case .email(let email) = values.first {
-            return email
-        } else {
-            return nil
-        }
+        return values.first
     }
 
     // MARK: - Success, multiple emails
@@ -150,13 +146,7 @@ final class EmailExtractorTest: XCTestCase {
 
         // when
         let extactedValues = extractor.extract(from: recognizedValues)
-        let emailValues: [String] = extactedValues.compactMap {
-            if case .email(let email) = $0 {
-                return email
-            } else {
-                return nil
-            }
-        }
+        let emailValues: [String] = extactedValues.compactMap { $0 }
 
         // then
         XCTAssertEqual(emailValues, [emailValue1, emailValue2])
@@ -174,13 +164,7 @@ final class EmailExtractorTest: XCTestCase {
 
         // when
         let extactedValues = extractor.extract(from: recognizedValues)
-        let emailValues: [String] = extactedValues.compactMap {
-            if case .email(let email) = $0 {
-                return email
-            } else {
-                return nil
-            }
-        }
+        let emailValues: [String] = extactedValues.compactMap { $0 }
 
         // then
         XCTAssertEqual(emailValues, ["dog@doggyHouse.com", "doggy@dogHouse.com"])
