@@ -31,7 +31,7 @@ public final class TextRecognizer: TextRecognizing {
             do {
                 let request = self.makeRequest { [weak self] results in
                     self?.inProgress = false
-                    guard let strings = self?.extractor.extract(from: results) else {
+                    guard let strings = self?.extractor.extract(from: results), !strings.isEmpty else {
                         return
                     }
                     completion(strings)
