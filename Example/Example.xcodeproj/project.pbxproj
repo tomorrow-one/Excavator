@@ -602,7 +602,7 @@
 				INFOPLIST_FILE = TomorrowIbanScanner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 0.1.6;
+				MARKETING_VERSION = 0.1.7;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "one.tomorrow.TomorrowIbanScanner-Example";
 				PRODUCT_NAME = Example;
@@ -620,7 +620,7 @@
 				INFOPLIST_FILE = TomorrowIbanScanner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 0.1.6;
+				MARKETING_VERSION = 0.1.7;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "one.tomorrow.TomorrowIbanScanner-Example";
 				PRODUCT_NAME = Example;
