@@ -166,10 +166,3 @@ private final class DummyExtractor: ValueExtracting {
         return self.extractorValues
     }
 }
-
-@available(iOS 13, *)
-extension TextRecognizerResult: Equatable {
-    public static func == (lhs: TextRecognizerResult, rhs: TextRecognizerResult) -> Bool {
-        lhs.value == rhs.value && lhs.confidence == rhs.confidence
-    }
-}
