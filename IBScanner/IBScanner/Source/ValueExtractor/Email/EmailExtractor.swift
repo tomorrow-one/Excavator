@@ -17,8 +17,8 @@ public final class EmailExtractor: ValueExtracting {
         self.minConfidence = minConfidence
     }
 
-    public func extract(from recognitionResults: [TextRecognizer.Result]) -> [String] {
-        recognitionResults.compactMap { self.process(recognitionResult: $0) }
+    public func extract(from input: [TextRecognizer.Result]) -> [String] {
+        input.compactMap { self.process(recognitionResult: $0) }
     }
 
     private func process(recognitionResult: TextRecognizer.Result) -> String? {

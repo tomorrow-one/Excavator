@@ -29,47 +29,54 @@ public final class TextRecognizer: TextRecognizing {
         self.inProgress = true
         self.queue.async { [unowned self] in
             do {
-                let request = self.makeRequest { [weak self] results in
+                let request = self.makeRequest { [weak self] rawResult in
                     self?.inProgress = false
-                    guard let strings = self?.extractor.extract(from: results), !strings.isEmpty else {
+                    guard !rawResult.isEmpty else {
                         return
                     }
-                    completion(strings)
+                    guard let result = self?.extractor.extract(from: rawResult), !result.isEmpty else {
+                        return
+                    }
+                    DispatchQueue.main.async {
+                        completion(result)
+                    }
                 }
                 let handler = VNImageRequestHandler(ciImage: image)
                 try handler.perform([request])
             } catch {
                 self.inProgress = false
-                self.logError(error: error)
+                self.log(error: error)
             }
         }
     }
 
     private func makeRequest(completion: @escaping ([TextRecognizer.Result]) -> Void) -> VNRecognizeTextRequest {
         let request = VNRecognizeTextRequest { [weak self] request, error in
-            guard let observations = request.results as? [VNRecognizedTextObservation] else {
-                if let error = error {
-                    self?.logError(error: error)
-                }
+            if let error = error {
+                self?.log(error: error)
                 return
+            }
+
+            guard let observations = request.results as? [VNRecognizedTextObservation] else {
+                preconditionFailure("observations must be of type \(type(of: VNRecognizedTextObservation.self))")
             }
 
             let result = observations
                 .compactMap { $0.topCandidates(1).first }
                 .map { TextRecognizer.Result(value: $0.string, confidence: $0.confidence) }
 
-            DispatchQueue.main.async {
-                completion(result)
-            }
+            completion(result)
         }
         request.recognitionLevel = .accurate
         request.usesLanguageCorrection = false
         return request
     }
 
-    private func logError(error: Error) {
-        if TextRecognizer.Config.isDebugLoggingEnabled {
-            debugPrint(error.localizedDescription)
+    private func log(error: Error) {
+        guard TextRecognizer.Config.isDebugLoggingEnabled else {
+            return
         }
+
+        debugPrint(error.localizedDescription)
     }
 }
