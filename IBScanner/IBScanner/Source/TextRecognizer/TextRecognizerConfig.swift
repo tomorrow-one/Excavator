@@ -6,6 +6,6 @@
 //  Copyright © 2020 Tomorrow GmbH. All rights reserved.
 //
 
-public struct TextRecognizerConfig {
+public enum TextRecognizerConfig {
     public static var isDebugLoggingEnabled = true
 }
