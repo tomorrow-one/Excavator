@@ -8,21 +8,20 @@
 
 enum IbanHelper {
 
-    public static let minIbanLength = 15
-
+    static let minLength = 15
     private static let ibanRegex = "\\A[A-Z]{2}\\d{2}[A-Z\\d]+\\z"
 
-    public static func excerpt(from string: String) -> String? {
+    static func excerpt(from string: String) -> String? {
         let ibanValue = trimNonValidCharacters(from: string.uppercased())
         return isValid(iban: ibanValue) ? ibanValue : nil
     }
 
-    public static func trimNonValidCharacters(from string: String) -> String {
+    static func trimNonValidCharacters(from string: String) -> String {
         string.replacingOccurrences(of: "[^A-Z0-9]", with: "", options: .regularExpression)
     }
 
     private static func isValid(iban: String) -> Bool {
-        guard iban.count >= self.minIbanLength else {
+        guard isValidLength(iban: iban) else {
             return false
         }
 
@@ -30,10 +29,10 @@ enum IbanHelper {
             return false
         }
 
-        guard isValidLength(iban: iban) else {
-            return false
-        }
+        return isValidChecksum(iban: iban)
+    }
 
+    private static func isValidChecksum(iban: String) -> Bool {
         let chars = iban.map { $0 }
         let adjustedIban = chars.dropFirst(4) + chars.prefix(4)
 
