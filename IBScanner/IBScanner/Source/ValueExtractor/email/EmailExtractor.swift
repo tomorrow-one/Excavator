@@ -10,7 +10,7 @@
 public final class EmailExtractor: ValueExtracting {
 
     private let minConfidence: Float
-    private let validator = Validator()
+    private let validator = EmailValidator()
 
     public init(minConfidence: Float = 0.5) {
         self.minConfidence = minConfidence

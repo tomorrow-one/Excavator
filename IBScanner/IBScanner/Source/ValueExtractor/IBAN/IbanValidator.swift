@@ -6,7 +6,7 @@
 //  Copyright © 2019 Tomorrow GmbH. All rights reserved.
 //
 
-enum IbanHelper {
+enum IbanValidator {
 
     private static let ibanRegex = "\\A[A-Z]{2}\\d{2}[A-Z\\d]+\\z"
 

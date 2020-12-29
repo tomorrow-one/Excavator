@@ -38,12 +38,12 @@ public final class IbanExtractor: ValueExtracting {
 
     private func excerptIban(from value: String) -> String? {
         let prefix = String(value.prefix(2))
-        guard let iso = IbanHelper.CountryIso(rawValue: prefix), let length = IbanHelper.length(for: iso) else {
+        guard let iso = CountryIso(rawValue: prefix), let length = IbanValidator.length(for: iso) else {
             return nil
         }
 
         let iban = String(value.prefix(length))
-        return IbanHelper.isValid(iban: iban) ? iban : nil
+        return IbanValidator.isValid(iban: iban) ? iban : nil
     }
 
     private func trimNonValidCharacters(from string: String) -> String {
