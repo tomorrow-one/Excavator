@@ -30,6 +30,7 @@
 		D97AD267259B70CD00C27C33 /* LongTextWithOneIBAN in Resources */ = {isa = PBXBuildFile; fileRef = D97AD266259B70CD00C27C33 /* LongTextWithOneIBAN */; };
 		D97AD26D259B718C00C27C33 /* FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97AD26C259B718C00C27C33 /* FileLoader.swift */; };
 		D984C14B259B74300063906D /* ManyIBANs in Resources */ = {isa = PBXBuildFile; fileRef = D984C14A259B74300063906D /* ManyIBANs */; };
+		D984C15B259B8E4D0063906D /* EmailExtractor+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D984C15A259B8E4D0063906D /* EmailExtractor+Validation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		D97AD266259B70CD00C27C33 /* LongTextWithOneIBAN */ = {isa = PBXFileReference; lastKnownFileType = text; path = LongTextWithOneIBAN; sourceTree = "<group>"; };
 		D97AD26C259B718C00C27C33 /* FileLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileLoader.swift; sourceTree = "<group>"; };
 		D984C14A259B74300063906D /* ManyIBANs */ = {isa = PBXFileReference; lastKnownFileType = text; path = ManyIBANs; sourceTree = "<group>"; };
+		D984C15A259B8E4D0063906D /* EmailExtractor+Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EmailExtractor+Validation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,25 +114,18 @@
 			isa = PBXGroup;
 			children = (
 				448A6FD12498FFBD004CE44F /* IbanExtractor.swift */,
-				448A6FD22498FFBD004CE44F /* Helper */,
-			);
-			path = IBAN;
-			sourceTree = "<group>";
-		};
-		448A6FD22498FFBD004CE44F /* Helper */ = {
-			isa = PBXGroup;
-			children = (
 				448A6FD32498FFBD004CE44F /* IbanHelper.swift */,
 				448A6FD52498FFBD004CE44F /* IbanHelper+CountryIso.swift */,
 				D97AD24E259B6D7600C27C33 /* IbanHelper+Length.swift */,
 			);
-			path = Helper;
+			path = IBAN;
 			sourceTree = "<group>";
 		};
 		448A6FD62498FFBD004CE44F /* email */ = {
 			isa = PBXGroup;
 			children = (
 				448A6FD72498FFBD004CE44F /* EmailExtractor.swift */,
+				D984C15A259B8E4D0063906D /* EmailExtractor+Validation.swift */,
 			);
 			path = email;
 			sourceTree = "<group>";
@@ -354,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				448A6FD82498FFBD004CE44F /* IbanExtractor.swift in Sources */,
+				D984C15B259B8E4D0063906D /* EmailExtractor+Validation.swift in Sources */,
 				448A6FE72499000B004CE44F /* ValueExtracting.swift in Sources */,
 				448A6FDC2498FFBD004CE44F /* EmailExtractor.swift in Sources */,
 				448A6FD92498FFBD004CE44F /* IbanHelper.swift in Sources */,
