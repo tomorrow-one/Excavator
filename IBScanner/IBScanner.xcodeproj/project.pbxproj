@@ -102,19 +102,19 @@
 			isa = PBXGroup;
 			children = (
 				448A6FE62499000B004CE44F /* ValueExtracting.swift */,
-				448A6FD02498FFBD004CE44F /* Iban */,
-				448A6FD62498FFBD004CE44F /* Email */,
+				448A6FD02498FFBD004CE44F /* IBAN */,
+				448A6FD62498FFBD004CE44F /* email */,
 			);
 			path = ValueExtractor;
 			sourceTree = "<group>";
 		};
-		448A6FD02498FFBD004CE44F /* Iban */ = {
+		448A6FD02498FFBD004CE44F /* IBAN */ = {
 			isa = PBXGroup;
 			children = (
 				448A6FD12498FFBD004CE44F /* IbanExtractor.swift */,
 				448A6FD22498FFBD004CE44F /* Helper */,
 			);
-			path = Iban;
+			path = IBAN;
 			sourceTree = "<group>";
 		};
 		448A6FD22498FFBD004CE44F /* Helper */ = {
@@ -127,12 +127,12 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
-		448A6FD62498FFBD004CE44F /* Email */ = {
+		448A6FD62498FFBD004CE44F /* email */ = {
 			isa = PBXGroup;
 			children = (
 				448A6FD72498FFBD004CE44F /* EmailExtractor.swift */,
 			);
-			path = Email;
+			path = email;
 			sourceTree = "<group>";
 		};
 		448A6FDD2498FFE1004CE44F /* TextRecognizer */ = {

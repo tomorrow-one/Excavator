@@ -16,9 +16,7 @@ public final class IbanExtractor: ValueExtracting {
 
     public func extract(from input: [TextRecognizer.Result]) -> [String] {
         let normalizedInput = input
-            .map { $0.value }
-            .map { $0.uppercased() }
-            .map(trimNonValidCharacters(from:))
+            .map { trimNonValidCharacters(from: $0.value.uppercased()) }
             .joined()
         return possibleSequences(in: normalizedInput)
             .compactMap(excerptIban(from:))
