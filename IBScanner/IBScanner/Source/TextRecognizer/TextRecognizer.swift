@@ -21,7 +21,7 @@ public final class TextRecognizer: TextRecognizing {
         self.extractor = extractor
     }
 
-    public func recognize(_ ciImage: CIImage, completion: @escaping ([String]) -> Void) {
+    public func recognize(in image: CIImage, completion: @escaping ([String]) -> Void) {
         guard !self.inProgress else {
             return
         }
@@ -36,7 +36,7 @@ public final class TextRecognizer: TextRecognizing {
                     }
                     completion(strings)
                 }
-                let handler = VNImageRequestHandler(ciImage: ciImage)
+                let handler = VNImageRequestHandler(ciImage: image)
                 try handler.perform([request])
             } catch {
                 self.inProgress = false
