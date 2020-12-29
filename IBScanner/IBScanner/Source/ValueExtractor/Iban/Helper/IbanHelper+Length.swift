@@ -6,10 +6,10 @@
 //  Copyright © 2020 Tomorrow. All rights reserved.
 //
 
+/* More information: https://en.wikipedia.org/wiki/International_Bank_Account_Number */
 extension IbanHelper {
-    // https://en.wikipedia.org/wiki/International_Bank_Account_Number
-    static func ibanLength(for countryIso: CountryIso) -> Int? { // swiftlint:disable:this cyclomatic_complexity function_body_length
-        switch countryIso {
+    static func length(for iso: CountryIso) -> Int? { // swiftlint:disable:this cyclomatic_complexity function_body_length
+        switch iso {
         case .AL:
             return 28
         case .AD:

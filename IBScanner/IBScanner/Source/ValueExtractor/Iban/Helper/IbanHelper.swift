@@ -26,7 +26,7 @@ enum IbanHelper {
             return false
         }
 
-        guard iban.range(of: IbanHelper.ibanRegex, options: .regularExpression) != nil else {
+        guard iban.range(of: self.ibanRegex, options: .regularExpression) != nil else {
             return false
         }
 
@@ -51,10 +51,6 @@ enum IbanHelper {
             return false
         }
 
-        if let length = ibanLength(for: country) {
-            return iban.count == length
-        } else {
-            return false
-        }
+        return iban.count == length(for: country)
     }
 }
