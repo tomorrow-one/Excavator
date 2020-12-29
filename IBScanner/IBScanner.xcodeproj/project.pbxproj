@@ -121,8 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				448A6FD32498FFBD004CE44F /* IbanHelper.swift */,
-				D97AD24E259B6D7600C27C33 /* IbanHelper+Length.swift */,
 				448A6FD52498FFBD004CE44F /* IbanHelper+CountryIso.swift */,
+				D97AD24E259B6D7600C27C33 /* IbanHelper+Length.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
