@@ -18,7 +18,7 @@ public final class IbanExtractor: ValueExtracting {
         let normalizedInput = input
             .map { $0.value }
             .map { $0.uppercased() }
-            .map(IbanHelper.trimNonValidCharacters(from:))
+            .map(trimNonValidCharacters(from:))
             .joined()
         return possibleSequences(in: normalizedInput)
             .compactMap(excerptIban(from:))
@@ -43,11 +43,15 @@ public final class IbanExtractor: ValueExtracting {
         }
         for prefixLength in IbanHelper.minLength..<value.count {
             let prefix = String(value.prefix(prefixLength))
-            if let iban = IbanHelper.excerpt(from: prefix) {
-                return iban
+            if IbanHelper.isValid(iban: prefix) {
+                return prefix
             }
         }
 
         return nil
+    }
+
+    func trimNonValidCharacters(from string: String) -> String {
+        string.replacingOccurrences(of: "[^A-Z0-9]", with: "", options: .regularExpression)
     }
 }
