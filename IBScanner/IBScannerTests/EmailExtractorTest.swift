@@ -19,7 +19,7 @@ final class EmailExtractorTest: XCTestCase {
     func testValidEmailExtractionSuccess() {
         // given
         let email = self.properEmail
-        let results = [TextRecognizerResult(value: email, confidence: 1.0)]
+        let results = [TextRecognizer.Result(value: email, confidence: 1.0)]
 
         // when && then
         XCTAssertEqual(extractedEmailValue(from: results), self.properEmail)
@@ -28,7 +28,7 @@ final class EmailExtractorTest: XCTestCase {
     func testValidEmailExtractionHasPrefixSuccess() {
         // given
         let email = "Find my email here ––– \(self.properEmail)"
-        let results = [TextRecognizerResult(value: email, confidence: 1.0)]
+        let results = [TextRecognizer.Result(value: email, confidence: 1.0)]
 
         // when && then
         XCTAssertEqual(extractedEmailValue(from: results), self.properEmail)
@@ -37,7 +37,7 @@ final class EmailExtractorTest: XCTestCase {
     func testValidEmailExtractionHasSuffixSuccess() {
         // given
         let email = "\(self.properEmail)ÜÄÖ"
-        let results = [TextRecognizerResult(value: email, confidence: 1.0)]
+        let results = [TextRecognizer.Result(value: email, confidence: 1.0)]
 
         // when && then
         XCTAssertEqual(extractedEmailValue(from: results), self.properEmail)
@@ -46,7 +46,7 @@ final class EmailExtractorTest: XCTestCase {
     func testValidEmailExtractionHasSuffixSuccessIWillFailFixMe() {
         // given
         let email = "\(self.properEmail). Also"
-        let results = [TextRecognizerResult(value: email, confidence: 1.0)]
+        let results = [TextRecognizer.Result(value: email, confidence: 1.0)]
 
         // when && then
         XCTAssertEqual(extractedEmailValue(from: results), self.properEmail)
@@ -55,7 +55,7 @@ final class EmailExtractorTest: XCTestCase {
     func testEmailExtractionHasPefixAndSuffixSuccess() {
         // given
         let email = "My email: \(self.properEmail). Please send the letter there"
-        let results = [TextRecognizerResult(value: email, confidence: 1.0)]
+        let results = [TextRecognizer.Result(value: email, confidence: 1.0)]
 
         // when && then
         XCTAssertEqual(extractedEmailValue(from: results), self.properEmail)
@@ -64,7 +64,7 @@ final class EmailExtractorTest: XCTestCase {
     func testEmailExtractionComplexEmailSuccess() {
         // given
         let email = "one-two-3-all-valid|||{}@banana.com"
-        let results = [TextRecognizerResult(value: email, confidence: 1.0)]
+        let results = [TextRecognizer.Result(value: email, confidence: 1.0)]
 
         // when && then
         XCTAssertEqual(extractedEmailValue(from: results), email)
@@ -75,7 +75,7 @@ final class EmailExtractorTest: XCTestCase {
     func testEmailWithSpacesExtractionFailure() {
         // given
         let email = "doggy dog @doggyHouse.house"
-        let results = [TextRecognizerResult(value: email, confidence: 1.0)]
+        let results = [TextRecognizer.Result(value: email, confidence: 1.0)]
 
         // when && then
         XCTAssertEqual(extractedEmailValue(from: results), nil)
@@ -84,7 +84,7 @@ final class EmailExtractorTest: XCTestCase {
     func testEmailIncorrectFormatNoSuffixExtractionFailure() {
         // given
         let email = "dog@doggyHouse."
-        let results = [TextRecognizerResult(value: email, confidence: 1.0)]
+        let results = [TextRecognizer.Result(value: email, confidence: 1.0)]
 
         // when && then
         XCTAssertEqual(extractedEmailValue(from: results), nil)
@@ -93,7 +93,7 @@ final class EmailExtractorTest: XCTestCase {
     func testEmailIncorrectFormatNoPrefixExtractionFailure() {
         // given
         let email = "@doggyHouse.ooo"
-        let results = [TextRecognizerResult(value: email, confidence: 1.0)]
+        let results = [TextRecognizer.Result(value: email, confidence: 1.0)]
 
         // when && then
         XCTAssertEqual(extractedEmailValue(from: results), nil)
@@ -102,7 +102,7 @@ final class EmailExtractorTest: XCTestCase {
     func testEmailIncorrectFormatNoDomainExtractionFailure() {
         // given
         let email = "dog@"
-        let results = [TextRecognizerResult(value: email, confidence: 1.0)]
+        let results = [TextRecognizer.Result(value: email, confidence: 1.0)]
 
         // when && then
         XCTAssertEqual(extractedEmailValue(from: results), nil)
@@ -111,7 +111,7 @@ final class EmailExtractorTest: XCTestCase {
     func testEmailIncorrectFormatNoAtSymbolExtractionFailure() {
         // given
         let email = "dogdoggy.dog.dog"
-        let results = [TextRecognizerResult(value: email, confidence: 1.0)]
+        let results = [TextRecognizer.Result(value: email, confidence: 1.0)]
 
         // when && then
         XCTAssertEqual(extractedEmailValue(from: results), nil)
@@ -120,7 +120,7 @@ final class EmailExtractorTest: XCTestCase {
     func testEmailIncorrectFormatOnlyAtSymbolExtractionFailure() {
         // given
         let email = "@"
-        let results = [TextRecognizerResult(value: email, confidence: 1.0)]
+        let results = [TextRecognizer.Result(value: email, confidence: 1.0)]
 
         // when && then
         XCTAssertEqual(extractedEmailValue(from: results), nil)
@@ -128,7 +128,7 @@ final class EmailExtractorTest: XCTestCase {
 
     // MARK: - Helpers
 
-    private func extractedEmailValue(from result: [TextRecognizerResult]) -> String? {
+    private func extractedEmailValue(from result: [TextRecognizer.Result]) -> String? {
         let extractor = EmailExtractor()
         let values = extractor.extract(from: result)
         return values.first
@@ -141,8 +141,8 @@ final class EmailExtractorTest: XCTestCase {
         let extractor = EmailExtractor()
         let emailValue1 = "dog@doggyHouse.com"
         let emailValue2 = "doggy@dogHouse.com"
-        let recognizedValues = [TextRecognizerResult(value: emailValue1, confidence: 1.0),
-                                TextRecognizerResult(value: emailValue2, confidence: 1.0)]
+        let recognizedValues = [TextRecognizer.Result(value: emailValue1, confidence: 1.0),
+                                TextRecognizer.Result(value: emailValue2, confidence: 1.0)]
 
         // when
         let extactedValues = extractor.extract(from: recognizedValues)
@@ -158,9 +158,9 @@ final class EmailExtractorTest: XCTestCase {
         let emailValue1 = "123 dog@doggyHouse.com 888"
         let emailValue2 = "I doubt  that is an @ email adress"
         let emailValue3 = "Use  my doggy email: doggy@dogHouse.com . Thanks!"
-        let recognizedValues = [TextRecognizerResult(value: emailValue1, confidence: 1.0),
-                                TextRecognizerResult(value: emailValue2, confidence: 1.0),
-                                TextRecognizerResult(value: emailValue3, confidence: 1.0)]
+        let recognizedValues = [TextRecognizer.Result(value: emailValue1, confidence: 1.0),
+                                TextRecognizer.Result(value: emailValue2, confidence: 1.0),
+                                TextRecognizer.Result(value: emailValue3, confidence: 1.0)]
 
         // when
         let extactedValues = extractor.extract(from: recognizedValues)
