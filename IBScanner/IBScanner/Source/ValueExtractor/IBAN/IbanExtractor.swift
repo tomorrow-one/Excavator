@@ -37,21 +37,16 @@ public final class IbanExtractor: ValueExtracting {
     }
 
     private func excerptIban(from value: String) -> String? {
-        guard IbanHelper.minLength < value.count else {
+        let prefix = String(value.prefix(2))
+        guard let iso = IbanHelper.CountryIso(rawValue: prefix), let length = IbanHelper.length(for: iso) else {
             return nil
         }
 
-        for prefixLength in IbanHelper.minLength...value.count {
-            let prefix = String(value.prefix(prefixLength))
-            if IbanHelper.isValid(iban: prefix) {
-                return prefix
-            }
-        }
-
-        return nil
+        let iban = String(value.prefix(length))
+        return IbanHelper.isValid(iban: iban) ? iban : nil
     }
 
-    func trimNonValidCharacters(from string: String) -> String {
+    private func trimNonValidCharacters(from string: String) -> String {
         string.replacingOccurrences(of: "[^A-Z0-9]", with: "", options: .regularExpression)
     }
 }
