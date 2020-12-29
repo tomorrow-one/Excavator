@@ -11,10 +11,6 @@ enum IbanHelper {
     private static let ibanRegex = "\\A[A-Z]{2}\\d{2}[A-Z\\d]+\\z"
 
     static func isValid(iban: String) -> Bool {
-        guard isValidLength(iban: iban) else {
-            return false
-        }
-
         guard iban.range(of: self.ibanRegex, options: .regularExpression) != nil else {
             return false
         }
@@ -33,13 +29,5 @@ enum IbanHelper {
         }
 
         return mod == 1
-    }
-
-    private static func isValidLength(iban: String) -> Bool {
-        guard let country = CountryIso(rawValue: String(iban.prefix(2))) else {
-            return false
-        }
-
-        return iban.count == length(for: country)
     }
 }
