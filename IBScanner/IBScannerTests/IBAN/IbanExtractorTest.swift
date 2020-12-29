@@ -42,15 +42,6 @@ final class IbanExtractorTest: XCTestCase {
         XCTAssertEqual(extractedIbanValue(from: [recognizedValue]), self.properIbanValue)
     }
 
-    func testValidIbanWithNonBreakableSpacesExtractionSuccess() {
-        // given
-        let ibanValue = "DE87 1101 0100 2430 9204 38"
-        let recognizedValue = TextRecognizer.Result(value: ibanValue, confidence: 1.0)
-
-        // when && then
-        XCTAssertEqual(extractedIbanValue(from: [recognizedValue]), self.properIbanValue)
-    }
-
     func testValidIbanWithIncorrectSymbolsOnEndsExtractionSuccess() {
         // given
         let ibanValue = "?DE87110101002430920438ü"

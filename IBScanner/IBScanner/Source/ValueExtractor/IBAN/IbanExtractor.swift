@@ -17,7 +17,7 @@ public final class IbanExtractor: ValueExtracting {
     public func extract(from input: [TextRecognizer.Result]) -> [String] {
         let normalizedInput = input
             .map { $0.value.uppercased() }
-            .map(trimNonValidCharacters(from:))
+            .map { $0.replacingOccurrences(of: " ", with: "") }
             .joined()
         return possibleSequences(in: normalizedInput)
             .compactMap(excerptIban(from:))
@@ -44,9 +44,5 @@ public final class IbanExtractor: ValueExtracting {
 
         let iban = String(value.prefix(length))
         return IbanValidator.isValid(iban: iban) ? iban : nil
-    }
-
-    private func trimNonValidCharacters(from string: String) -> String {
-        string.replacingOccurrences(of: "[^A-Z0-9]", with: "", options: .regularExpression)
     }
 }
