@@ -18,8 +18,7 @@ final class IbanExtractorTest: XCTestCase {
 
     func testValidIbanExtractionSuccess() {
         // given
-        let ibanValue = self.properIbanValue
-        let recognizedValue = TextRecognizer.Result(value: ibanValue, confidence: 1.0)
+        let recognizedValue = TextRecognizer.Result(value: self.properIbanValue, confidence: 1.0)
 
         // when && then
         XCTAssertEqual(extractedIbanValue(from: [recognizedValue]), self.properIbanValue)
