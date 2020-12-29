@@ -9,51 +9,45 @@
 @available(iOS 13, *)
 public final class IbanExtractor: ValueExtracting {
 
-    private let ibanInStringRegex = "[A-Z]{2}\\d{2}[A-Z\\d]+"
-    private let ibanMandatoryPrefixLength = 4
+    private let prefixRegex = try! NSRegularExpression(pattern: "[A-Z]{2}\\d{2}[A-Z\\d]+")
+    private let minPrefixLength = 4
 
     public init() { }
 
-    public func extract(from results: [TextRecognizer.Result]) -> [String] {
-        let concatenetedValue: String = results.reduce("") { $0 + $1.value }
-        return process(recognitionResult: TextRecognizer.Result(value: concatenetedValue, confidence: 1.0))
+    public func extract(from input: [TextRecognizer.Result]) -> [String] {
+        let normalizedInput = input
+            .map { $0.value }
+            .map { $0.uppercased() }
+            .map(IbanHelper.trimNonValidCharacters(from:))
+            .joined()
+        return possibleSequences(in: normalizedInput)
+            .compactMap(excerptIban(from:))
     }
 
-    private func process(recognitionResult: TextRecognizer.Result) -> [String] {
-        let trimmedIbanValue = IbanHelper.trimNonValidCharacters(from: recognitionResult.value.uppercased())
-        let possibleIbanValues = extractPossibleIbans(from: trimmedIbanValue, isFirstStep: true)
-
-        var extractedIbans: [String] = []
-        for possibleIbanValue in possibleIbanValues {
-            if let iban = excerptIban(with: possibleIbanValue) {
-                extractedIbans.append(iban)
-            }
-        }
-        return extractedIbans
-    }
-
-    private func extractPossibleIbans(from string: String, isFirstStep: Bool) -> [String] {
-        guard let regex = try? NSRegularExpression(pattern: self.ibanInStringRegex) else {
+    private func possibleSequences(in string: String) -> [String] {
+        guard !string.isEmpty else {
             return []
         }
+        let matches = self.prefixRegex.matches(in: string, range: NSRange(location: 0, length: string.count))
         let nsString = string as NSString
-        let location = isFirstStep ? 0 : self.ibanMandatoryPrefixLength
-        let matches = regex.matches(in: string, range: NSRange(location: location, length: string.count - location))
-        var result = matches.compactMap { nsString.substring(with: $0.range) }
-        result.append(contentsOf: result.flatMap { extractPossibleIbans(from: $0, isFirstStep: false) })
-        return result
+        let baseResults = matches.compactMap { nsString.substring(with: $0.range) }
+        let subResults = baseResults
+            .map { String($0.dropFirst(self.minPrefixLength)) }
+            .flatMap(possibleSequences(in:))
+        return baseResults + subResults
     }
 
-    private func excerptIban(with possibleIbanValue: String) -> String? {
-        var currentLength = IbanHelper.minLength
-        while currentLength <= possibleIbanValue.count {
-            let probableIban = String(possibleIbanValue.prefix(currentLength))
-            if let iban = IbanHelper.excerpt(from: probableIban) {
+    private func excerptIban(from value: String) -> String? {
+        guard IbanHelper.minLength < value.count else {
+            return nil
+        }
+        for prefixLength in IbanHelper.minLength..<value.count {
+            let prefix = String(value.prefix(prefixLength))
+            if let iban = IbanHelper.excerpt(from: prefix) {
                 return iban
             }
-
-            currentLength += 1
         }
+
         return nil
     }
 }
