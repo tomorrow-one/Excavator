@@ -2,7 +2,7 @@
 //  IbanHelperLength.swift
 //  TomorrowIbanScanner
 //
-//  Created by Alexander Kravchenko on 27.04.20.
+//  Created by Sasha Kravchenko on 27.04.20.
 //  Copyright © 2020 Tomorrow. All rights reserved.
 //
 

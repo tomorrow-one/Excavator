@@ -3,7 +3,7 @@
 //  TomorrowIbanScanner
 //
 //  Created by Pavel Stepanov on 03.12.18.
-//  Copyright © 2018 ToMoRRoW GmbH. All rights reserved.
+//  Copyright © 2018 Tomorrow GmbH. All rights reserved.
 //
 
 extension IbanHelper {

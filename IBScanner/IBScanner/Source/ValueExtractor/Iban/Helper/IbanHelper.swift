@@ -2,8 +2,8 @@
 //  IbanHelper.swift
 //  TomorrowIbanScanner
 //
-//  Created by Alexander Kravchenko on 14.02.19.
-//  Copyright © 2019 ToMoRRoW GmbH. All rights reserved.
+//  Created by Sasha Kravchenko on 14.02.19.
+//  Copyright © 2019 Tomorrow GmbH. All rights reserved.
 //
 
 enum IbanHelper {
