@@ -214,5 +214,34 @@ final class IbanExtractorTest: XCTestCase {
         XCTAssertEqual(ibanValues, ["DE87110101002430920438", "DE05700000000070001506"])
     }
 
-    // TODO: add performance tests
+    // MARK: Performance
+
+    func testRecognizingOneIBANInLongText() {
+        // given
+        let input = FileLoader.string(from: "LongTextWithOneIBAN")!
+            .split(separator: "\n")
+            .map { String($0) }
+            .map { TextRecognizer.Result(value: $0, confidence: 1.0) }
+
+        // when && then
+        measure {
+            let result = extractedIbanValue(from: input)
+            XCTAssertEqual(result, self.properIbanValue)
+        }
+    }
+
+    func testRecognizingManyIBANs() {
+        // given
+        let input = FileLoader.string(from: "ManyIBANs")!
+            .split(separator: "\n")
+            .map { String($0) }
+            .map { TextRecognizer.Result(value: $0, confidence: 1.0) }
+
+        // when && then
+        measure {
+            let extractor = IbanExtractor()
+            let values = extractor.extract(from: input)
+            XCTAssertEqual(values.count, 1000)
+        }
+    }
 }
