@@ -6,6 +6,9 @@
 //  Copyright © 2020 Tomorrow GmbH. All rights reserved.
 //
 
-public enum TextRecognizerConfig {
-    public static var isDebugLoggingEnabled = true
+@available(iOS 13, *)
+extension TextRecognizer {
+    public enum Config {
+        public static var isDebugLoggingEnabled = true
+    }
 }

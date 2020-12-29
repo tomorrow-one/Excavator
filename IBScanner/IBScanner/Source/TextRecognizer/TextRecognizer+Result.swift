@@ -7,7 +7,10 @@
 //
 
 @available(iOS 13, *)
-public struct TextRecognizerResult {
-    public let value: String
-    public let confidence: Float
+
+extension TextRecognizer {
+    public struct Result {
+        public let value: String
+        public let confidence: Float
+    }
 }

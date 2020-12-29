@@ -45,7 +45,7 @@ public final class TextRecognizer: TextRecognizing {
         }
     }
 
-    private func makeRequest(completion: @escaping ([TextRecognizerResult]) -> Void) -> VNRecognizeTextRequest {
+    private func makeRequest(completion: @escaping ([TextRecognizer.Result]) -> Void) -> VNRecognizeTextRequest {
         let request = VNRecognizeTextRequest { [weak self] request, error in
             guard let observations = request.results as? [VNRecognizedTextObservation] else {
                 if let error = error {
@@ -56,7 +56,7 @@ public final class TextRecognizer: TextRecognizing {
 
             let result = observations
                 .compactMap { $0.topCandidates(1).first }
-                .map { TextRecognizerResult(value: $0.string, confidence: $0.confidence) }
+                .map { TextRecognizer.Result(value: $0.string, confidence: $0.confidence) }
 
             DispatchQueue.main.async {
                 completion(result)
@@ -68,7 +68,7 @@ public final class TextRecognizer: TextRecognizing {
     }
 
     private func logError(error: Error) {
-        if TextRecognizerConfig.isDebugLoggingEnabled {
+        if TextRecognizer.Config.isDebugLoggingEnabled {
             debugPrint(error.localizedDescription)
         }
     }

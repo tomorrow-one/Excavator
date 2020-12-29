@@ -14,12 +14,12 @@ public final class IbanExtractor: ValueExtracting {
 
     public init() { }
 
-    public func extract(from results: [TextRecognizerResult]) -> [String] {
+    public func extract(from results: [TextRecognizer.Result]) -> [String] {
         let concatenetedValue: String = results.reduce("") { $0 + $1.value }
-        return process(recognitionResult: TextRecognizerResult(value: concatenetedValue, confidence: 1.0))
+        return process(recognitionResult: TextRecognizer.Result(value: concatenetedValue, confidence: 1.0))
     }
 
-    private func process(recognitionResult: TextRecognizerResult) -> [String] {
+    private func process(recognitionResult: TextRecognizer.Result) -> [String] {
         let trimmedIbanValue = IbanHelper.trimNonValidCharacters(from: recognitionResult.value.uppercased())
         let possibleIbanValues = extractPossibleIbans(from: trimmedIbanValue, isFirstStep: true)
 
@@ -45,7 +45,7 @@ public final class IbanExtractor: ValueExtracting {
     }
 
     private func excerptIban(with possibleIbanValue: String) -> String? {
-        var currentLength = IbanHelper.minIbanLength
+        var currentLength = IbanHelper.minLength
         while currentLength <= possibleIbanValue.count {
             let probableIban = String(possibleIbanValue.prefix(currentLength))
             if let iban = IbanHelper.excerpt(from: probableIban) {

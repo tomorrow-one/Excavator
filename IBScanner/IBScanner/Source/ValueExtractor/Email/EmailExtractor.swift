@@ -17,11 +17,11 @@ public final class EmailExtractor: ValueExtracting {
         self.minConfidence = minConfidence
     }
 
-    public func extract(from recognitionResults: [TextRecognizerResult]) -> [String] {
+    public func extract(from recognitionResults: [TextRecognizer.Result]) -> [String] {
         recognitionResults.compactMap { self.process(recognitionResult: $0) }
     }
 
-    private func process(recognitionResult: TextRecognizerResult) -> String? {
+    private func process(recognitionResult: TextRecognizer.Result) -> String? {
         guard recognitionResult.confidence >= self.minConfidence, let atSymbolPosition = recognitionResult.value.firstIndex(of: "@") else {
                 return nil
         }
