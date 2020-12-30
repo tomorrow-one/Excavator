@@ -39,6 +39,10 @@ For the complete flow, please refer to the Example project.
 As for now the library logs errors if any were produced into the standart output. You can switch it off with 
 `TextRecognizerConfig.isDebugLoggingEnabled = false`
 
+## Examples
+
+<img src="https://github.com/PavelStepanovTomorrow/TomorrowIbanScanner/blob/master/Screenshots/EmailExample.PNG" width="200"> <img src="https://github.com/PavelStepanovTomorrow/TomorrowIbanScanner/blob/master/Screenshots/MultilineExample.PNG" width="200"> <img src="https://github.com/PavelStepanovTomorrow/TomorrowIbanScanner/blob/master/Screenshots/MultipleIdsExample.PNG" width="200">
+
 ## License
 
 TomorrowIbanScanner is available under the MIT license. See the LICENSE file for more info.
