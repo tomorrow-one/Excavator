@@ -21,7 +21,6 @@
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		EC6760EBA92DD6BB67FC69F3 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C105B45999DF1E49AD7890E /* Pods_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,14 +67,6 @@
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		67F3AD5BD704E87287F73305 /* Pods-TomorrowIbanScanner_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomorrowIbanScanner_Tests.debug.xcconfig"; path = "Target Support Files/Pods-TomorrowIbanScanner_Tests/Pods-TomorrowIbanScanner_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		6C105B45999DF1E49AD7890E /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C41943A043F867EE27380DF /* Pods-TomorrowIbanScanner_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomorrowIbanScanner_Example.debug.xcconfig"; path = "Target Support Files/Pods-TomorrowIbanScanner_Example/Pods-TomorrowIbanScanner_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		7297C07614EF3A783C84B2D2 /* Pods-TomorrowIbanScanner_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomorrowIbanScanner_Example.release.xcconfig"; path = "Target Support Files/Pods-TomorrowIbanScanner_Example/Pods-TomorrowIbanScanner_Example.release.xcconfig"; sourceTree = "<group>"; };
-		BF5A601544CAB8500B06137B /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
-		D1AF00B45925714031AB9C46 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
-		F8B59A3697E6533A7001C763 /* Pods_TomorrowIbanScanner_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TomorrowIbanScanner_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAF0CB3216EC255E23096E2A /* Pods-TomorrowIbanScanner_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomorrowIbanScanner_Tests.release.xcconfig"; path = "Target Support Files/Pods-TomorrowIbanScanner_Tests/Pods-TomorrowIbanScanner_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +81,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC6760EBA92DD6BB67FC69F3 /* Pods_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,19 +165,6 @@
 			path = Alert;
 			sourceTree = "<group>";
 		};
-		45B0AEBE1854A104A8A3E495 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6C41943A043F867EE27380DF /* Pods-TomorrowIbanScanner_Example.debug.xcconfig */,
-				7297C07614EF3A783C84B2D2 /* Pods-TomorrowIbanScanner_Example.release.xcconfig */,
-				67F3AD5BD704E87287F73305 /* Pods-TomorrowIbanScanner_Tests.debug.xcconfig */,
-				FAF0CB3216EC255E23096E2A /* Pods-TomorrowIbanScanner_Tests.release.xcconfig */,
-				D1AF00B45925714031AB9C46 /* Pods-Example.debug.xcconfig */,
-				BF5A601544CAB8500B06137B /* Pods-Example.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -195,8 +172,6 @@
 				44665775247EAFFF00A806D2 /* TomorrowIbanScanner_ExampleTests */,
 				4497770D2497B95C009BF942 /* IBScanner.xcodeproj */,
 				607FACD11AFB9204008FA782 /* Products */,
-				45B0AEBE1854A104A8A3E495 /* Pods */,
-				B7DC956BFD6C0E4119F2F63F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -227,15 +202,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B7DC956BFD6C0E4119F2F63F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F8B59A3697E6533A7001C763 /* Pods_TomorrowIbanScanner_Tests.framework */,
-				6C105B45999DF1E49AD7890E /* Pods_Example.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -261,7 +227,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Example" */;
 			buildPhases = (
-				F145C18089252F350059CDF1 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
@@ -282,7 +247,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = Tomorrow;
 				TargetAttributes = {
 					44665773247EAFFF00A806D2 = {
@@ -359,31 +324,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		F145C18089252F350059CDF1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		44665770247EAFFF00A806D2 /* Sources */ = {
@@ -511,6 +451,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -566,6 +507,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -594,7 +536,6 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D1AF00B45925714031AB9C46 /* Pods-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -612,7 +553,6 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF5A601544CAB8500B06137B /* Pods-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
