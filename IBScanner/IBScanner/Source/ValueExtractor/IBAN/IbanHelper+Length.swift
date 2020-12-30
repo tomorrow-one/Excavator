@@ -8,7 +8,11 @@
 
 /* More information: https://en.wikipedia.org/wiki/International_Bank_Account_Number */
 extension IbanValidator {
-    static let minLength = CountryIso.allKnown.compactMap(length(for:)).min()!
+
+    static let minLength = Self.allLengths.min()!
+    static let maxLength = Self.allLengths.max()!
+
+    private static let allLengths = CountryIso.allKnown.compactMap(length(for:))
     
     static func length(for iso: CountryIso) -> Int? { // swiftlint:disable:this cyclomatic_complexity function_body_length
         switch iso {
