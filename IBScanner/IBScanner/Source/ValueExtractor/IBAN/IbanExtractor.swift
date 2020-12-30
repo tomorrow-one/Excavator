@@ -9,7 +9,7 @@
 @available(iOS 13, *)
 public final class IbanExtractor: ValueExtracting {
 
-    private let prefixRegex = try! NSRegularExpression(pattern: "[A-Z]{2}\\d{2}[A-Z\\d]+")
+    private let possibleIbanRegex = try! NSRegularExpression(pattern: "[A-Z]{2}\\d{2}[A-Z\\d]{\(IbanValidator.minLength - 4),\(IbanValidator.maxLength - 4)}")
     private let minPrefixLength = 4
 
     public init() { }
@@ -19,30 +19,28 @@ public final class IbanExtractor: ValueExtracting {
             .map { $0.value.uppercased() }
             .map { $0.replacingOccurrences(of: " ", with: "") }
             .joined()
-        return possibleSequences(in: normalizedInput)
-            .compactMap(excerptIban(from:))
+        return excerptIbans(from: normalizedInput)
     }
 
-    private func possibleSequences(in string: String) -> [String] {
-        guard !string.isEmpty else {
-            return []
+    private func excerptIbans(from input: String) -> [String] {
+        var result = [String]()
+        let inputLength = input.count
+        let nsString = input as NSString
+        var location = 0
+        while let match = self.possibleIbanRegex.firstMatch(in: input, range: NSRange(location: location, length: inputLength - location)) {
+            location = match.range.location + self.minPrefixLength
+            let possibleIban = nsString.substring(with: match.range)
+            let prefix = String(possibleIban.prefix(2))
+            guard let iso = CountryIso(rawValue: prefix), let length = IbanValidator.length(for: iso) else {
+                continue
+            }
+            let iban = String(possibleIban.prefix(length))
+            if IbanValidator.isValid(iban: iban) {
+                result.append(iban)
+                location = match.range.location + length
+            }
         }
-        let matches = self.prefixRegex.matches(in: string, range: NSRange(location: 0, length: string.count))
-        let nsString = string as NSString
-        let baseResults = matches.compactMap { nsString.substring(with: $0.range) }
-        let subResults = baseResults
-            .map { String($0.dropFirst(self.minPrefixLength)) }
-            .flatMap(possibleSequences(in:))
-        return baseResults + subResults
-    }
 
-    private func excerptIban(from value: String) -> String? {
-        let prefix = String(value.prefix(2))
-        guard let iso = CountryIso(rawValue: prefix), let length = IbanValidator.length(for: iso) else {
-            return nil
-        }
-
-        let iban = String(value.prefix(length))
-        return IbanValidator.isValid(iban: iban) ? iban : nil
+        return result
     }
 }
