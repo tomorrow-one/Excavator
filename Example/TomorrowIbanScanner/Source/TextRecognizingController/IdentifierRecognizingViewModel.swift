@@ -30,7 +30,7 @@ final class IdentifierRecognizingViewModel {
         guard !self.isWaitingForUserInput else {
             return
         }
-        self.recognizer.recognize(ciImage) { [weak self] results in
+        self.recognizer.recognize(in: ciImage) { [weak self] results in
             self?.recognizeResults(results)
         }
     }

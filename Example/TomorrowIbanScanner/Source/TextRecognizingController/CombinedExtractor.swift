@@ -13,7 +13,7 @@ final class CombinedExtractor: ValueExtracting {
     private let emailExtractor = EmailExtractor()
     private let ibanExtractor = IbanExtractor()
 
-    func extract(from results: [TextRecognizerResult]) -> [String] {
-        return self.emailExtractor.extract(from: results) + self.ibanExtractor.extract(from: results)
+    func extract(from results: [TextRecognizer.Result]) -> [String] {
+        self.emailExtractor.extract(from: results) + self.ibanExtractor.extract(from: results)
     }
 }
