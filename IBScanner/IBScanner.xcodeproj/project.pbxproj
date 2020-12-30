@@ -145,7 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				4497771E2497BBD5009BF942 /* Deployment */,
-				449777052497B863009BF942 /* Screenshots */,
 				449776AB2497B70C009BF942 /* IBScanner */,
 				4497772A2497C30A009BF942 /* IBScannerTests */,
 				449776AA2497B70C009BF942 /* Products */,
@@ -187,16 +186,16 @@
 				449777072497B863009BF942 /* MultipleIdsExample.PNG */,
 				449777082497B863009BF942 /* MultilineExample.PNG */,
 			);
-			name = Screenshots;
-			path = ../Screenshots;
+			path = Screenshots;
 			sourceTree = "<group>";
 		};
 		4497771E2497BBD5009BF942 /* Deployment */ = {
 			isa = PBXGroup;
 			children = (
+				449777202497BBDE009BF942 /* TomorrowIbanScanner.podspec */,
 				449777212497BBDE009BF942 /* LICENSE */,
 				4497771F2497BBDE009BF942 /* README.md */,
-				449777202497BBDE009BF942 /* TomorrowIbanScanner.podspec */,
+				449777052497B863009BF942 /* Screenshots */,
 			);
 			name = Deployment;
 			sourceTree = "<group>";

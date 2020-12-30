@@ -41,7 +41,7 @@ As for now the library logs errors if any were produced into the standart output
 
 ## Examples
 
-<img src="https://github.com/PavelStepanovTomorrow/TomorrowIbanScanner/blob/master/Screenshots/EmailExample.PNG" width="200"> <img src="https://github.com/PavelStepanovTomorrow/TomorrowIbanScanner/blob/master/Screenshots/MultilineExample.PNG" width="200"> <img src="https://github.com/PavelStepanovTomorrow/TomorrowIbanScanner/blob/master/Screenshots/MultipleIdsExample.PNG" width="200">
+<img src="https://github.com/PavelStepanovTomorrow/TomorrowIbanScanner/blob/master/Deployment/Screenshots/EmailExample.PNG" width="200"> <img src="https://github.com/PavelStepanovTomorrow/TomorrowIbanScanner/blob/master/Deployment/Screenshots/MultilineExample.PNG" width="200"> <img src="https://github.com/PavelStepanovTomorrow/TomorrowIbanScanner/blob/master/Deployment/Screenshots/MultipleIdsExample.PNG" width="200">
 
 ## License
 
