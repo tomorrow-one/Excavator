@@ -293,7 +293,6 @@
 					};
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 8GNUVHDS8K;
 						LastSwiftMigration = 0900;
 					};
 				};
@@ -598,7 +597,7 @@
 			baseConfigurationReference = D1AF00B45925714031AB9C46 /* Pods-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8GNUVHDS8K;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TomorrowIbanScanner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -616,7 +615,7 @@
 			baseConfigurationReference = BF5A601544CAB8500B06137B /* Pods-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = T26XN9U9U2;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TomorrowIbanScanner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
