@@ -28,7 +28,7 @@ pod 'TomorrowIbanScanner'
 ```swift
 let recognizer = TextRecognizer(extractor: IbanExtractor())
 let ciImage = cameraImage()
-self.recognizer.recognize(in: ciImage) { [weak self] ibans in
+self.recognizer.recognize(in: ciImage) { ibans in
     // do something here
 }
 ```
@@ -37,7 +37,7 @@ For the complete flow, please refer to the Example project.
 
 ### Configuration
 As for now the library logs errors if any were produced into the standart output. You can switch it off with 
-`TextRecognizerConfig.isDebugLoggingEnabled = false`
+`TextRecognizer.Config.isDebugLoggingEnabled = false`
 
 ## Examples
 
