@@ -39,9 +39,8 @@ For the complete flow, please refer to the Example project.
 As for now the library logs errors if any were produced into the standart output. You can switch it off with 
 `TextRecognizer.Config.isDebugLoggingEnabled = false`
 
-## Examples
-
-<img src="https://github.com/PavelStepanovTomorrow/TomorrowIbanScanner/blob/master/Deployment/Screenshots/EmailExample.PNG" width="200"> <img src="https://github.com/PavelStepanovTomorrow/TomorrowIbanScanner/blob/master/Deployment/Screenshots/MultilineExample.PNG" width="200"> <img src="https://github.com/PavelStepanovTomorrow/TomorrowIbanScanner/blob/master/Deployment/Screenshots/MultipleIdsExample.PNG" width="200">
+## Example
+<img src="https://github.com/PavelStepanovTomorrow/TomorrowIbanScanner/blob/develop/IBScanner/Screenshots/EmailExample.PNG" width="200"> <img src="https://github.com/PavelStepanovTomorrow/TomorrowIbanScanner/blob/develop/IBScanner/Screenshots/MultilineExample.PNG" width="200"> <img src="https://github.com/PavelStepanovTomorrow/TomorrowIbanScanner/blob/develop/IBScanner/Screenshots/MultipleIdsExample.PNG" width="200">
 
 ## License
 
