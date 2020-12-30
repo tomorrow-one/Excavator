@@ -28,7 +28,7 @@ pod 'TomorrowIbanScanner'
 ```swift
 let recognizer = TextRecognizer(extractor: IbanExtractor())
 let ciImage = cameraImage()
-self.recognizer.recognize(in: ciImage) { ibans in
+recognizer.recognize(in: ciImage) { ibans in
     // do something here
 }
 ```
