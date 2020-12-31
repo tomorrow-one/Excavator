@@ -9,8 +9,11 @@
 @available(iOS 13, *)
 public final class IbanExtractor: ValueExtracting {
 
-    private let possibleIbanRegex = try! NSRegularExpression(pattern: "[A-Z]{2}\\d{2}[A-Z\\d]{\(IbanValidator.minLength - 4),\(IbanValidator.maxLength - 4)}")
     private let minPrefixLength = 4
+    private lazy var minSuffixLength = IbanValidator.minLength - self.minPrefixLength
+    private lazy var maxSuffixLength = IbanValidator.maxLength - self.minPrefixLength
+    private lazy var possibleIbanRegex = try! NSRegularExpression(pattern: "[A-Z]{2}\\d{2}[A-Z\\d]{\(self.minSuffixLength),\(self.maxSuffixLength)}")
+
 
     public init() { }
 
