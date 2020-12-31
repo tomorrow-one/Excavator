@@ -11,5 +11,5 @@ import UIKit
 @available(iOS 13, *)
 public protocol TextRecognizing: class {
     var inProgress: Bool { get set }
-    func recognize(_ cgImage: CIImage, completion: @escaping ([String]) -> Void)
+    func recognize(in image: CIImage, completion: @escaping ([String]) -> Void)
 }

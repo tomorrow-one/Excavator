@@ -18,7 +18,7 @@ final class IdentifierRecognizingViewModelTest: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        self.recognizer = DummyTextRecognizer()
+        self.recognizer = .init()
     }
 
     override func tearDown() {
@@ -147,7 +147,7 @@ private class DummyTextRecognizer: TextRecognizing {
 
     private(set) var recognizeTextInImageCounter = 0
 
-    func recognize(_ cgImage: CIImage, completion: @escaping ([String]) -> Void) {
+    func recognize(in cgImage: CIImage, completion: @escaping ([String]) -> Void) {
         self.recognizeTextInImageCounter += 1
         self.invokation = completion
     }
@@ -158,9 +158,9 @@ private final class DummyExtractor: ValueExtracting {
 
     var extractorValues: [String] = []
     private(set) var counter = 0
-    private(set) var receviedResults: [TextRecognizerResult] = []
+    private(set) var receviedResults: [TextRecognizer.Result] = []
 
-    func extract(from results: [TextRecognizerResult]) -> [String] {
+    func extract(from results: [TextRecognizer.Result]) -> [String] {
         self.counter += 1
         self.receviedResults.append(contentsOf: results)
         return self.extractorValues
