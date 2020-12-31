@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TomorrowIbanScanner'
-  s.version          = '0.1.7'
+  s.version          = '0.2.0'
   s.summary          = 'A set of classes which recognize and extract IBAN or email from an image using Vision framework from Apple.'
   s.swift_version    = '5.0'
 
