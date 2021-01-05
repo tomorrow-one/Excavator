@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		448A6FD82498FFBD004CE44F /* IbanExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448A6FD12498FFBD004CE44F /* IbanExtractor.swift */; };
+		448A6FD92498FFBD004CE44F /* IbanValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448A6FD32498FFBD004CE44F /* IbanValidator.swift */; };
+		448A6FDB2498FFBD004CE44F /* CountryIso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448A6FD52498FFBD004CE44F /* CountryIso.swift */; };
+		448A6FDC2498FFBD004CE44F /* EmailExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448A6FD72498FFBD004CE44F /* EmailExtractor.swift */; };
+		448A6FE22498FFE1004CE44F /* TextRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448A6FDE2498FFE1004CE44F /* TextRecognizer.swift */; };
+		448A6FE52498FFE1004CE44F /* TextRecognizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448A6FE12498FFE1004CE44F /* TextRecognizing.swift */; };
+		448A6FE72499000B004CE44F /* ValueExtracting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448A6FE62499000B004CE44F /* ValueExtracting.swift */; };
+		449776AE2497B70C009BF942 /* Excavator.h in Headers */ = {isa = PBXBuildFile; fileRef = 449776AC2497B70C009BF942 /* Excavator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		449777092497B863009BF942 /* EmailExample.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 449777062497B863009BF942 /* EmailExample.PNG */; };
+		4497770A2497B863009BF942 /* MultipleIdsExample.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 449777072497B863009BF942 /* MultipleIdsExample.PNG */; };
+		4497770B2497B863009BF942 /* MultilineExample.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 449777082497B863009BF942 /* MultilineExample.PNG */; };
+		449777222497BBDE009BF942 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4497771F2497BBDE009BF942 /* README.md */; };
+		449777232497BBDE009BF942 /* Excavator.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 449777202497BBDE009BF942 /* Excavator.podspec */; };
+		449777242497BBDE009BF942 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 449777212497BBDE009BF942 /* LICENSE */; };
+		4497772E2497C30A009BF942 /* Excavator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 449776A92497B70C009BF942 /* Excavator.framework */; };
+		4497773D2497C342009BF942 /* IbanExtractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4497773B2497C342009BF942 /* IbanExtractorTest.swift */; };
+		4497773E2497C342009BF942 /* EmailExtractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4497773C2497C342009BF942 /* EmailExtractorTest.swift */; };
+		D97AD24F259B6D7600C27C33 /* IbanHelper+Length.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97AD24E259B6D7600C27C33 /* IbanHelper+Length.swift */; };
+		D97AD254259B6D9000C27C33 /* TextRecognizer+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97AD252259B6D9000C27C33 /* TextRecognizer+Config.swift */; };
+		D97AD255259B6D9000C27C33 /* TextRecognizer+Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97AD253259B6D9000C27C33 /* TextRecognizer+Result.swift */; };
+		D97AD267259B70CD00C27C33 /* LongTextWithOneIBAN in Resources */ = {isa = PBXBuildFile; fileRef = D97AD266259B70CD00C27C33 /* LongTextWithOneIBAN */; };
+		D97AD26D259B718C00C27C33 /* FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97AD26C259B718C00C27C33 /* FileLoader.swift */; };
+		D984C14B259B74300063906D /* ManyIBANs in Resources */ = {isa = PBXBuildFile; fileRef = D984C14A259B74300063906D /* ManyIBANs */; };
+		D984C15B259B8E4D0063906D /* EmailValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D984C15A259B8E4D0063906D /* EmailValidation.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4497772F2497C30A009BF942 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 449776A02497B70C009BF942 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 449776A82497B70C009BF942;
+			remoteInfo = IBScanner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		448A6FCC2498FF34004CE44F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		448A6FD12498FFBD004CE44F /* IbanExtractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IbanExtractor.swift; sourceTree = "<group>"; };
+		448A6FD32498FFBD004CE44F /* IbanValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IbanValidator.swift; sourceTree = "<group>"; };
+		448A6FD52498FFBD004CE44F /* CountryIso.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryIso.swift; sourceTree = "<group>"; };
+		448A6FD72498FFBD004CE44F /* EmailExtractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailExtractor.swift; sourceTree = "<group>"; };
+		448A6FDE2498FFE1004CE44F /* TextRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextRecognizer.swift; sourceTree = "<group>"; };
+		448A6FE12498FFE1004CE44F /* TextRecognizing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextRecognizing.swift; sourceTree = "<group>"; };
+		448A6FE62499000B004CE44F /* ValueExtracting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueExtracting.swift; sourceTree = "<group>"; };
+		449776A92497B70C009BF942 /* Excavator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Excavator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		449776AC2497B70C009BF942 /* Excavator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Excavator.h; sourceTree = "<group>"; };
+		449777062497B863009BF942 /* EmailExample.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EmailExample.PNG; sourceTree = "<group>"; };
+		449777072497B863009BF942 /* MultipleIdsExample.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultipleIdsExample.PNG; sourceTree = "<group>"; };
+		449777082497B863009BF942 /* MultilineExample.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultilineExample.PNG; sourceTree = "<group>"; };
+		4497771F2497BBDE009BF942 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		449777202497BBDE009BF942 /* Excavator.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Excavator.podspec; path = ../Excavator.podspec; sourceTree = "<group>"; };
+		449777212497BBDE009BF942 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		449777292497C30A009BF942 /* ExcavatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExcavatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4497772D2497C30A009BF942 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4497773B2497C342009BF942 /* IbanExtractorTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IbanExtractorTest.swift; sourceTree = "<group>"; };
+		4497773C2497C342009BF942 /* EmailExtractorTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailExtractorTest.swift; sourceTree = "<group>"; };
+		D97AD24E259B6D7600C27C33 /* IbanHelper+Length.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IbanHelper+Length.swift"; sourceTree = "<group>"; };
+		D97AD252259B6D9000C27C33 /* TextRecognizer+Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TextRecognizer+Config.swift"; sourceTree = "<group>"; };
+		D97AD253259B6D9000C27C33 /* TextRecognizer+Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TextRecognizer+Result.swift"; sourceTree = "<group>"; };
+		D97AD266259B70CD00C27C33 /* LongTextWithOneIBAN */ = {isa = PBXFileReference; lastKnownFileType = text; path = LongTextWithOneIBAN; sourceTree = "<group>"; };
+		D97AD26C259B718C00C27C33 /* FileLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileLoader.swift; sourceTree = "<group>"; };
+		D984C14A259B74300063906D /* ManyIBANs */ = {isa = PBXFileReference; lastKnownFileType = text; path = ManyIBANs; sourceTree = "<group>"; };
+		D984C15A259B8E4D0063906D /* EmailValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidation.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		449776A62497B70C009BF942 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		449777262497C30A009BF942 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4497772E2497C30A009BF942 /* Excavator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		448A6FCF2498FFBD004CE44F /* ValueExtractor */ = {
+			isa = PBXGroup;
+			children = (
+				448A6FE62499000B004CE44F /* ValueExtracting.swift */,
+				448A6FD02498FFBD004CE44F /* IBAN */,
+				448A6FD62498FFBD004CE44F /* email */,
+			);
+			path = ValueExtractor;
+			sourceTree = "<group>";
+		};
+		448A6FD02498FFBD004CE44F /* IBAN */ = {
+			isa = PBXGroup;
+			children = (
+				448A6FD12498FFBD004CE44F /* IbanExtractor.swift */,
+				448A6FD32498FFBD004CE44F /* IbanValidator.swift */,
+				D97AD24E259B6D7600C27C33 /* IbanHelper+Length.swift */,
+				448A6FD52498FFBD004CE44F /* CountryIso.swift */,
+			);
+			path = IBAN;
+			sourceTree = "<group>";
+		};
+		448A6FD62498FFBD004CE44F /* email */ = {
+			isa = PBXGroup;
+			children = (
+				448A6FD72498FFBD004CE44F /* EmailExtractor.swift */,
+				D984C15A259B8E4D0063906D /* EmailValidation.swift */,
+			);
+			path = email;
+			sourceTree = "<group>";
+		};
+		448A6FDD2498FFE1004CE44F /* TextRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				448A6FE12498FFE1004CE44F /* TextRecognizing.swift */,
+				448A6FDE2498FFE1004CE44F /* TextRecognizer.swift */,
+				D97AD252259B6D9000C27C33 /* TextRecognizer+Config.swift */,
+				D97AD253259B6D9000C27C33 /* TextRecognizer+Result.swift */,
+			);
+			path = TextRecognizer;
+			sourceTree = "<group>";
+		};
+		4497769F2497B70C009BF942 = {
+			isa = PBXGroup;
+			children = (
+				4497771E2497BBD5009BF942 /* Deployment */,
+				449776AB2497B70C009BF942 /* Excavator */,
+				4497772A2497C30A009BF942 /* ExcavatorTests */,
+				449776AA2497B70C009BF942 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		449776AA2497B70C009BF942 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				449776A92497B70C009BF942 /* Excavator.framework */,
+				449777292497C30A009BF942 /* ExcavatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		449776AB2497B70C009BF942 /* Excavator */ = {
+			isa = PBXGroup;
+			children = (
+				448A6FCC2498FF34004CE44F /* Info.plist */,
+				449776B42497B740009BF942 /* Source */,
+				449776AC2497B70C009BF942 /* Excavator.h */,
+			);
+			path = Excavator;
+			sourceTree = "<group>";
+		};
+		449776B42497B740009BF942 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				448A6FDD2498FFE1004CE44F /* TextRecognizer */,
+				448A6FCF2498FFBD004CE44F /* ValueExtractor */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		449777052497B863009BF942 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				449777062497B863009BF942 /* EmailExample.PNG */,
+				449777072497B863009BF942 /* MultipleIdsExample.PNG */,
+				449777082497B863009BF942 /* MultilineExample.PNG */,
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
+		4497771E2497BBD5009BF942 /* Deployment */ = {
+			isa = PBXGroup;
+			children = (
+				449777202497BBDE009BF942 /* Excavator.podspec */,
+				449777212497BBDE009BF942 /* LICENSE */,
+				4497771F2497BBDE009BF942 /* README.md */,
+				449777052497B863009BF942 /* Screenshots */,
+			);
+			name = Deployment;
+			sourceTree = "<group>";
+		};
+		4497772A2497C30A009BF942 /* ExcavatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				D97AD25E259B708800C27C33 /* email */,
+				D97AD265259B709600C27C33 /* IBAN */,
+				D97AD26C259B718C00C27C33 /* FileLoader.swift */,
+				4497772D2497C30A009BF942 /* Info.plist */,
+			);
+			path = ExcavatorTests;
+			sourceTree = "<group>";
+		};
+		D97AD25E259B708800C27C33 /* email */ = {
+			isa = PBXGroup;
+			children = (
+				4497773C2497C342009BF942 /* EmailExtractorTest.swift */,
+			);
+			path = email;
+			sourceTree = "<group>";
+		};
+		D97AD265259B709600C27C33 /* IBAN */ = {
+			isa = PBXGroup;
+			children = (
+				4497773B2497C342009BF942 /* IbanExtractorTest.swift */,
+				D97AD266259B70CD00C27C33 /* LongTextWithOneIBAN */,
+				D984C14A259B74300063906D /* ManyIBANs */,
+			);
+			path = IBAN;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		449776A42497B70C009BF942 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				449776AE2497B70C009BF942 /* Excavator.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		449776A82497B70C009BF942 /* Excavator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 449776B12497B70C009BF942 /* Build configuration list for PBXNativeTarget "Excavator" */;
+			buildPhases = (
+				449776A42497B70C009BF942 /* Headers */,
+				449776A52497B70C009BF942 /* Sources */,
+				449776A62497B70C009BF942 /* Frameworks */,
+				449776A72497B70C009BF942 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Excavator;
+			productName = IBScanner;
+			productReference = 449776A92497B70C009BF942 /* Excavator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		449777282497C30A009BF942 /* ExcavatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 449777312497C30A009BF942 /* Build configuration list for PBXNativeTarget "ExcavatorTests" */;
+			buildPhases = (
+				449777252497C30A009BF942 /* Sources */,
+				449777262497C30A009BF942 /* Frameworks */,
+				449777272497C30A009BF942 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				449777302497C30A009BF942 /* PBXTargetDependency */,
+			);
+			name = ExcavatorTests;
+			productName = IBScannerTests;
+			productReference = 449777292497C30A009BF942 /* ExcavatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		449776A02497B70C009BF942 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1230;
+				ORGANIZATIONNAME = "Pavel Stepanov";
+				TargetAttributes = {
+					449776A82497B70C009BF942 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					449777282497C30A009BF942 = {
+						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
+					};
+				};
+			};
+			buildConfigurationList = 449776A32497B70C009BF942 /* Build configuration list for PBXProject "Excavator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4497769F2497B70C009BF942;
+			productRefGroup = 449776AA2497B70C009BF942 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				449776A82497B70C009BF942 /* Excavator */,
+				449777282497C30A009BF942 /* ExcavatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		449776A72497B70C009BF942 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				449777242497BBDE009BF942 /* LICENSE in Resources */,
+				4497770B2497B863009BF942 /* MultilineExample.PNG in Resources */,
+				449777092497B863009BF942 /* EmailExample.PNG in Resources */,
+				449777222497BBDE009BF942 /* README.md in Resources */,
+				449777232497BBDE009BF942 /* Excavator.podspec in Resources */,
+				4497770A2497B863009BF942 /* MultipleIdsExample.PNG in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		449777272497C30A009BF942 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D97AD267259B70CD00C27C33 /* LongTextWithOneIBAN in Resources */,
+				D984C14B259B74300063906D /* ManyIBANs in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		449776A52497B70C009BF942 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				448A6FD82498FFBD004CE44F /* IbanExtractor.swift in Sources */,
+				D984C15B259B8E4D0063906D /* EmailValidation.swift in Sources */,
+				448A6FE72499000B004CE44F /* ValueExtracting.swift in Sources */,
+				448A6FDC2498FFBD004CE44F /* EmailExtractor.swift in Sources */,
+				448A6FD92498FFBD004CE44F /* IbanValidator.swift in Sources */,
+				448A6FDB2498FFBD004CE44F /* CountryIso.swift in Sources */,
+				D97AD255259B6D9000C27C33 /* TextRecognizer+Result.swift in Sources */,
+				D97AD254259B6D9000C27C33 /* TextRecognizer+Config.swift in Sources */,
+				448A6FE22498FFE1004CE44F /* TextRecognizer.swift in Sources */,
+				448A6FE52498FFE1004CE44F /* TextRecognizing.swift in Sources */,
+				D97AD24F259B6D7600C27C33 /* IbanHelper+Length.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		449777252497C30A009BF942 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D97AD26D259B718C00C27C33 /* FileLoader.swift in Sources */,
+				4497773D2497C342009BF942 /* IbanExtractorTest.swift in Sources */,
+				4497773E2497C342009BF942 /* EmailExtractorTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		449777302497C30A009BF942 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 449776A82497B70C009BF942 /* Excavator */;
+			targetProxy = 4497772F2497C30A009BF942 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		449776AF2497B70C009BF942 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		449776B02497B70C009BF942 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		449776B22497B70C009BF942 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Excavator/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = one.tomorrow.excavator;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		449776B32497B70C009BF942 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Excavator/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = one.tomorrow.excavator;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		449777322497C30A009BF942 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8GNUVHDS8K;
+				INFOPLIST_FILE = ExcavatorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = one.tomorrow.excavator.ExcavatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		449777332497C30A009BF942 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8GNUVHDS8K;
+				INFOPLIST_FILE = ExcavatorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = one.tomorrow.excavator.ExcavatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		449776A32497B70C009BF942 /* Build configuration list for PBXProject "Excavator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				449776AF2497B70C009BF942 /* Debug */,
+				449776B02497B70C009BF942 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		449776B12497B70C009BF942 /* Build configuration list for PBXNativeTarget "Excavator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				449776B22497B70C009BF942 /* Debug */,
+				449776B32497B70C009BF942 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		449777312497C30A009BF942 /* Build configuration list for PBXNativeTarget "ExcavatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				449777322497C30A009BF942 /* Debug */,
+				449777332497C30A009BF942 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 449776A02497B70C009BF942 /* Project object */;
+}
