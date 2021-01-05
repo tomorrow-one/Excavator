@@ -1,8 +1,8 @@
-# TomorrowIbanScanner
+# Excavator
 
-[![Version](https://img.shields.io/cocoapods/v/TomorrowIbanScanner.svg?style=flat)](https://cocoapods.org/pods/TomorrowIbanScanner)
-[![License](https://img.shields.io/cocoapods/l/TomorrowIbanScanner.svg?style=flat)](https://cocoapods.org/pods/TomorrowIbanScanner)
-[![Platform](https://img.shields.io/cocoapods/p/TomorrowIbanScanner.svg?style=flat)](https://cocoapods.org/pods/TomorrowIbanScanner)
+[![Version](https://img.shields.io/cocoapods/v/Excavator.svg?style=flat)](https://cocoapods.org/pods/Excavator)
+[![License](https://img.shields.io/cocoapods/l/Excavator.svg?style=flat)](https://cocoapods.org/pods/Excavator)
+[![Platform](https://img.shields.io/cocoapods/p/Excavator.svg?style=flat)](https://cocoapods.org/pods/Excavator)
 
 ## Requirements
 - iOS 13.0+
@@ -13,9 +13,9 @@
 
 ### CocoaPods
 
-[CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate TomorrowIbanScanner into your Xcode project using CocoaPods, specify it in your Podfile:
+[CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate Excavator into your Xcode project using CocoaPods, specify it in your Podfile:
 ```ruby
-pod 'TomorrowIbanScanner'
+pod 'Excavator'
 ```
 
 ## Features
@@ -40,8 +40,8 @@ As for now the library logs errors if any were produced into the standart output
 `TextRecognizer.Config.isDebugLoggingEnabled = false`
 
 ## Example
-<img src="https://github.com/PavelStepanovTomorrow/TomorrowIbanScanner/blob/develop/IBScanner/Screenshots/EmailExample.PNG" width="200"> <img src="https://github.com/PavelStepanovTomorrow/TomorrowIbanScanner/blob/develop/IBScanner/Screenshots/MultilineExample.PNG" width="200"> <img src="https://github.com/PavelStepanovTomorrow/TomorrowIbanScanner/blob/develop/IBScanner/Screenshots/MultipleIdsExample.PNG" width="200">
+<img src="https://github.com/PavelStepanovTomorrow/Excavator/blob/develop/Excavator/Screenshots/EmailExample.PNG" width="200"> <img src="https://github.com/PavelStepanovTomorrow/Excavator/blob/develop/Excavator/Screenshots/MultilineExample.PNG" width="200"> <img src="https://github.com/PavelStepanovTomorrow/Excavator/blob/develop/Excavator/Screenshots/MultipleIdsExample.PNG" width="200">
 
 ## License
 
-TomorrowIbanScanner is available under the MIT license. See the LICENSE file for more info.
+Excavator is available under the MIT license. See the LICENSE file for more info.

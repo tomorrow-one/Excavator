@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod lib lint TomorrowIbanScanner.podspec' to ensure this is a
+# Be sure to run `pod lib lint Excavator.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'TomorrowIbanScanner'
+  s.name             = 'Excavator'
   s.version          = '0.2.0'
   s.summary          = 'A set of classes which recognize and extract IBAN or email from an image using Vision framework from Apple.'
   s.swift_version    = '5.0'
@@ -23,18 +23,18 @@ Pod::Spec.new do |s|
                        DESC
 
   s.homepage         = 'https://github.com/PavelStepanovTomorrow' #TODO: FIXME
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2' #TODO: FIXME
+  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2' #TODO: we have to find out, what happens with them
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'PavelStepanovTomorrow' => 'pavel@tomorrow.one' } #fixme
-  s.source           = { :git => 'https://github.com/PavelStepanovTomorrow/TomorrowIbanScanner.git', :tag => s.version.to_s } #TODO: FIXME
+  s.author           = { 'PavelStepanovTomorrow' => 'pavel@tomorrow.one' } #TODO: fixme
+  s.source           = { :git => 'https://github.com/PavelStepanovTomorrow/Excavator.git', :tag => s.version.to_s } #TODO: FIXME
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '11.0'
 
-  s.source_files = 'IBScanner/IBScanner/**/*'
+  s.source_files = 'Excavator/Excavator/**/*'
   
   # s.resource_bundles = {
-  #   'TomorrowIbanScanner' => ['TomorrowIbanScanner/Assets/*.png']
+  #   'Excavator' => ['Excavator/Assets/*.png']
   # }
 
   s.frameworks = 'CoreImage', 'Vision'

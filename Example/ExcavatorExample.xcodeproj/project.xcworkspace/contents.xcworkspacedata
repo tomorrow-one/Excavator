@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Example.xcodeproj">
+      location = "self:TomorrowIbanScanner.xcodeproj">
    </FileRef>
 </Workspace>

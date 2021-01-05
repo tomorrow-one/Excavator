@@ -1,13 +1,13 @@
 //
 //  IdentifierRecognizingViewModelTest.swift
-//  TomorrowIbanScannerTests
+//  ExcavatorTests
 //
 //  Created by Pavel Stepanov on 16.04.20.
 //  Copyright © 2020 Tomorrow GmbH. All rights reserved.
 //
 
 import XCTest
-@testable import IBScanner
+@testable import Excavator
 @testable import Example
 
 @available(iOS 13, *)
