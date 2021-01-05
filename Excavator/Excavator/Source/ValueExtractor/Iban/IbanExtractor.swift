@@ -6,6 +6,8 @@
 //  Copyright © 2020 Tomorrow GmbH. All rights reserved.
 //
 
+import Foundation
+
 @available(iOS 13, *)
 public final class IbanExtractor: ValueExtracting {
 

@@ -8,7 +8,7 @@
 
 import XCTest
 @testable import Excavator
-@testable import Example
+@testable import ExcavatorExample
 
 @available(iOS 13, *)
 final class IdentifierRecognizingViewModelTest: XCTestCase {

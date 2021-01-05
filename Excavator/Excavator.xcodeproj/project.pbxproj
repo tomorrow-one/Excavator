@@ -14,7 +14,6 @@
 		448A6FE22498FFE1004CE44F /* TextRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448A6FDE2498FFE1004CE44F /* TextRecognizer.swift */; };
 		448A6FE52498FFE1004CE44F /* TextRecognizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448A6FE12498FFE1004CE44F /* TextRecognizing.swift */; };
 		448A6FE72499000B004CE44F /* ValueExtracting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448A6FE62499000B004CE44F /* ValueExtracting.swift */; };
-		449776AE2497B70C009BF942 /* Excavator.h in Headers */ = {isa = PBXBuildFile; fileRef = 449776AC2497B70C009BF942 /* Excavator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		449777092497B863009BF942 /* EmailExample.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 449777062497B863009BF942 /* EmailExample.PNG */; };
 		4497770A2497B863009BF942 /* MultipleIdsExample.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 449777072497B863009BF942 /* MultipleIdsExample.PNG */; };
 		4497770B2497B863009BF942 /* MultilineExample.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 449777082497B863009BF942 /* MultilineExample.PNG */; };
@@ -53,7 +52,6 @@
 		448A6FE12498FFE1004CE44F /* TextRecognizing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextRecognizing.swift; sourceTree = "<group>"; };
 		448A6FE62499000B004CE44F /* ValueExtracting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueExtracting.swift; sourceTree = "<group>"; };
 		449776A92497B70C009BF942 /* Excavator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Excavator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		449776AC2497B70C009BF942 /* Excavator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Excavator.h; sourceTree = "<group>"; };
 		449777062497B863009BF942 /* EmailExample.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EmailExample.PNG; sourceTree = "<group>"; };
 		449777072497B863009BF942 /* MultipleIdsExample.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultipleIdsExample.PNG; sourceTree = "<group>"; };
 		449777082497B863009BF942 /* MultilineExample.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultilineExample.PNG; sourceTree = "<group>"; };
@@ -136,9 +134,9 @@
 		4497769F2497B70C009BF942 = {
 			isa = PBXGroup;
 			children = (
-				4497771E2497BBD5009BF942 /* Deployment */,
 				449776AB2497B70C009BF942 /* Excavator */,
 				4497772A2497C30A009BF942 /* ExcavatorTests */,
+				4497771E2497BBD5009BF942 /* Deployment */,
 				449776AA2497B70C009BF942 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -157,7 +155,6 @@
 			children = (
 				448A6FCC2498FF34004CE44F /* Info.plist */,
 				449776B42497B740009BF942 /* Source */,
-				449776AC2497B70C009BF942 /* Excavator.h */,
 			);
 			path = Excavator;
 			sourceTree = "<group>";
@@ -228,7 +225,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				449776AE2497B70C009BF942 /* Excavator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
