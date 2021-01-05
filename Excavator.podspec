@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Excavator'
-  s.version          = '0.2.0'
-  s.summary          = 'A set of classes which recognize and extract IBAN or email from an image using Vision framework from Apple.'
+  s.version          = '0.2.1'
+  s.summary          = 'An extension over Apple Vision framework for extracting text from CIImage.'
   s.swift_version    = '5.0'
 
 # This description is used to generate tags and improve search results. FIXME
@@ -22,14 +22,13 @@ Pod::Spec.new do |s|
   This CocoaPod provides the ability to extract an IBAN or email from a given image. It includes some IBAN and email specific validation rules so you will need no boilerplate for that.
                        DESC
 
-  s.homepage         = 'https://github.com/PavelStepanovTomorrow' #TODO: FIXME
+  s.homepage         = 'https://github.com/tomorrow-one/Excavator'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2' #TODO: we have to find out, what happens with them
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'PavelStepanovTomorrow' => 'pavel@tomorrow.one' } #TODO: fixme
-  s.source           = { :git => 'https://github.com/PavelStepanovTomorrow/Excavator.git', :tag => s.version.to_s } #TODO: FIXME
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'Tomorrow GmbH' => 'ios@tomorrow.one' }
+  s.source           = { :git => 'https://github.com/tomorrow-one/Excavator.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '13.0'
 
   s.source_files = 'Excavator/Excavator/**/*'
   
