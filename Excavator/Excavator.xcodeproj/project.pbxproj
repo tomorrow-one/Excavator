@@ -14,12 +14,6 @@
 		448A6FE22498FFE1004CE44F /* TextRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448A6FDE2498FFE1004CE44F /* TextRecognizer.swift */; };
 		448A6FE52498FFE1004CE44F /* TextRecognizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448A6FE12498FFE1004CE44F /* TextRecognizing.swift */; };
 		448A6FE72499000B004CE44F /* ValueExtracting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448A6FE62499000B004CE44F /* ValueExtracting.swift */; };
-		449777092497B863009BF942 /* EmailExample.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 449777062497B863009BF942 /* EmailExample.PNG */; };
-		4497770A2497B863009BF942 /* MultipleIdsExample.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 449777072497B863009BF942 /* MultipleIdsExample.PNG */; };
-		4497770B2497B863009BF942 /* MultilineExample.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 449777082497B863009BF942 /* MultilineExample.PNG */; };
-		449777222497BBDE009BF942 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4497771F2497BBDE009BF942 /* README.md */; };
-		449777232497BBDE009BF942 /* Excavator.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 449777202497BBDE009BF942 /* Excavator.podspec */; };
-		449777242497BBDE009BF942 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 449777212497BBDE009BF942 /* LICENSE */; };
 		4497772E2497C30A009BF942 /* Excavator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 449776A92497B70C009BF942 /* Excavator.framework */; };
 		4497773D2497C342009BF942 /* IbanExtractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4497773B2497C342009BF942 /* IbanExtractorTest.swift */; };
 		4497773E2497C342009BF942 /* EmailExtractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4497773C2497C342009BF942 /* EmailExtractorTest.swift */; };
@@ -137,6 +131,7 @@
 				449776AB2497B70C009BF942 /* Excavator */,
 				4497772A2497C30A009BF942 /* ExcavatorTests */,
 				4497771E2497BBD5009BF942 /* Deployment */,
+				D947FBAF25A4BB5C0083E051 /* Supporting Files */,
 				449776AA2497B70C009BF942 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -154,7 +149,6 @@
 			isa = PBXGroup;
 			children = (
 				449776B42497B740009BF942 /* Source */,
-				448A6FCC2498FF34004CE44F /* Info.plist */,
 			);
 			path = Excavator;
 			sourceTree = "<group>";
@@ -198,6 +192,14 @@
 				4497772D2497C30A009BF942 /* Info.plist */,
 			);
 			path = ExcavatorTests;
+			sourceTree = "<group>";
+		};
+		D947FBAF25A4BB5C0083E051 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				448A6FCC2498FF34004CE44F /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		D97AD25E259B708800C27C33 /* email */ = {
@@ -310,12 +312,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				449777242497BBDE009BF942 /* LICENSE in Resources */,
-				4497770B2497B863009BF942 /* MultilineExample.PNG in Resources */,
-				449777092497B863009BF942 /* EmailExample.PNG in Resources */,
-				449777222497BBDE009BF942 /* README.md in Resources */,
-				449777232497BBDE009BF942 /* Excavator.podspec in Resources */,
-				4497770A2497B863009BF942 /* MultipleIdsExample.PNG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,7 +497,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Excavator/Info.plist;
+				INFOPLIST_FILE = "Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -526,7 +522,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Excavator/Info.plist;
+				INFOPLIST_FILE = "Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
