@@ -21,7 +21,6 @@
 		D947FBA525A4B7C70083E051 /* TextRecognizingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D947FB9625A4B7C70083E051 /* TextRecognizingController.xib */; };
 		D947FBA625A4B7C70083E051 /* VideoCaptureSessionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D947FB9825A4B7C70083E051 /* VideoCaptureSessionFactory.swift */; };
 		D947FBA725A4B7C70083E051 /* CIImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D947FB9925A4B7C70083E051 /* CIImageHelper.swift */; };
-		D947FBA825A4B7C70083E051 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D947FB9A25A4B7C70083E051 /* Info.plist */; };
 		D96417F425A4898100935C43 /* Excavator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96417F325A4898100935C43 /* Excavator.framework */; };
 		D96417F525A4898100935C43 /* Excavator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D96417F325A4898100935C43 /* Excavator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -291,7 +290,6 @@
 				D947FBA425A4B7C70083E051 /* Images.xcassets in Resources */,
 				D947FBA325A4B7C70083E051 /* Assets.xcassets in Resources */,
 				D947FBA525A4B7C70083E051 /* TextRecognizingController.xib in Resources */,
-				D947FBA825A4B7C70083E051 /* Info.plist in Resources */,
 				D947FB9E25A4B7C70083E051 /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
