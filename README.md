@@ -40,7 +40,7 @@ As for now the library logs errors if any were produced into the standart output
 `TextRecognizer.Config.isDebugLoggingEnabled = false`
 
 ## Example
-<img src="https://github.com/PavelStepanovTomorrow/Excavator/blob/develop/Excavator/Screenshots/EmailExample.PNG" width="200"> <img src="https://github.com/PavelStepanovTomorrow/Excavator/blob/develop/Excavator/Screenshots/MultilineExample.PNG" width="200"> <img src="https://github.com/PavelStepanovTomorrow/Excavator/blob/develop/Excavator/Screenshots/MultipleIdsExample.PNG" width="200">
+<img src="https://github.com/tomorrow-one/Excavator/blob/master/Excavator/Screenshots/EmailExample.PNG" width="200"> <img src="https://github.com/tomorrow-one/Excavator/blob/master/Excavator/Screenshots/MultilineExample.PNG" width="200"> <img src="https://github.com/tomorrow-one/Excavator/blob/master/Excavator/Screenshots/MultipleIdsExample.PNG" width="200">
 
 ## License
 
