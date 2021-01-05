@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "ExcavatorExample.app"
-               BlueprintName = "ExcavatorExample"
-               ReferencedContainer = "container:ExcavatorExample.xcodeproj">
+               BuildableName = "Example.app"
+               BlueprintName = "Example"
+               ReferencedContainer = "container:Example.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -31,7 +31,7 @@
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
                BuildableName = "TomorrowIbanScanner_Tests.xctest"
                BlueprintName = "TomorrowIbanScanner_Tests"
-               ReferencedContainer = "container:ExcavatorExample.xcodeproj">
+               ReferencedContainer = "container:Example.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,9 +46,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "ExcavatorExample.app"
-            BlueprintName = "ExcavatorExample"
-            ReferencedContainer = "container:ExcavatorExample.xcodeproj">
+            BuildableName = "Example.app"
+            BlueprintName = "Example"
+            ReferencedContainer = "container:Example.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -57,9 +57,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "44665773247EAFFF00A806D2"
-               BuildableName = "ExcavatorExampleTests.xctest"
-               BlueprintName = "ExcavatorExampleTests"
-               ReferencedContainer = "container:ExcavatorExample.xcodeproj">
+               BuildableName = "ExampleTests.xctest"
+               BlueprintName = "ExampleTests"
+               ReferencedContainer = "container:Example.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -79,9 +79,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "ExcavatorExample.app"
-            BlueprintName = "ExcavatorExample"
-            ReferencedContainer = "container:ExcavatorExample.xcodeproj">
+            BuildableName = "Example.app"
+            BlueprintName = "Example"
+            ReferencedContainer = "container:Example.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "ExcavatorExample.app"
-            BlueprintName = "ExcavatorExample"
-            ReferencedContainer = "container:ExcavatorExample.xcodeproj">
+            BuildableName = "Example.app"
+            BlueprintName = "Example"
+            ReferencedContainer = "container:Example.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
