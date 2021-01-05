@@ -529,7 +529,7 @@
 				);
 				MARKETING_VERSION = 0.2.1;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "one.tomorrow.excavator-example";
+				PRODUCT_BUNDLE_IDENTIFIER = one.tomorrow.excavator.example;
 				PRODUCT_NAME = Example;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
@@ -549,7 +549,7 @@
 				);
 				MARKETING_VERSION = 0.2.1;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "one.tomorrow.excavator-example";
+				PRODUCT_BUNDLE_IDENTIFIER = one.tomorrow.excavator.example;
 				PRODUCT_NAME = Example;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
