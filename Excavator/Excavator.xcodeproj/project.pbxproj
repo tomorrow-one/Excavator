@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -153,8 +153,8 @@
 		449776AB2497B70C009BF942 /* Excavator */ = {
 			isa = PBXGroup;
 			children = (
-				448A6FCC2498FF34004CE44F /* Info.plist */,
 				449776B42497B740009BF942 /* Source */,
+				448A6FCC2498FF34004CE44F /* Info.plist */,
 			);
 			path = Excavator;
 			sourceTree = "<group>";
@@ -275,7 +275,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1230;
-				ORGANIZATIONNAME = "Pavel Stepanov";
+				ORGANIZATIONNAME = "Tomorrow GmbH";
 				TargetAttributes = {
 					449776A82497B70C009BF942 = {
 						CreatedOnToolsVersion = 11.5;
@@ -287,7 +287,7 @@
 				};
 			};
 			buildConfigurationList = 449776A32497B70C009BF942 /* Build configuration list for PBXProject "Excavator" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -508,7 +508,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2.0;
+				MARKETING_VERSION = 0.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = one.tomorrow.excavator;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -533,7 +533,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2.0;
+				MARKETING_VERSION = 0.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = one.tomorrow.excavator;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
