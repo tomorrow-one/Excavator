@@ -1,8 +1,8 @@
 # Excavator
 
-[![Version](https://img.shields.io/cocoapods/v/Excavator.svg?style=flat)](https://cocoapods.org/pods/Excavator)
-[![License](https://img.shields.io/cocoapods/l/Excavator.svg?style=flat)](https://cocoapods.org/pods/Excavator)
-[![Platform](https://img.shields.io/cocoapods/p/Excavator.svg?style=flat)](https://cocoapods.org/pods/Excavator)
+![Cocoapods](https://img.shields.io/cocoapods/v/Excavator)
+![Cocoapods](https://img.shields.io/cocoapods/l/Excavator)
+![Cocoapods platforms](https://img.shields.io/cocoapods/p/Excavator)
 
 ## Requirements
 - iOS 13.0+
