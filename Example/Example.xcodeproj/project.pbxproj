@@ -21,6 +21,8 @@
 		D947FBA525A4B7C70083E051 /* TextRecognizingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D947FB9625A4B7C70083E051 /* TextRecognizingController.xib */; };
 		D947FBA625A4B7C70083E051 /* VideoCaptureSessionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D947FB9825A4B7C70083E051 /* VideoCaptureSessionFactory.swift */; };
 		D947FBA725A4B7C70083E051 /* CIImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D947FB9925A4B7C70083E051 /* CIImageHelper.swift */; };
+		D957224925A5E4F100E4F7FC /* Excavator_Multiple_Identifiers.gif in Resources */ = {isa = PBXBuildFile; fileRef = D957224125A5E4F100E4F7FC /* Excavator_Multiple_Identifiers.gif */; };
+		D957224E25A5E4F100E4F7FC /* Excavator_IBAN_email.gif in Resources */ = {isa = PBXBuildFile; fileRef = D957224325A5E4F100E4F7FC /* Excavator_IBAN_email.gif */; };
 		D9C335D825A5C70900A48EB1 /* Excavator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C335D725A5C70900A48EB1 /* Excavator.framework */; };
 		D9C335D925A5C70900A48EB1 /* Excavator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D9C335D725A5C70900A48EB1 /* Excavator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -68,6 +70,8 @@
 		D947FB9825A4B7C70083E051 /* VideoCaptureSessionFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCaptureSessionFactory.swift; sourceTree = "<group>"; };
 		D947FB9925A4B7C70083E051 /* CIImageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CIImageHelper.swift; sourceTree = "<group>"; };
 		D947FB9A25A4B7C70083E051 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D957224125A5E4F100E4F7FC /* Excavator_Multiple_Identifiers.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Excavator_Multiple_Identifiers.gif; sourceTree = "<group>"; };
+		D957224325A5E4F100E4F7FC /* Excavator_IBAN_email.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Excavator_IBAN_email.gif; sourceTree = "<group>"; };
 		D9C335D725A5C70900A48EB1 /* Excavator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Excavator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -121,6 +125,7 @@
 		D947FB8525A4B7C70083E051 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				D957223F25A5E4F100E4F7FC /* Screenshots */,
 				D947FB8625A4B7C70083E051 /* Source */,
 				D947FB9A25A4B7C70083E051 /* Info.plist */,
 			);
@@ -185,6 +190,16 @@
 				D947FB9925A4B7C70083E051 /* CIImageHelper.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D957223F25A5E4F100E4F7FC /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				D957224125A5E4F100E4F7FC /* Excavator_Multiple_Identifiers.gif */,
+				D957224325A5E4F100E4F7FC /* Excavator_IBAN_email.gif */,
+			);
+			name = Screenshots;
+			path = ../../Excavator/Screenshots;
 			sourceTree = "<group>";
 		};
 		D9C335D625A5C70900A48EB1 /* Frameworks */ = {
@@ -287,8 +302,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D957224E25A5E4F100E4F7FC /* Excavator_IBAN_email.gif in Resources */,
 				D947FBA425A4B7C70083E051 /* Images.xcassets in Resources */,
 				D947FBA325A4B7C70083E051 /* Assets.xcassets in Resources */,
+				D957224925A5E4F100E4F7FC /* Excavator_Multiple_Identifiers.gif in Resources */,
 				D947FBA525A4B7C70083E051 /* TextRecognizingController.xib in Resources */,
 				D947FB9E25A4B7C70083E051 /* LaunchScreen.xib in Resources */,
 			);
