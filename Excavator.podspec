@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Excavator'
-  s.version          = '0.2.3'
+  s.version          = '0.2.4'
   s.summary          = 'An extension over Apple Vision framework for extracting text from CIImage.'
   s.swift_version    = '5.0'
   s.description      = <<-DESC
