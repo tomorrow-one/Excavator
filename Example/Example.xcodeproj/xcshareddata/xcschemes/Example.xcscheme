@@ -62,6 +62,16 @@
                ReferencedContainer = "container:Example.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "449777282497C30A009BF942"
+               BuildableName = "ExcavatorTests.xctest"
+               BlueprintName = "ExcavatorTests"
+               ReferencedContainer = "container:../Excavator/Excavator.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
