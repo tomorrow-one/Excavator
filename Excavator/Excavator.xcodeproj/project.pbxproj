@@ -55,7 +55,7 @@
 		4497772D2497C30A009BF942 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4497773B2497C342009BF942 /* IbanExtractorTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IbanExtractorTest.swift; sourceTree = "<group>"; };
 		4497773C2497C342009BF942 /* EmailExtractorTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailExtractorTest.swift; sourceTree = "<group>"; };
-		D947FBBD25A4C1C20083E051 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../../Supporting Files/Info.plist"; sourceTree = "<group>"; };
+		D947FBD525A5B6470083E051 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D97AD24E259B6D7600C27C33 /* IbanHelper+Length.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IbanHelper+Length.swift"; sourceTree = "<group>"; };
 		D97AD252259B6D9000C27C33 /* TextRecognizer+Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TextRecognizer+Config.swift"; sourceTree = "<group>"; };
 		D97AD253259B6D9000C27C33 /* TextRecognizer+Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TextRecognizer+Result.swift"; sourceTree = "<group>"; };
@@ -197,7 +197,7 @@
 		D947FBAF25A4BB5C0083E051 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D947FBBD25A4C1C20083E051 /* Info.plist */,
+				D947FBD525A5B6470083E051 /* Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
