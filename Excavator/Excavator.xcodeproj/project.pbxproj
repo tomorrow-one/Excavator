@@ -128,11 +128,10 @@
 		4497769F2497B70C009BF942 = {
 			isa = PBXGroup;
 			children = (
-				4497771E2497BBD5009BF942 /* Deployment */,
 				449776AB2497B70C009BF942 /* Excavator */,
 				4497772A2497C30A009BF942 /* ExcavatorTests */,
 				449776AA2497B70C009BF942 /* Products */,
-				D947FBE725A5B9B40083E051 /* Supporting */,
+				4497771E2497BBD5009BF942 /* Deployment */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				449776B42497B740009BF942 /* Source */,
+				D947FBE125A5B9100083E051 /* Info.plist */,
 			);
 			path = Excavator;
 			sourceTree = "<group>";
@@ -192,14 +192,6 @@
 				4497772D2497C30A009BF942 /* Info.plist */,
 			);
 			path = ExcavatorTests;
-			sourceTree = "<group>";
-		};
-		D947FBE725A5B9B40083E051 /* Supporting */ = {
-			isa = PBXGroup;
-			children = (
-				D947FBE125A5B9100083E051 /* Info.plist */,
-			);
-			name = Supporting;
 			sourceTree = "<group>";
 		};
 		D97AD25E259B708800C27C33 /* email */ = {
